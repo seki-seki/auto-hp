@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaia LLC | デザインコンセプト</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">コンテンツへスキップ</a>
+  <header>
+    <div class="brand" aria-label="Gaia LLC デザインコンセプト">Gaia LLC Concepts</div>
+    <div class="tablist" role="tablist" aria-label="デザインパターン選択">
+      <button role="tab" id="tab-1" aria-selected="true" aria-controls="pattern-panel" tabindex="0" data-src="pattern-1.html" data-title="Gaia LLC モダンミニマル">
+        モダンミニマル
+      </button>
+      <button role="tab" id="tab-2" aria-selected="false" aria-controls="pattern-panel" tabindex="-1" data-src="pattern-2.html" data-title="Gaia LLC ダークモード">
+        ダークモード × グラデーション
+      </button>
+      <button role="tab" id="tab-3" aria-selected="false" aria-controls="pattern-panel" tabindex="-1" data-src="pattern-3.html" data-title="Gaia LLC ビジュアルリッチ">
+        ビジュアルリッチ &amp; Bold
+      </button>
+    </div>
+  </header>
+  <main id="main">
+    <section>
+      <h1 class="section-heading">Gaia LLC ブランドストーリーテリング</h1>
+      <p>
+        クライアントに最適なイメージを提示できるよう、同一コンテンツを基に 3 つの異なるデザインアプローチを展開しました。
+        上部のタブからレイアウトを切り替えてご覧いただけます。
+      </p>
+    </section>
+    <section class="tabpanel" role="tabpanel" tabindex="0" aria-labelledby="tab-1" id="pattern-panel">
+      <iframe src="pattern-1.html" title="Gaia LLC モダンミニマル" loading="lazy"></iframe>
+    </section>
+  </main>
+</body>
+</html>
