@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gaia LLC | デザインバリエーション</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="theme-minimal">
+    <a class="skip-link" href="#pattern-gallery">メインコンテンツへ移動</a>
+    <header>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <span class="badge" aria-label="コンセプトコレクション">Design Library</span>
+            <h1>Gaia LLC Webデザイン提案</h1>
+            <p>
+              Atlassian Design System の原則に沿いながら、Gaia LLC の多角的な事業価値を伝えるための 3 つのデザインパターンをご用意しました。モダンな UI
+              体験を比較し、ブランドの方向性に最適なスタイルをご検討ください。
+            </p>
+          </div>
+          <div class="hero-media">
+            <img src="assets/images/gaia-overview.jpg" alt="多角的なビジネス領域を象徴する都市の俯瞰図" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="pattern-gallery" class="container" aria-label="デザインパターンギャラリー">
+      <div class="section" style="background: transparent; box-shadow: none; padding: 0;">
+        <div class="section-header">
+          <h2>デザインパターンを切り替える</h2>
+          <p>タブまたはキーボード（← →）でレイアウトを切り替えてプレビューできます。</p>
+        </div>
+        <nav role="tablist" aria-label="Gaia LLC デザインパターン">
+          <div class="cta-group" role="presentation">
+            <button type="button" role="tab" id="tab-pattern-1" aria-controls="panel-pattern-1" aria-selected="true" class="button primary">モダンミニマル</button>
+            <button type="button" role="tab" id="tab-pattern-2" aria-controls="panel-pattern-2" aria-selected="false" class="button secondary">ダーク × グラデーション</button>
+            <button type="button" role="tab" id="tab-pattern-3" aria-controls="panel-pattern-3" aria-selected="false" class="button secondary">ビジュアルリッチ</button>
+          </div>
+        </nav>
+      </div>
+      <section role="tabpanel" id="panel-pattern-1" aria-labelledby="tab-pattern-1">
+        <iframe
+          src="pattern-1.html"
+          title="Gaia LLC モダンミニマルデザイン"
+          style="width: 100%; border: none; min-height: 1200px; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);"
+          loading="lazy"
+        ></iframe>
+      </section>
+      <section role="tabpanel" id="panel-pattern-2" aria-labelledby="tab-pattern-2" hidden aria-hidden="true">
+        <iframe
+          src="pattern-2.html"
+          title="Gaia LLC ダークモードグラデーションデザイン"
+          style="width: 100%; border: none; min-height: 1200px; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);"
+          loading="lazy"
+        ></iframe>
+      </section>
+      <section role="tabpanel" id="panel-pattern-3" aria-labelledby="tab-pattern-3" hidden aria-hidden="true">
+        <iframe
+          src="pattern-3.html"
+          title="Gaia LLC ビジュアルリッチデザイン"
+          style="width: 100%; border: none; min-height: 1200px; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="container">
+      <p>© <time datetime="2024">2024</time> Gaia LLC — デザインコンセプト比較プレビュー</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
