@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaia LLC | Value Creation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="page" data-active-variant="variant-a">
+      <header class="global-header">
+        <div class="global-header__brand">
+          <div class="global-header__logo" aria-hidden="true">G</div>
+          <div class="global-header__identity">
+            <span class="global-header__company">Gaia LLC</span>
+            <span class="global-header__tagline">Value Creation Studio</span>
+          </div>
+        </div>
+        <nav class="global-header__nav" aria-label="レイアウト切替">
+          <span class="global-header__nav-label">Layouts</span>
+          <div class="layout-switcher" role="group" aria-label="デザインバリエーション">
+            <button
+              type="button"
+              class="layout-switcher__button is-active"
+              data-variant="variant-a"
+              aria-pressed="true"
+            >
+              Essence
+            </button>
+            <button
+              type="button"
+              class="layout-switcher__button"
+              data-variant="variant-b"
+              aria-pressed="false"
+            >
+              Craft
+            </button>
+            <button
+              type="button"
+              class="layout-switcher__button"
+              data-variant="variant-c"
+              aria-pressed="false"
+            >
+              Horizon
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="variant variant--a" data-variant="variant-a">
+          <div class="hero hero--primary">
+            <div class="hero__eyebrow">Gaia LLC</div>
+            <h1 class="hero__title">価値創造を社会へ。</h1>
+            <p class="hero__copy">
+              私たちの使命は「価値を創造し、社会に還元すること」。不動産から広告、保険、建築設計まで、幅広い専門性で未来志向のソリューションを提供します。
+            </p>
+            <div class="hero__meta">
+              <span class="chip">VALUE CREATION</span>
+              <span class="chip">未来志向</span>
+            </div>
+          </div>
+
+          <div class="section-grid">
+            <section class="panel panel--highlight">
+              <h2 class="panel__title">事業の目的</h2>
+              <ul class="list list--columns">
+                <li>不動産事業</li>
+                <li>建築の工事設計</li>
+                <li>広告看板事業</li>
+                <li>生命保険募集</li>
+                <li>損害保険代理店</li>
+                <li>不動産コンサルティング</li>
+                <li>住宅地・別荘地の開発造成</li>
+              </ul>
+            </section>
+
+            <section class="panel">
+              <h2 class="panel__title">会社概要</h2>
+              <dl class="definition">
+                <div>
+                  <dt>会社名</dt>
+                  <dd>Gaia LLC（合同会社ガイア）</dd>
+                </div>
+                <div>
+                  <dt>資本金</dt>
+                  <dd>200万円</dd>
+                </div>
+                <div>
+                  <dt>所在地</dt>
+                  <dd>熊本県熊本市中央区帯山５丁目３８番２５号</dd>
+                </div>
+                <div>
+                  <dt>設立</dt>
+                  <dd>平成25年11月1日</dd>
+                </div>
+                <div>
+                  <dt>法人番号</dt>
+                  <dd>5330003005421</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
+
+          <section class="message-card">
+            <h2 class="message-card__title">Message</h2>
+            <p>
+              私たちは常に「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切にした価値創造に取り組んでいます。お客様、パートナー、地域社会と共に成長し、持続可能な社会の実現に貢献します。
+            </p>
+            <p class="message-card__signature">代表社員　井上真意</p>
+          </section>
+
+          <section class="mission">
+            <div class="mission__header">
+              <h2>Mission</h2>
+              <p>
+                お客様にとって最適な価値を創造し、提案し、形にすることが私たちの役割です。
+              </p>
+            </div>
+            <div class="mission__content">
+              <article class="mission-card">
+                <h3>Realestate</h3>
+                <p>
+                  独自のネットワークと不動産知識で、賃貸から投資まで幅広いニーズに対応します。
+                </p>
+              </article>
+              <article class="mission-card">
+                <h3>Signboard Business</h3>
+                <p>
+                  希望に寄り添う独自のデザインで、不動産条件も踏まえた唯一無二の広告を提案します。
+                </p>
+              </article>
+              <article class="mission-card">
+                <h3>Creation</h3>
+                <p>
+                  陶芸に息づく自由な創造力で、最高のデザインと独自性を追求します。
+                </p>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="variant variant--b" data-variant="variant-b" hidden>
+          <div class="hero hero--immersive">
+            <div class="hero__badge">Design × Place</div>
+            <h1 class="hero__title">
+              土地とデザインが出会う場所で、独創性が芽吹く。
+            </h1>
+            <p class="hero__copy">
+              陶芸や建築、広告、そして保険。Gaia LLCは感性とデータを融合し、地域に寄り添う価値を生み出します。
+            </p>
+          </div>
+
+          <section class="split-section">
+            <div class="split-section__visual">
+              <div class="visual-card">
+                <h2>VALUE CREATION</h2>
+                <p>価値創造の先へ。</p>
+              </div>
+            </div>
+            <div class="split-section__content">
+              <h2>会社概要</h2>
+              <p class="intro">
+                Gaia LLC（合同会社ガイア）は熊本を拠点に、多彩な事業で地域経済と人々の暮らしを支えます。
+              </p>
+              <ul class="facts">
+                <li><span>資本金</span><strong>200万円</strong></li>
+                <li><span>設立</span><strong>平成25年11月1日</strong></li>
+                <li><span>法人番号</span><strong>5330003005421</strong></li>
+                <li>
+                  <span>所在地</span>
+                  <strong>熊本県熊本市中央区帯山５丁目３８番２５号</strong>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="pillars">
+            <h2 class="pillars__title">事業の柱</h2>
+            <div class="pillars__grid">
+              <article class="pillar">
+                <h3>不動産と建築</h3>
+                <p>
+                  不動産事業と建築工事設計で、街の未来を形づくるプロジェクトを推進します。
+                </p>
+              </article>
+              <article class="pillar">
+                <h3>広告とメディア</h3>
+                <p>
+                  看板広告を中心に、デジタルでは代替できない体験型プロモーションをデザインします。
+                </p>
+              </article>
+              <article class="pillar">
+                <h3>保険とコンサルティング</h3>
+                <p>
+                  生命・損害保険代理店業務と不動産コンサルティングで、総合的な安心を提供します。
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="story">
+            <div class="story__content">
+              <h2>Message</h2>
+              <p>
+                私たちの使命は、地域の期待を超える価値を生み出すこと。常に問い続ける姿勢が、新たな解決策と共創を生み出します。
+              </p>
+              <p>
+                パートナーやコミュニティとの信頼関係を育み、持続可能な社会に貢献し続けます。
+              </p>
+              <p class="story__signature">代表社員　井上真意</p>
+            </div>
+            <div class="story__highlights">
+              <article class="highlight">
+                <h3>陶芸</h3>
+                <p>最高のデザインと独自性で、暮らしに新たな美を届けます。</p>
+              </article>
+              <article class="highlight">
+                <h3>Signboard Business</h3>
+                <p>唯一無二の広告提案で、街に新しい景観を生み出します。</p>
+              </article>
+              <article class="highlight">
+                <h3>Creation</h3>
+                <p>自由な創造力が、あらゆる領域で価値を具現化します。</p>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="variant variant--c" data-variant="variant-c" hidden>
+          <div class="hero hero--minimal">
+            <h1 class="hero__title">社会の未来を、価値で紡ぐ。</h1>
+            <p class="hero__copy">
+              Gaia LLCは、生活者・企業・地域の接点をデザインするパートナーです。価値の創造と還元を、事業のすべてに組み込みます。
+            </p>
+            <div class="hero__tags">
+              <span class="chip">Gaia LLC</span>
+              <span class="chip">VALUE CREATION</span>
+              <span class="chip">未来共創</span>
+            </div>
+          </div>
+
+          <section class="timeline">
+            <h2>Gaia LLC at a Glance</h2>
+            <ol class="timeline__list">
+              <li>
+                <h3>2013</h3>
+                <p>熊本にて合同会社ガイア設立（平成25年11月1日）。</p>
+              </li>
+              <li>
+                <h3>Today</h3>
+                <p>不動産事業、建築設計、広告、保険まで領域を拡張し、価値創造を支援。</p>
+              </li>
+              <li>
+                <h3>Tomorrow</h3>
+                <p>住宅地・別荘地の開発造成とともに、地域とともに歩む未来を描きます。</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="capabilities">
+            <h2>Capabilities</h2>
+            <div class="capabilities__grid">
+              <article class="capability">
+                <h3>Realestate</h3>
+                <p>賃貸から投資まで、独自ネットワークを活かしたソリューションを提供。</p>
+              </article>
+              <article class="capability">
+                <h3>Construction Design</h3>
+                <p>建築の工事設計で、機能と美しさを両立する空間を生み出します。</p>
+              </article>
+              <article class="capability">
+                <h3>Signboard & Street Ads</h3>
+                <p>メディアミックスを意識した看板広告で、唯一無二のブランド体験を創出。</p>
+              </article>
+              <article class="capability">
+                <h3>Insurance Agency</h3>
+                <p>生命保険募集・損害保険代理店業務で、お客様の安心を支えます。</p>
+              </article>
+              <article class="capability">
+                <h3>Consulting</h3>
+                <p>不動産コンサルティングで、価値向上と持続可能な運用を導きます。</p>
+              </article>
+              <article class="capability">
+                <h3>Development</h3>
+                <p>住宅地・別荘地の開発造成で、地域のポテンシャルを引き出します。</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="quote-block">
+            <blockquote>
+              <p>
+                「価値を創造し、社会に還元する」――Gaia LLCは、感性と価値の裏付けをサービスへと変換するチームです。
+              </p>
+            </blockquote>
+            <p class="quote-block__caption">
+              Message from CEO &mdash; 代表社員 井上真意
+            </p>
+          </section>
+
+          <section class="details">
+            <div class="details__card">
+              <h2>Company Overview</h2>
+              <dl class="definition definition--compact">
+                <div>
+                  <dt>会社名</dt>
+                  <dd>Gaia LLC / 合同会社ガイア</dd>
+                </div>
+                <div>
+                  <dt>資本金</dt>
+                  <dd>200万円</dd>
+                </div>
+                <div>
+                  <dt>所在地</dt>
+                  <dd>熊本県熊本市中央区帯山５丁目３８番２５号</dd>
+                </div>
+                <div>
+                  <dt>法人番号</dt>
+                  <dd>5330003005421</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="details__card">
+              <h2>Service DNA</h2>
+              <ul class="service-list">
+                <li>Design × Place：陶芸に宿る創造力</li>
+                <li>Signboard Business：唯一無二の広告提案</li>
+                <li>感性と価値：メディアミックスで新しい体験を創出</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="global-footer">
+        <p>&copy; Gaia LLC. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
