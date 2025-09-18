@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaia LLC | Pattern 02</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Work+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f8f9;
+      --surface: #ffffff;
+      --surface-alt: #ebf4ff;
+      --text: #172b4d;
+      --muted: #42526e;
+      --accent: #00b8d9;
+      --accent-strong: #0065ff;
+      --shadow: 0 24px 48px rgba(9, 30, 66, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .layout {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: clamp(32px, 5vw, 64px) clamp(16px, 5vw, 48px);
+      display: grid;
+      gap: 48px;
+    }
+
+    header {
+      background: var(--surface);
+      border-radius: 32px;
+      padding: clamp(32px, 6vw, 64px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(0, 101, 255, 0.16) 0%, rgba(0, 184, 217, 0.05) 55%, transparent 75%);
+      pointer-events: none;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: clamp(36px, 5vw, 56px);
+      letter-spacing: 0.06em;
+    }
+
+    .subtitle {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface-alt);
+      color: var(--accent-strong);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.8;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    section {
+      background: var(--surface);
+      border-radius: 28px;
+      padding: clamp(24px, 4vw, 48px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section h2 {
+      margin: 0 0 16px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(0, 184, 217, 0.12);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin: 20px 0 0;
+      padding-left: 18px;
+      line-height: 1.8;
+    }
+
+    .summary {
+      display: grid;
+      gap: 20px;
+    }
+
+    .summary strong {
+      font-size: 18px;
+      color: var(--accent-strong);
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .card {
+      border: 1px solid rgba(0, 184, 217, 0.25);
+      border-radius: 20px;
+      padding: 20px;
+      background: rgba(235, 244, 255, 0.45);
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 24px;
+      padding-left: 24px;
+      border-left: 2px solid rgba(0, 101, 255, 0.2);
+      display: grid;
+      gap: 24px;
+    }
+
+    .timeline h3 {
+      margin: 0 0 8px;
+      color: var(--accent-strong);
+      font-size: 18px;
+    }
+
+    blockquote {
+      margin: 24px 0 0;
+      padding: 24px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(0, 184, 217, 0.12), rgba(0, 101, 255, 0.12));
+      border: 1px solid rgba(0, 101, 255, 0.16);
+      font-style: italic;
+    }
+
+    blockquote footer {
+      margin-top: 16px;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--accent-strong);
+    }
+
+    .mission-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .mission-card {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(0, 184, 217, 0.12);
+      border: 1px solid rgba(0, 184, 217, 0.3);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 12px;
+      background: rgba(0, 101, 255, 0.1);
+      color: var(--accent-strong);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    footer {
+      text-align: right;
+      color: rgba(23, 43, 77, 0.6);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      header, section {
+        border-radius: 24px;
+      }
+
+      .timeline {
+        padding-left: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <div class="subtitle">VALUE CREATION / 価値創造</div>
+      <h1>Gaia LLC</h1>
+      <p>熊本の地から価値創造をリードする合同会社ガイア。Atlassian のデザイン原則に基づいた「透明性」「協働」「インパクト」を軸に、社会へ価値を届けています。</p>
+    </header>
+
+    <section>
+      <div class="chip">事業の目的</div>
+      <h2>多様な事業ポートフォリオ</h2>
+      <p>Gaia LLC は複数の専門領域を横断することで、顧客の期待を超えるサービス体験を実現します。</p>
+      <ul>
+        <li>不動産事業 / 建築の工事設計</li>
+        <li>広告看板事業 / 看板・ストリートサイド広告</li>
+        <li>生命保険募集・損害保険代理店事業</li>
+        <li>不動産コンサルタント業務 / 住宅地・別荘地の開発造成</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="chip">会社概要</div>
+      <div class="summary">
+        <p><strong>合同会社ガイア（Gaia LLC）</strong> は熊本県熊本市中央区帯山５丁目３８番２５号に拠点を置き、地域の価値共創をミッションに掲げています。</p>
+        <div class="columns">
+          <div class="card">
+            <div class="tag">Capital</div>
+            <h3>資本金</h3>
+            <p>200万円</p>
+          </div>
+          <div class="card">
+            <div class="tag">Founded</div>
+            <h3>設立日</h3>
+            <p>平成25年11月1日（2013年）</p>
+          </div>
+          <div class="card">
+            <div class="tag">Corporate ID</div>
+            <h3>法人番号</h3>
+            <p>5330003005421</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="chip">会社プレゼンテーション</div>
+      <div class="timeline">
+        <div>
+          <h3>陶芸 – Design × Place</h3>
+          <p>最良のデザインと独自性で土地と空間の価値を高めます。</p>
+        </div>
+        <div>
+          <h3>Creation</h3>
+          <p>自由な創造力で常識を超える体験を構築。</p>
+        </div>
+        <div>
+          <h3>Signboard Business</h3>
+          <p>不動産条件も踏まえた独自デザインで唯一無二の広告を提案。</p>
+        </div>
+        <div>
+          <h3>看板・ストリートサイド広告</h3>
+          <p>デジタルでは再現できない質感とメディアミックスで地域の存在感を高めます。</p>
+        </div>
+        <div>
+          <h3>感性と価値の裏付け</h3>
+          <p>感性に寄り添うだけでなく確かな成果へ結びつけるデザインプロセス。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="chip">Message</div>
+      <h2>価値を創造し社会に還元する</h2>
+      <p>私たちの使命は、人々の期待を超える新たな価値を生み出し続けること。創業以来、ユーザー視点と未来志向を軸に事業を展開してきました。</p>
+      <blockquote>
+        <p>お客様、パートナー企業、地域社会と共に歩み、共創することで、より良い社会を実現します。変化を恐れず挑戦を続け、持続可能な社会づくりに貢献してまいります。</p>
+        <footer>代表社員 井上真意</footer>
+      </blockquote>
+    </section>
+
+    <section>
+      <div class="chip">Mission</div>
+      <h2>顧客に最適な価値を届ける</h2>
+      <p>Gaia LLC は「提案し、形にする」プロセスを徹底し、顧客との共創を通じて価値を実装します。</p>
+      <div class="mission-grid">
+        <div class="mission-card">
+          <h3>Realestate</h3>
+          <p>賃貸から投資まで、独自ネットワークで幅広い選択肢を提供。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>© Gaia LLC</footer>
+  </div>
+</body>
+</html>
