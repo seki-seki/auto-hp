@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaia LLC デザインパターン</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <p class="eyebrow" style="font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#5160a8;">Design Exploration</p>
+      <h1 style="font-size:clamp(2.4rem, 2.1rem + 2vw, 3.4rem); margin-bottom:1rem;">Gaia LLC ブランドサイト デザイン案</h1>
+      <p style="max-width:60ch;">与えられたコンテンツをもとに、異なる世界観をもつ3つのWebデザインを作成しました。モダンミニマル、ダーク×グラデーション、ビジュアルリッチ&ボールドという3つのテーマをタブで切り替えて比較できます。</p>
+    </div>
+  </header>
+  <main>
+    <div class="tab-interface">
+      <div class="tablist" role="tablist" aria-label="デザインテーマ切り替え">
+        <button role="tab" aria-selected="true" tabindex="0" data-pattern="pattern-1">Pattern 01 モダンミニマル</button>
+        <button role="tab" aria-selected="false" tabindex="-1" data-pattern="pattern-2">Pattern 02 ダーク×グラデーション</button>
+        <button role="tab" aria-selected="false" tabindex="-1" data-pattern="pattern-3">Pattern 03 ビジュアルリッチ</button>
+      </div>
+      <div id="pattern-panel" class="tab-panel" role="tabpanel" aria-live="polite">
+        <iframe id="pattern-frame" class="pattern-frame" src="pattern-1.html" title="Gaia LLC モダンミニマルデザイン" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapper" style="padding-top:1.5rem; border-top:1px solid rgba(90,100,130,0.16);">
+      <p style="margin:0; font-size:0.95rem; color:rgba(32,36,52,0.7);">© Gaia LLC Design Exploration</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

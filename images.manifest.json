@@ -1,0 +1,50 @@
+[
+  {
+    "file": "assets/images/hero-1.svg",
+    "section": "pattern-1 hero",
+    "prompt": "minimal architecture studio interior, white workspace, natural daylight, blue accent, high-key photo, 1200x800",
+    "alt": "ミニマルなワークスペース（自然光と白基調）",
+    "conversion": "jpg->svg(data-uri)",
+    "sizeHint": "≈14KB"
+  },
+  {
+    "file": "assets/images/section-1.svg",
+    "section": "pattern-1 feature",
+    "prompt": "architectural blueprint overlay, layered boards, neutral minimal design, soft daylight, 1000x600",
+    "alt": "価値創造を設計する抽象的な図面",
+    "conversion": "jpg->svg(data-uri)",
+    "sizeHint": "≈10KB"
+  },
+  {
+    "file": "assets/images/hero-2.svg",
+    "section": "pattern-2 hero",
+    "prompt": "dark gradient city skyline, luminous glass reflections, signage glow, cinematic night, 1200x800",
+    "alt": "夜明けの都市と光彩の抽象ビジュアル",
+    "conversion": "jpg->svg(data-uri)",
+    "sizeHint": "≈21KB"
+  },
+  {
+    "file": "assets/images/section-2.svg",
+    "section": "pattern-2 signage",
+    "prompt": "neon signage layers, nighttime street facade, purple blue gradient lighting, cinematic, 1000x600",
+    "alt": "ライトアップされた看板面",
+    "conversion": "jpg->svg(data-uri)",
+    "sizeHint": "≈15KB"
+  },
+  {
+    "file": "assets/images/hero-3.svg",
+    "section": "pattern-3 hero",
+    "prompt": "bold abstract urban development poster, vibrant orange energy, sweeping shapes, 1200x800",
+    "alt": "ダイナミックな価値提案の抽象アート",
+    "conversion": "jpg->svg(data-uri)",
+    "sizeHint": "≈23KB"
+  },
+  {
+    "file": "assets/images/section-3.svg",
+    "section": "pattern-3 feature",
+    "prompt": "collaborative motion lines, energetic strokes, orange magenta gradient, abstract teamwork poster, 1000x600",
+    "alt": "共創を象徴するダイナミックなライン",
+    "conversion": "jpg->svg(data-uri)",
+    "sizeHint": "≈12KB"
+  }
+]
