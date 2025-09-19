@@ -36,6 +36,7 @@
             text-decoration: none;
             display: block;
             color: inherit;
+            position: relative;
         }
         .demo-card:hover {
             border-color: #667eea;
@@ -52,6 +53,17 @@
             color: #666;
             line-height: 1.6;
         }
+        .pr-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +71,7 @@
         <h1>Web Page Demos</h1>
         <div class="demo-list">
             <a href="./generative-art/" class="demo-card">
+                <span class="pr-badge">PR #12</span>
                 <div class="demo-title">Stylish Web Pages with Generative Art</div>
                 <div class="demo-description">
                     ジェネラティブアートを使用したスタイリッシュなWebページデザイン。
@@ -66,6 +79,7 @@
                 </div>
             </a>
             <a href="./web-patterns/" class="demo-card">
+                <span class="pr-badge">PR #13</span>
                 <div class="demo-title">3 Stylish Web Page Patterns</div>
                 <div class="demo-description">
                     Gaia LLC向けに作成された3つのスタイリッシュなWebページパターン。
@@ -73,10 +87,19 @@
                 </div>
             </a>
             <a href="./gaia-llc/" class="demo-card">
+                <span class="pr-badge">PR #15</span>
                 <div class="demo-title">Three Design Patterns for Gaia LLC</div>
                 <div class="demo-description">
                     Gaia LLC向けの3つのデザインパターン。モダンでプロフェッショナルな
                     企業サイトデザインのバリエーション。
+                </div>
+            </a>
+            <a href="./company-profile/" class="demo-card">
+                <span class="pr-badge">PR #14</span>
+                <div class="demo-title">Web Pages for Company Profile</div>
+                <div class="demo-description">
+                    企業プロフィール用のWebページデザイン。プロフェッショナルで
+                    洗練された3つのバリエーションを提供。
                 </div>
             </a>
         </div>
