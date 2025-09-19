@@ -1,0 +1,113 @@
+{
+  "companyProfile": {
+    "name": "Gaia LLC",
+    "industry": [
+      "Real estate",
+      "Architectural design",
+      "Signboard advertising",
+      "Insurance agency",
+      "Land development"
+    ],
+    "valueProps": [
+      "Design × Place integration",
+      "Unique street-side media mix",
+      "Consultative asset strategy",
+      "Value creation for community"
+    ],
+    "audience": [
+      "Property owners",
+      "Investors",
+      "Local communities",
+      "Advertisers"
+    ],
+    "mission": "Create optimal value for clients and return it to society while staying future-oriented.",
+    "colors": [
+      "#1f4a3f",
+      "#2f5f92",
+      "#47f0bf",
+      "#d9772f",
+      "#6fb1c4"
+    ],
+    "keywords": [
+      "Design × Place",
+      "Value creation",
+      "Media mix",
+      "Pottery inspiration",
+      "Land development"
+    ]
+  },
+  "images": [
+    {
+      "file": "images/hero-1.svg",
+      "type": "hero",
+      "theme": "Modern minimal skyline network",
+      "source": {
+        "type": "generated",
+        "method": "hand-coded-svg",
+        "prompt": "Abstract skyline with network nodes in soft earth and teal gradients representing integrated real estate consulting"
+      },
+      "alt": "抽象的な都市ネットワークのビジュアル",
+      "licenseNote": "Custom vector illustration created for Gaia LLC concept."
+    },
+    {
+      "file": "images/hero-2.svg",
+      "type": "hero",
+      "theme": "Dark neon signage ribbons",
+      "source": {
+        "type": "generated",
+        "method": "hand-coded-svg",
+        "prompt": "Luminous neon ribbons over dark skyline evoking bespoke signboard advertising"
+      },
+      "alt": "ネオンが流れる街の抽象ビジュアル",
+      "licenseNote": "Custom vector illustration created for Gaia LLC concept."
+    },
+    {
+      "file": "images/hero-3.svg",
+      "type": "hero",
+      "theme": "Layered earth and clay landscape",
+      "source": {
+        "type": "generated",
+        "method": "hand-coded-svg",
+        "prompt": "Organic layered earth, clay, greenery and water forms referencing pottery craftsmanship and land creation"
+      },
+      "alt": "大地のレイヤーを思わせる有機的なグラデーション",
+      "licenseNote": "Custom vector illustration created for Gaia LLC concept."
+    },
+    {
+      "file": "images/section-1.svg",
+      "type": "section",
+      "theme": "Property planning grid",
+      "source": {
+        "type": "generated",
+        "method": "hand-coded-svg",
+        "prompt": "Minimal grid with modular blocks in teal and blue referencing property development planning"
+      },
+      "alt": "不動産開発のためのグリッドプランニング図",
+      "licenseNote": "Custom vector illustration created for Gaia LLC concept."
+    },
+    {
+      "file": "images/section-2.svg",
+      "type": "section",
+      "theme": "Neon media mix pathways",
+      "source": {
+        "type": "generated",
+        "method": "hand-coded-svg",
+        "prompt": "Neon light trails and signage panels symbolizing street-side advertising"
+      },
+      "alt": "ネオンサインの光跡と広告パネル",
+      "licenseNote": "Custom vector illustration created for Gaia LLC concept."
+    },
+    {
+      "file": "images/section-3.svg",
+      "type": "section",
+      "theme": "Clay growth rings",
+      "source": {
+        "type": "generated",
+        "method": "hand-coded-svg",
+        "prompt": "Bold clay rings with sprouting growth illustrating pottery aesthetics and land formation"
+      },
+      "alt": "陶芸と大地造成を象徴する重なるリング",
+      "licenseNote": "Custom vector illustration created for Gaia LLC concept."
+    }
+  ]
+}
