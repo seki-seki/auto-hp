@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Demos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .demo-list {
+            display: grid;
+            gap: 20px;
+        }
+        .demo-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        .demo-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        .demo-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .demo-description {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Page Demos</h1>
+        <div class="demo-list">
+            <a href="./generative-art/" class="demo-card">
+                <div class="demo-title">Stylish Web Pages with Generative Art</div>
+                <div class="demo-description">
+                    ジェネラティブアートを使用したスタイリッシュなWebページデザイン。
+                    3つの異なるパターンを含むモダンなデザインコレクション。
+                </div>
+            </a>
+            <a href="./web-patterns/" class="demo-card">
+                <div class="demo-title">3 Stylish Web Page Patterns</div>
+                <div class="demo-description">
+                    Gaia LLC向けに作成された3つのスタイリッシュなWebページパターン。
+                    各パターンは異なるデザインアプローチを示しています。
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
