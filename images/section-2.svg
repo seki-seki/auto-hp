@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">夜景の導線と情報の流れを示すグラデーションウェーブ</title>
+  <desc id="desc">深い紺の背景にサインの光跡をイメージした波型が交差し、広告と不動産の連携を可視化。</desc>
+  <defs>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052cc" />
+      <stop offset="100%" stop-color="#36b37e" />
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5a623" />
+      <stop offset="100%" stop-color="#ffcf8b" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="420" rx="30" fill="#050910" />
+  <path d="M0 260 C 120 210, 220 320, 320 280 S 520 220, 600 260 L 600 420 L 0 420 Z" fill="url(#wave1)" opacity="0.55" />
+  <path d="M0 220 C 140 140, 240 220, 340 200 S 520 160, 600 200 L 600 420 L 0 420 Z" fill="url(#wave2)" opacity="0.45" />
+  <g opacity="0.3">
+    <circle cx="140" cy="120" r="40" fill="#36b37e" />
+    <circle cx="460" cy="90" r="62" fill="#0052cc" />
+    <circle cx="360" cy="140" r="28" fill="#f5a623" />
+  </g>
+</svg>
