@@ -337,3 +337,147 @@ HTML/CSS/JS版で作成してください。
    - 画像最適化
    - CSSの効率化
    - 不要なJavaScriptを避ける
+
+---
+
+## デプロイ準備（統合ギャラリー版）
+
+3つのパターンを1つのサイトとして統合し、ヘッダーで切り替えられるようにデプロイする手順です。
+
+### プロンプト例
+
+```
+3つのデザインパターンをヘッダーで切り替えられるデザインギャラリーとしてデプロイしてください。
+
+参考URL: https://seki-seki.github.io/auto-hp/three-designs/
+
+# 要件
+
+## 1. ギャラリートップページ作成
+- ファイル名: `index.html`
+- 3つのデザインパターンを紹介するランディングページ
+- 各パターンの特徴説明とプレビューカード
+- 各パターンへのリンクボタン
+
+## 2. 各パターンページの統合
+- ファイル名: `pattern-a.html`, `pattern-b.html`, `pattern-c.html`
+- 既存の各パターンのindex.htmlをコピーして作成
+- **重要**: ヘッダーナビゲーションを以下のように変更:
+  ```html
+  <nav class="nav">
+    <a href="index.html">Gallery</a>
+    <a href="pattern-a.html">Pattern A</a>
+    <a href="pattern-b.html">Pattern B</a>
+    <a href="pattern-c.html">Pattern C</a>
+  </nav>
+  ```
+- CSS/JSのパスを修正:
+  - `css/` → `css/pattern-a/` (各パターンごと)
+  - `js/` → `js/pattern-a/` (各パターンごと)
+
+## 3. ディレクトリ構造
+```
+deploy-temp/[client-name]-designs/
+├── index.html              # ギャラリートップページ
+├── pattern-a.html          # パターンA（ナビゲーション付き）
+├── pattern-b.html          # パターンB（ナビゲーション付き）
+├── pattern-c.html          # パターンC（ナビゲーション付き）
+├── css/
+│   ├── pattern-a/          # パターンAのCSS一式
+│   │   ├── reset.css
+│   │   ├── variables.css
+│   │   ├── style.css
+│   │   └── responsive.css
+│   ├── pattern-b/          # パターンBのCSS一式
+│   └── pattern-c/          # パターンCのCSS一式
+└── js/
+    ├── pattern-a/          # パターンAのJS
+    │   └── main.js
+    ├── pattern-b/          # パターンBのJS
+    └── pattern-c/          # パターンCのJS
+```
+
+## 4. デプロイ手順
+1. 上記のディレクトリ構造でファイルを作成
+2. `npm run deploy` を実行してGitHub Pagesにデプロイ
+3. デプロイURL: `https://[username].github.io/[repo-name]/[client-name]-designs/`
+
+よろしくお願いします。
+```
+
+### 実装のポイント
+
+#### ギャラリートップページ（index.html）
+- 3つのパターンカードを横並びまたは縦並びで配置
+- 各カードに:
+  - パターン名（Pattern A: Modern Minimal など）
+  - コンセプト説明（2-3行）
+  - 「View Pattern」ボタン
+- レスポンシブデザイン対応
+- 統一感のあるシンプルなデザイン
+
+#### ナビゲーション統合
+各パターンページのヘッダーに、**同じナビゲーション**を追加:
+```html
+<nav class="nav">
+  <a href="index.html">Gallery</a>
+  <a href="pattern-a.html" [現在のページならstyle="font-weight: 700; color: var(--color-accent);">Pattern A</a>
+  <a href="pattern-b.html">Pattern B</a>
+  <a href="pattern-c.html">Pattern C</a>
+</nav>
+```
+
+#### アセットパスの修正
+元のパターンディレクトリから統合版へコピーする際、パスを修正:
+
+**元のパス:**
+```html
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+```
+
+**修正後:**
+```html
+<link rel="stylesheet" href="css/pattern-a/style.css">
+<script src="js/pattern-a/main.js"></script>
+```
+
+### デプロイコマンド
+
+```bash
+# package.jsonに以下のスクリプトがあることを確認
+{
+  "scripts": {
+    "deploy": "gh-pages -d deploy-temp"
+  }
+}
+
+# デプロイ実行
+npm run deploy
+```
+
+### 確認事項
+
+デプロイ後、以下を確認:
+- ✅ ギャラリートップページが表示される
+- ✅ 各パターンへのリンクが機能する
+- ✅ ヘッダーナビゲーションで各パターン間を移動できる
+- ✅ CSS/JSが正しく読み込まれている
+- ✅ レスポンシブデザインが機能している
+
+---
+
+## デプロイ実例
+
+### Gaia LLCの場合
+
+```
+https://seki-seki.github.io/auto-hp/gaia-designs/のように
+各デザインをヘッダーで切り替えられるようにしてデプロイしてください。
+```
+
+**完成例:**
+- トップ: https://seki-seki.github.io/auto-hp/gaia-designs/
+- Pattern A: https://seki-seki.github.io/auto-hp/gaia-designs/pattern-a.html
+- Pattern B: https://seki-seki.github.io/auto-hp/gaia-designs/pattern-b.html
+- Pattern C: https://seki-seki.github.io/auto-hp/gaia-designs/pattern-c.html
