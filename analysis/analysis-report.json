@@ -1,0 +1,975 @@
+{
+  "timestamp": "2025-10-11T13:56:59.519Z",
+  "totalSitesAnalyzed": 10,
+  "individualAnalysis": [
+    {
+      "site": "harachuou-hoikuen",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 5,
+            "h3": 3,
+            "h4": 2,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 47,
+          "buttons": 0,
+          "images": 0,
+          "forms": 0,
+          "iframes": 1,
+          "lists": 8
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "新着ブログ"
+          },
+          {
+            "level": 2,
+            "title": "保育方針"
+          },
+          {
+            "level": 3,
+            "title": "⼊園について"
+          },
+          {
+            "level": 3,
+            "title": "保育内容"
+          },
+          {
+            "level": 3,
+            "title": "施設紹介"
+          },
+          {
+            "level": 2,
+            "title": "原中央保育園について"
+          },
+          {
+            "level": 2,
+            "title": " "
+          },
+          {
+            "level": 2,
+            "title": "見学・入園のお問い合わせ"
+          }
+        ],
+        "navigation": [
+          "お知らせ",
+          "施設概要",
+          "施設紹介",
+          "保育方針",
+          "保育内容",
+          "入園について",
+          " お問い合わせ",
+          " 採用情報",
+          "2025.01.01 新年のご挨拶申し上げます お知らせ",
+          "2024.03.15 園長交代のお知らせ お知らせ",
+          "採用情報について MORE",
+          "お問い合わせ",
+          "TOP"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav"
+      ]
+    },
+    {
+      "site": "motoki-ortho",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 6,
+            "h3": 9,
+            "h4": 0,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 53,
+          "buttons": 0,
+          "images": 0,
+          "forms": 0,
+          "iframes": 0,
+          "lists": 0
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "OUR MESSAGE"
+          },
+          {
+            "level": 3,
+            "title": "矯正治療の本当の目的をご存知ですか？"
+          },
+          {
+            "level": 3,
+            "title": "大人の矯正歯科"
+          },
+          {
+            "level": 2,
+            "title": "インビザライン インビザラインロゴ"
+          },
+          {
+            "level": 3,
+            "title": "こどもの矯正歯科"
+          },
+          {
+            "level": 2,
+            "title": "歯並びを「治す」のではなく、 正しい歯並びに「育てる」ために 予防矯正を行っています"
+          },
+          {
+            "level": 3,
+            "title": "精密データに基づく治療を可能に 口腔内スキャナー 「iTeroエレメント」 ロゴ：iTero element」"
+          },
+          {
+            "level": 3,
+            "title": "iTero エレメント 4つの特徴"
+          },
+          {
+            "level": 3,
+            "title": "あなたの歯並びに当てはまるものはありますか？"
+          },
+          {
+            "level": 2,
+            "title": "ABOUT"
+          },
+          {
+            "level": 3,
+            "title": "MEDICAL"
+          },
+          {
+            "level": 3,
+            "title": "DOCTOR"
+          },
+          {
+            "level": 2,
+            "title": "お知らせ・コラム"
+          },
+          {
+            "level": 2,
+            "title": "RESERVATION"
+          },
+          {
+            "level": 3,
+            "title": "患者様の生活を 豊かにする"
+          }
+        ],
+        "navigation": [
+          "› 2023.12.04 お知らせ 年末年始の休診日ご案内"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section"
+      ]
+    },
+    {
+      "site": "magokoro-hoikuen",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 5,
+            "h3": 4,
+            "h4": 2,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 49,
+          "buttons": 0,
+          "images": 0,
+          "forms": 0,
+          "iframes": 2,
+          "lists": 4
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "E V E N T / N E W S"
+          },
+          {
+            "level": 2,
+            "title": "F E A T U R E"
+          },
+          {
+            "level": 3,
+            "title": "基本的生活習慣の確立"
+          },
+          {
+            "level": 3,
+            "title": "恵まれた外部環境"
+          },
+          {
+            "level": 2,
+            "title": "保育園に通うことが楽しくなる"
+          },
+          {
+            "level": 3,
+            "title": "BRANCH"
+          },
+          {
+            "level": 3,
+            "title": "PLAN"
+          },
+          {
+            "level": 2,
+            "title": " "
+          },
+          {
+            "level": 2,
+            "title": "見学・入園のお問い合わせ"
+          }
+        ],
+        "navigation": [
+          "採用情報",
+          "お問い合わせ",
+          "お知らせ",
+          "施設概要",
+          "施設紹介",
+          "保育方針",
+          "保育内容",
+          "入園について",
+          "施設概要について",
+          "施設紹介について",
+          "PLAN 保育内容 詳しくはこちら",
+          "採用情報について MORE",
+          "TOP"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav"
+      ]
+    },
+    {
+      "site": "kukomae-hoikuen",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 3,
+            "h3": 3,
+            "h4": 2,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 48,
+          "buttons": 0,
+          "images": 0,
+          "forms": 0,
+          "iframes": 1,
+          "lists": 4
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "空港前保育園"
+          },
+          {
+            "level": 3,
+            "title": "「からだ」と「こころ」を育む。"
+          },
+          {
+            "level": 3,
+            "title": "FACILITY"
+          },
+          {
+            "level": 3,
+            "title": "CHILDCARE"
+          },
+          {
+            "level": 2,
+            "title": " "
+          },
+          {
+            "level": 2,
+            "title": "見学・入園のお問い合わせ"
+          }
+        ],
+        "navigation": [
+          "採用情報",
+          " お問い合わせ",
+          "お知らせ NEWS",
+          "施設概要 OVERVIEW",
+          "施設紹介 FACILITY",
+          "保育方針 CHILDCARE",
+          "保育内容 PLAN",
+          "入園について ADMISSION",
+          "2025.09.01 令和8年度新規入園見学説明について",
+          "お知らせ一覧を見る",
+          "入園について",
+          "採用情報について MORE",
+          "お問い合わせ",
+          "TOP",
+          "お知らせ",
+          "施設概要",
+          "施設紹介",
+          "保育方針",
+          "保育内容"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav"
+      ]
+    },
+    {
+      "site": "motoki-implant",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 14,
+            "h3": 7,
+            "h4": 0,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 70,
+          "buttons": 0,
+          "images": 0,
+          "forms": 0,
+          "iframes": 0,
+          "lists": 4
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "What I want to convey"
+          },
+          {
+            "level": 2,
+            "title": "より美しく、丈夫でおいしく噛める歯を提供"
+          },
+          {
+            "level": 2,
+            "title": "モトキデンタルクリニックが選ばれる8つの理由"
+          },
+          {
+            "level": 2,
+            "title": "理由1 丁寧な カウンセリング"
+          },
+          {
+            "level": 2,
+            "title": "理由2 徹底した 術前検査"
+          },
+          {
+            "level": 2,
+            "title": "理由3 適切な 衛生管理"
+          },
+          {
+            "level": 2,
+            "title": "理由4 医療設備・ 技術を導入"
+          },
+          {
+            "level": 2,
+            "title": "理由5 信頼性の高い 歯科材料を使用"
+          },
+          {
+            "level": 2,
+            "title": "理由6 連携のとれた チーム医療"
+          },
+          {
+            "level": 2,
+            "title": "理由7 世界中から集めた 科学的エビデンス"
+          },
+          {
+            "level": 2,
+            "title": "理由8 患者様に合った メンテナンス"
+          },
+          {
+            "level": 2,
+            "title": "生活の質の向上のために"
+          },
+          {
+            "level": 3,
+            "title": "インプラントの寿命"
+          },
+          {
+            "level": 3,
+            "title": "痛みに配慮した治療"
+          },
+          {
+            "level": 3,
+            "title": "骨造成"
+          },
+          {
+            "level": 3,
+            "title": "ガイデッドサージェリー"
+          },
+          {
+            "level": 3,
+            "title": "麻酔法の種類"
+          },
+          {
+            "level": 3,
+            "title": "インプラントメンテナンス"
+          },
+          {
+            "level": 2,
+            "title": "モトキデンタルクリニックの気持ち"
+          },
+          {
+            "level": 3,
+            "title": "安全で精度の高いインプラント治療のために"
+          },
+          {
+            "level": 2,
+            "title": "新着情報"
+          }
+        ],
+        "navigation": [
+          "ホーム HOME"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section"
+      ]
+    },
+    {
+      "site": "kks-wadatsumi",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 4,
+            "h3": 8,
+            "h4": 0,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 45,
+          "buttons": 0,
+          "images": 2,
+          "forms": 0,
+          "iframes": 0,
+          "lists": 0
+        },
+        "sections": [
+          {
+            "level": 3,
+            "title": "海神（わだつみ）のこだわりをご紹介 旬の海の幸をご堪能下さい"
+          },
+          {
+            "level": 3,
+            "title": "選ばれる理由"
+          },
+          {
+            "level": 3,
+            "title": "商品一覧"
+          },
+          {
+            "level": 3,
+            "title": "ご挨拶"
+          },
+          {
+            "level": 3,
+            "title": "店舗情報"
+          },
+          {
+            "level": 3,
+            "title": "特定商取引法"
+          },
+          {
+            "level": 2,
+            "title": "オンラインショップ"
+          },
+          {
+            "level": 2,
+            "title": "INSTAGRAM"
+          },
+          {
+            "level": 2,
+            "title": "アクセス"
+          },
+          {
+            "level": 2,
+            "title": "お知らせ"
+          },
+          {
+            "level": 3,
+            "title": "お問い合わせ"
+          },
+          {
+            "level": 3,
+            "title": "お電話"
+          }
+        ],
+        "navigation": [
+          "HOME ホーム",
+          "CONTACT お問い合わせ",
+          "株式会社勝king",
+          "お問い合わせ CONTACT",
+          "お問い合わせ",
+          "アクセスマップ"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav"
+      ]
+    },
+    {
+      "site": "yasuki-group",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 1,
+            "h3": 6,
+            "h4": 0,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 61,
+          "buttons": 0,
+          "images": 1,
+          "forms": 0,
+          "iframes": 0,
+          "lists": 0
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "循環型社会へ新たな挑戦"
+          },
+          {
+            "level": 3,
+            "title": "本物の価値がわかる 目利きで高額査定"
+          },
+          {
+            "level": 3,
+            "title": "破産管財品買取"
+          },
+          {
+            "level": 3,
+            "title": "事故・破損品買取"
+          },
+          {
+            "level": 3,
+            "title": "新年のご挨拶申し上げます"
+          },
+          {
+            "level": 3,
+            "title": "年末年始の休業日ご案内"
+          },
+          {
+            "level": 3,
+            "title": "お盆期間中の休業日ご案内"
+          }
+        ],
+        "navigation": [
+          "会社概要",
+          "採用情報",
+          " お問い合わせ",
+          "HOME ホーム",
+          "COMPANY 会社概要",
+          "RECRUIT 採用情報",
+          "お知らせ一覧 ›",
+          "RECRUIT 採用情報 VIEW MORE",
+          "株式会社YGS（ecoeat）",
+          " お問い合わせフォーム"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav"
+      ]
+    },
+    {
+      "site": "motoki-dental-prevention",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 4,
+            "h3": 4,
+            "h4": 6,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 47,
+          "buttons": 2,
+          "images": 6,
+          "forms": 0,
+          "iframes": 1,
+          "lists": 0
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "モトキデンタルクリニックの想い"
+          },
+          {
+            "level": 3,
+            "title": "元気で自立した 老後を過ごすために"
+          },
+          {
+            "level": 2,
+            "title": "必要な理由"
+          },
+          {
+            "level": 3,
+            "title": "「お悩み」はありませんか？"
+          },
+          {
+            "level": 2,
+            "title": "お知らせ"
+          },
+          {
+            "level": 3,
+            "title": "このようなお悩みはありませんか？"
+          },
+          {
+            "level": 3,
+            "title": "歯医者は痛くなったら行くところ？"
+          },
+          {
+            "level": 2,
+            "title": "モトキデンタルクリニック"
+          }
+        ],
+        "navigation": [
+          "モトキデンタルクリニック 採用サイト"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "image-rich"
+      ]
+    },
+    {
+      "site": "food-ch",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 4,
+            "h3": 0,
+            "h4": 0,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 37,
+          "buttons": 0,
+          "images": 4,
+          "forms": 0,
+          "iframes": 0,
+          "lists": 0
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "色々な食材を安心・安全に 受注から納品まで対応致します。"
+          },
+          {
+            "level": 2,
+            "title": "おいしい食材を新鮮な内に 安心してお客様に"
+          },
+          {
+            "level": 2,
+            "title": "News新着情報"
+          },
+          {
+            "level": 2,
+            "title": "ORDER TO DELIVERY RESPONDING TO CUSTOMER TRUST"
+          }
+        ],
+        "navigation": [
+          "株式会社フードチャンネル",
+          "お問い合わせ",
+          "HOME ホーム",
+          "COMPANY 会社概要",
+          "会社概要 COMPANY",
+          "CONTACT",
+          "HOME"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav"
+      ]
+    },
+    {
+      "site": "daimyojin",
+      "analysis": {
+        "components": {
+          "headings": {
+            "h1": 0,
+            "h2": 3,
+            "h3": 1,
+            "h4": 0,
+            "h5": 0,
+            "h6": 0
+          },
+          "links": 25,
+          "buttons": 3,
+          "images": 8,
+          "forms": 0,
+          "iframes": 0,
+          "lists": 0
+        },
+        "sections": [
+          {
+            "level": 2,
+            "title": "当店の餃子は、ひとつひとつ手包みの為、 一日二十名様分しか餃子を用意できません。"
+          },
+          {
+            "level": 3,
+            "title": "創業から変わらぬ 手作りの餃子 知る人ぞ知る 餃子の名店として"
+          },
+          {
+            "level": 2,
+            "title": "大明神の「美味しい」ぎょうざ おすすめのメニュー"
+          },
+          {
+            "level": 2,
+            "title": "一口サイズの小振りな餃子"
+          }
+        ],
+        "navigation": [
+          "価格改定のお知らせ",
+          "店舗メニュー",
+          " お問い合わせ",
+          "PageTop"
+        ]
+      },
+      "patterns": [
+        "hero-section",
+        "multi-section",
+        "horizontal-nav",
+        "image-rich"
+      ]
+    }
+  ],
+  "commonPatterns": {
+    "patternCounts": {
+      "hero-section": 10,
+      "multi-section": 10,
+      "horizontal-nav": 7,
+      "image-rich": 2
+    },
+    "componentAverages": {
+      "headings": {
+        "h1": 0,
+        "h2": 5,
+        "h3": 5,
+        "h4": 1,
+        "h5": 0,
+        "h6": 0
+      },
+      "links": 48,
+      "buttons": 1,
+      "images": 2,
+      "forms": 0,
+      "iframes": 1,
+      "lists": 2
+    },
+    "commonNavItems": [
+      {
+        "item": "お問い合わせ",
+        "count": 5,
+        "percentage": 50
+      },
+      {
+        "item": " お問い合わせ",
+        "count": 4,
+        "percentage": 40
+      },
+      {
+        "item": "お知らせ",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "施設概要",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "施設紹介",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "保育方針",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "保育内容",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "入園について",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "採用情報について MORE",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "TOP",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "採用情報",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "HOME ホーム",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "COMPANY 会社概要",
+        "count": 2,
+        "percentage": 20
+      },
+      {
+        "item": " 採用情報",
+        "count": 1,
+        "percentage": 10
+      },
+      {
+        "item": "2025.01.01 新年のご挨拶申し上げます お知らせ",
+        "count": 1,
+        "percentage": 10
+      }
+    ]
+  },
+  "summary": {
+    "description": "東海岸制作所の実績サイト群の分析結果",
+    "averageComponents": {
+      "headings": {
+        "h1": 0,
+        "h2": 5,
+        "h3": 5,
+        "h4": 1,
+        "h5": 0,
+        "h6": 0
+      },
+      "links": 48,
+      "buttons": 1,
+      "images": 2,
+      "forms": 0,
+      "iframes": 1,
+      "lists": 2
+    },
+    "commonLayouts": [
+      {
+        "pattern": "hero-section",
+        "count": 10,
+        "percentage": 100
+      },
+      {
+        "pattern": "multi-section",
+        "count": 10,
+        "percentage": 100
+      },
+      {
+        "pattern": "horizontal-nav",
+        "count": 7,
+        "percentage": 70
+      },
+      {
+        "pattern": "image-rich",
+        "count": 2,
+        "percentage": 20
+      }
+    ],
+    "commonNavigationItems": [
+      {
+        "item": "お問い合わせ",
+        "count": 5,
+        "percentage": 50
+      },
+      {
+        "item": " お問い合わせ",
+        "count": 4,
+        "percentage": 40
+      },
+      {
+        "item": "お知らせ",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "施設概要",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "施設紹介",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "保育方針",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "保育内容",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "入園について",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "採用情報について MORE",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "TOP",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "採用情報",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "HOME ホーム",
+        "count": 3,
+        "percentage": 30
+      },
+      {
+        "item": "COMPANY 会社概要",
+        "count": 2,
+        "percentage": 20
+      },
+      {
+        "item": " 採用情報",
+        "count": 1,
+        "percentage": 10
+      },
+      {
+        "item": "2025.01.01 新年のご挨拶申し上げます お知らせ",
+        "count": 1,
+        "percentage": 10
+      }
+    ]
+  }
+}

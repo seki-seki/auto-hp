@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "images/hero-1.svg",
+    "prompt": "Minimal geometric skyline with signage frames in Gaia LLC brand blue, green, and amber showing value creation beam",
+    "alt": "都市開発とサインボックスを組み合わせた抽象的な幾何学アート",
+    "usage": "pattern-1 hero",
+    "companyProfile": {
+      "industry": "Real estate development & signage design",
+      "valueProps": ["価値創造", "Design × Place", "独自看板最適化"],
+      "mission": "価値を創造し社会に還元",
+      "colors": ["#0052CC", "#36B37E", "#F5A623"]
+    },
+    "source": {"type": "generated", "url": ""},
+    "licenseNote": "Created as bespoke vector artwork for Gaia LLC branding."
+  },
+  {
+    "filename": "images/section-1.svg",
+    "prompt": "Line grid showing property parcels and flowing routes in blue, green, amber",
+    "alt": "都市区画と広告動線を示すグリッドと曲線のラインアート",
+    "usage": "pattern-1 services section",
+    "companyProfile": {
+      "industry": "Real estate & signage",
+      "valueProps": ["不動産コンサル", "看板設計"],
+      "mission": "価値を創造し社会に還元",
+      "colors": ["#0052CC", "#36B37E", "#F5A623"]
+    },
+    "source": {"type": "generated", "url": ""},
+    "licenseNote": "Created as bespoke vector artwork for Gaia LLC branding."
+  },
+  {
+    "filename": "images/hero-2.svg",
+    "prompt": "Dark gradient night city with neon light trails in Gaia colors for signage business",
+    "alt": "夜の街路に光の軌跡が走るネオングラデーションアート",
+    "usage": "pattern-2 hero",
+    "companyProfile": {
+      "industry": "Real estate, signage, insurance",
+      "valueProps": ["メディアミックス", "唯一無二の看板"],
+      "mission": "価値を創造し社会に還元",
+      "colors": ["#0052CC", "#36B37E", "#F5A623"]
+    },
+    "source": {"type": "generated", "url": ""},
+    "licenseNote": "Created as bespoke vector artwork for Gaia LLC branding."
+  },
+  {
+    "filename": "images/section-2.svg",
+    "prompt": "Night gradient waves showing signage information flow in blue, green, amber",
+    "alt": "ネオンの波が交差する夜景の導線アート",
+    "usage": "pattern-2 process section",
+    "companyProfile": {
+      "industry": "Signage design",
+      "valueProps": ["動線設計", "保守計画"],
+      "mission": "価値を創造し社会に還元",
+      "colors": ["#0052CC", "#36B37E", "#F5A623"]
+    },
+    "source": {"type": "generated", "url": ""},
+    "licenseNote": "Created as bespoke vector artwork for Gaia LLC branding."
+  },
+  {
+    "filename": "images/hero-3.svg",
+    "prompt": "Bold organic arcs merging pottery warmth and skyline strokes in Gaia palette",
+    "alt": "陶芸の曲線と都市ストロークが交差する大胆なアート",
+    "usage": "pattern-3 hero",
+    "companyProfile": {
+      "industry": "Real estate, design, signage",
+      "valueProps": ["Design × Place", "自由な創造力"],
+      "mission": "価値を創造し社会に還元",
+      "colors": ["#0052CC", "#36B37E", "#F5A623"]
+    },
+    "source": {"type": "generated", "url": ""},
+    "licenseNote": "Created as bespoke vector artwork for Gaia LLC branding."
+  },
+  {
+    "filename": "images/section-3.svg",
+    "prompt": "Warm gradient circles and cool rectangles symbolizing pottery and architecture",
+    "alt": "陶芸の円と建築の矩形を重ねた図形アート",
+    "usage": "pattern-3 philosophy section",
+    "companyProfile": {
+      "industry": "Design consulting",
+      "valueProps": ["クラフト表現", "ブランド体験"],
+      "mission": "価値を創造し社会に還元",
+      "colors": ["#0052CC", "#36B37E", "#F5A623"]
+    },
+    "source": {"type": "generated", "url": ""},
+    "licenseNote": "Created as bespoke vector artwork for Gaia LLC branding."
+  }
+]

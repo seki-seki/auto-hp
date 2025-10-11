@@ -1,0 +1,24 @@
+{
+  "name": "auto-hp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d deploy-temp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seki-seki/auto-hp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seki-seki/auto-hp/issues"
+  },
+  "homepage": "https://github.com/seki-seki/auto-hp#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
