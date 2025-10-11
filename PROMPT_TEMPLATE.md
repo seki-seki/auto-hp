@@ -349,31 +349,135 @@ HTML/CSS/JS版で作成してください。
 ```
 3つのデザインパターンをヘッダーで切り替えられるデザインギャラリーとしてデプロイしてください。
 
-参考URL: https://seki-seki.github.io/auto-hp/three-designs/
-
 # 要件
 
 ## 1. ギャラリートップページ作成
-- ファイル名: `index.html`
+
+### ファイル名
+`index.html`
+
+### ヘッダー構造
+```html
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">[クライアント名] Design Gallery</a>
+    <nav>
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="pattern-a.html" role="menuitem">Pattern A</a></li>
+        <li role="none"><a href="pattern-b.html" role="menuitem">Pattern B</a></li>
+        <li role="none"><a href="pattern-c.html" role="menuitem">Pattern C</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+```
+
+### コンテンツ要素
 - 3つのデザインパターンを紹介するランディングページ
 - 各パターンの特徴説明とプレビューカード
 - 各パターンへのリンクボタン
 
-## 2. 各パターンページの統合
-- ファイル名: `pattern-a.html`, `pattern-b.html`, `pattern-c.html`
-- 既存の各パターンのindex.htmlをコピーして作成
-- **重要**: ヘッダーナビゲーションを以下のように変更:
-  ```html
-  <nav class="nav">
-    <a href="index.html">Gallery</a>
-    <a href="pattern-a.html">Pattern A</a>
-    <a href="pattern-b.html">Pattern B</a>
-    <a href="pattern-c.html">Pattern C</a>
-  </nav>
-  ```
-- CSS/JSのパスを修正:
-  - `css/` → `css/pattern-a/` (各パターンごと)
-  - `js/` → `js/pattern-a/` (各パターンごと)
+## 2. 各パターンページの統合（pattern-a.html, pattern-b.html, pattern-c.html）
+
+### ベースファイル
+既存の各パターンの `index.html` をコピーして作成
+
+### ヘッダーナビゲーションの置き換え
+
+**既存のナビゲーション部分を削除し、以下に置き換え:**
+
+#### Pattern A (pattern-a.html) の場合:
+```html
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">[元のロゴ名]</a>
+
+    <nav class="nav">
+      <a href="index.html">Gallery</a>
+      <a href="pattern-a.html" style="font-weight: 700; color: var(--color-accent);">Pattern A</a>
+      <a href="pattern-b.html">Pattern B</a>
+      <a href="pattern-c.html">Pattern C</a>
+    </nav>
+
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+```
+
+#### Pattern B (pattern-b.html) の場合:
+```html
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">[元のロゴ名]</a>
+
+    <nav class="nav">
+      <a href="index.html">Gallery</a>
+      <a href="pattern-a.html">Pattern A</a>
+      <a href="pattern-b.html" style="font-weight: 700; color: var(--color-accent);">Pattern B</a>
+      <a href="pattern-c.html">Pattern C</a>
+    </nav>
+
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+```
+
+#### Pattern C (pattern-c.html) の場合:
+```html
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">[元のロゴ名]</a>
+
+    <nav class="nav">
+      <a href="index.html">Gallery</a>
+      <a href="pattern-a.html">Pattern A</a>
+      <a href="pattern-b.html">Pattern B</a>
+      <a href="pattern-c.html" style="font-weight: 700; color: var(--color-accent);">Pattern C</a>
+    </nav>
+
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+```
+
+**重要ポイント:**
+- 現在表示中のパターンには `style="font-weight: 700; color: var(--color-accent);"` を追加
+- 元のヘッダーの構造（`.header-inner` や `.mobile-menu-toggle` など）は維持
+- 元のナビゲーション項目（Business, Company, Message など）は削除し、Gallery/Pattern A/B/C に置き換え
+
+### CSS/JSのパス修正
+
+**元のパス:**
+```html
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/main.js"></script>
+```
+
+**修正後（pattern-a.html の場合）:**
+```html
+<link rel="stylesheet" href="css/pattern-a/reset.css">
+<link rel="stylesheet" href="css/pattern-a/variables.css">
+<link rel="stylesheet" href="css/pattern-a/style.css">
+<link rel="stylesheet" href="css/pattern-a/responsive.css">
+<script src="js/pattern-a/main.js"></script>
+```
+
+※ pattern-b.html は `css/pattern-b/`, pattern-c.html は `css/pattern-c/` に変更
 
 ## 3. ディレクトリ構造
 ```
@@ -416,31 +520,98 @@ deploy-temp/[client-name]-designs/
 - レスポンシブデザイン対応
 - 統一感のあるシンプルなデザイン
 
-#### ナビゲーション統合
-各パターンページのヘッダーに、**同じナビゲーション**を追加:
+#### ナビゲーション統合の詳細
+
+各パターンページのヘッダー全体を置き換えます。**元のヘッダー構造は維持しつつ、ナビゲーション部分のみを変更**します。
+
+**変更前の典型的なヘッダー:**
 ```html
-<nav class="nav">
-  <a href="index.html">Gallery</a>
-  <a href="pattern-a.html" [現在のページならstyle="font-weight: 700; color: var(--color-accent);">Pattern A</a>
-  <a href="pattern-b.html">Pattern B</a>
-  <a href="pattern-c.html">Pattern C</a>
-</nav>
+<header class="header">
+  <div class="header-inner">
+    <a href="#home" class="logo">GAIA</a>
+
+    <nav class="nav">
+      <a href="#business">Business</a>
+      <a href="#company">Company</a>
+      <a href="#message">Message</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
 ```
+
+**変更後（Pattern A の場合）:**
+```html
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">GAIA</a>
+
+    <nav class="nav">
+      <a href="index.html">Gallery</a>
+      <a href="pattern-a.html" style="font-weight: 700; color: var(--color-accent);">Pattern A</a>
+      <a href="pattern-b.html">Pattern B</a>
+      <a href="pattern-c.html">Pattern C</a>
+    </nav>
+
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+```
+
+**変更のポイント:**
+1. ロゴのhrefを `#home` から `index.html` に変更
+2. `<nav class="nav">` 内のリンクを全て置き換え
+3. 現在のページに該当するリンクにインラインスタイルを追加
+4. その他の要素（`.header-inner`, `.mobile-menu-toggle` など）は変更しない
 
 #### アセットパスの修正
-元のパターンディレクトリから統合版へコピーする際、パスを修正:
 
-**元のパス:**
+元のパターンディレクトリから統合版へコピーする際、すべてのCSS/JSのパスを修正します。
+
+**変更前（元のindex.html）:**
 ```html
-<link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
+<head>
+  <!-- ... -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- ... -->
+  <script src="js/main.js"></script>
+</body>
 ```
 
-**修正後:**
+**変更後（pattern-a.html の場合）:**
 ```html
-<link rel="stylesheet" href="css/pattern-a/style.css">
-<script src="js/pattern-a/main.js"></script>
+<head>
+  <!-- ... -->
+  <link rel="stylesheet" href="css/pattern-a/reset.css">
+  <link rel="stylesheet" href="css/pattern-a/variables.css">
+  <link rel="stylesheet" href="css/pattern-a/style.css">
+  <link rel="stylesheet" href="css/pattern-a/responsive.css">
+</head>
+<body>
+  <!-- ... -->
+  <script src="js/pattern-a/main.js"></script>
+</body>
 ```
+
+**一括置換の例:**
+- Pattern A: `css/` → `css/pattern-a/`, `js/` → `js/pattern-a/`
+- Pattern B: `css/` → `css/pattern-b/`, `js/` → `js/pattern-b/`
+- Pattern C: `css/` → `css/pattern-c/`, `js/` → `js/pattern-c/`
 
 ### デプロイコマンド
 
