@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaia LLC デザインギャラリー - 3つの異なるレイアウトパターンをご覧いただけます">
+  <title>Gaia LLC Design Gallery v2</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+      background: linear-gradient(135deg, #2c5f2d 0%, #1a3d1b 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      margin-bottom: 16px;
+      color: #97ba97;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.8);
+      letter-spacing: 2px;
+    }
+
+    .version-badge {
+      display: inline-block;
+      background: #97ba97;
+      color: #1a3d1b;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 60px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+
+    .pattern-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .pattern-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+    }
+
+    .pattern-preview {
+      height: 200px;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      border-bottom: 4px solid #2c5f2d;
+    }
+
+    .pattern-content {
+      padding: 32px 24px;
+      color: #333;
+    }
+
+    .pattern-label {
+      font-size: 12px;
+      color: #2c5f2d;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .pattern-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #2c5f2d;
+      margin-bottom: 12px;
+    }
+
+    .pattern-description {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .pattern-features {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .pattern-features li {
+      font-size: 14px;
+      color: #555;
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .pattern-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #2c5f2d;
+      font-weight: bold;
+    }
+
+    .pattern-link {
+      display: inline-block;
+      background: #2c5f2d;
+      color: white;
+      text-decoration: none;
+      padding: 12px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .pattern-link:hover {
+      background: #1a3d1b;
+      transform: translateX(4px);
+    }
+
+    .footer {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 36px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .pattern-content {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="logo">GAIA</h1>
+      <p class="subtitle">Design Gallery</p>
+      <span class="version-badge">Version 2</span>
+    </div>
+
+    <div class="description">
+      <p>
+        Gaia LLCの3つの異なるレイアウトパターンをご覧いただけます。<br>
+        すべてのパターンで共通のブランドカラーを使用し、レイアウトと構造で差別化しています。
+      </p>
+    </div>
+
+    <div class="gallery">
+      <!-- Pattern A -->
+      <div class="pattern-card">
+        <div class="pattern-preview">📱</div>
+        <div class="pattern-content">
+          <p class="pattern-label">Pattern A</p>
+          <h2 class="pattern-title">シンプル・1カラム</h2>
+          <p class="pattern-description">
+            縦スクロール中心のミニマルなデザイン。大きな余白とタイポグラフィを重視したレイアウトです。
+          </p>
+          <ul class="pattern-features">
+            <li>1カラムレイアウト</li>
+            <li>センター寄せコンテンツ</li>
+            <li>ミニマルなアニメーション</li>
+            <li>余白を活かしたデザイン</li>
+          </ul>
+          <a href="pattern-a.html" class="pattern-link">View Pattern A →</a>
+        </div>
+      </div>
+
+      <!-- Pattern B -->
+      <div class="pattern-card">
+        <div class="pattern-preview">🎨</div>
+        <div class="pattern-content">
+          <p class="pattern-label">Pattern B</p>
+          <h2 class="pattern-title">グリッド・カードベース</h2>
+          <p class="pattern-description">
+            2カラムグリッドを基本とした構造。情報をカード形式で整理し、読みやすさを重視しています。
+          </p>
+          <ul class="pattern-features">
+            <li>2カラムグリッドレイアウト</li>
+            <li>カード形式の情報整理</li>
+            <li>セクションごとの背景色</li>
+            <li>バランスの取れた配置</li>
+          </ul>
+          <a href="pattern-b.html" class="pattern-link">View Pattern B →</a>
+        </div>
+      </div>
+
+      <!-- Pattern C -->
+      <div class="pattern-card">
+        <div class="pattern-preview">🚀</div>
+        <div class="pattern-content">
+          <p class="pattern-label">Pattern C</p>
+          <h2 class="pattern-title">非対称・ビジュアル重視</h2>
+          <p class="pattern-description">
+            非対称なレイアウトで視覚的インパクトを重視。画像を大きく配置したダイナミックなデザインです。
+          </p>
+          <ul class="pattern-features">
+            <li>非対称レイアウト</li>
+            <li>大きな画像配置</li>
+            <li>オーバーラップ・パララックス</li>
+            <li>印象的なビジュアル</li>
+          </ul>
+          <a href="pattern-c.html" class="pattern-link">View Pattern C →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Gaia LLC. All rights reserved.</p>
+      <p style="margin-top: 8px;">Layout-focused design patterns with unified brand colors.</p>
+    </div>
+  </div>
+</body>
+</html>
