@@ -1,3 +1,12 @@
+# ホームページ作成プロンプトテンプレート
+
+このテンプレートは、Claude Codeにホームページを作成させる際に使用します。
+
+---
+
+## 基本プロンプト
+
+```
 【作業指示】確認や質問はせず、直ちにホームページ作成作業を開始してください。
 
 🔴🔴🔴 【超重要】ヒーロー画像は必須です！必ず実装してください！ 🔴🔴🔴
@@ -265,3 +274,409 @@
 
 【重要】上記の手順に従って、今すぐホームページ作成を開始してください。
 確認や質問は不要です。直ちに作業を進めてください。
+```
+
+---
+
+## カスタマイズオプション
+
+### 業種別の調整
+
+#### 企業・不動産業の場合（Gaia LLCなど）
+```
+## 追加指示
+
+業種: 企業（不動産事業・広告看板事業など）
+
+推奨ナビゲーション項目:
+- ホーム / HOME
+- 事業内容 / BUSINESS
+- 会社概要 / COMPANY
+- メッセージ / MESSAGE
+- お問い合わせ / CONTACT
+
+重点セクション:
+- 事業内容の詳細説明
+- 代表メッセージ
+- 会社の強み・独自性
+- 実績（あれば）
+```
+
+#### 保育園・福祉施設の場合
+```
+## 追加指示
+
+業種: 保育園・福祉施設
+
+推奨ナビゲーション項目:
+- お知らせ
+- 施設概要
+- 施設紹介
+- 保育方針
+- 保育内容
+- 入園について
+- よくある質問
+- お問い合わせ
+
+重点セクション:
+- 温かみのあるデザイン
+- 保護者向けの丁寧な情報提供
+- 施設の雰囲気が伝わる画像配置
+```
+
+#### 医療機関の場合
+```
+## 追加指示
+
+業種: 医療機関（歯科・クリニックなど）
+
+推奨ナビゲーション項目:
+- ホーム
+- 診療内容
+- 設備紹介
+- 医師紹介
+- お知らせ
+- 予約・お問い合わせ
+- アクセス
+
+重点セクション:
+- 清潔感と信頼感のあるデザイン
+- 治療内容の詳細説明
+- 設備・技術のアピール
+```
+
+---
+
+## 画像・素材指定（必須実装）
+
+```
+## ヒーロー画像の実装 - 必ず実装してください
+
+**重要原則: お客様提供画像がない場合、必ず業種に適したフリー画像を使用してください。**
+
+### 【必須】フリー画像を使用したヒーロー画像の実装
+
+#### ステップ1: 業種の特定と適切なキーワードの選定
+
+事業内容Markdownから業種を特定し、以下のキーワードマッピングを使用してください：
+
+| 業種 | パターンA キーワード | パターンB キーワード | パターンC キーワード |
+|------|---------------------|---------------------|---------------------|
+| 企業・不動産 | office-building,architecture | modern-building,business | architecture,cityscape |
+| 保育園・福祉 | children-playing,kindergarten | happy-kids,playground | children-learning,education |
+| 医療機関 | hospital,medical-clinic | healthcare,clean-environment | medical-technology,care |
+| 飲食店 | restaurant,food | dining,chef | culinary,cuisine |
+| 一般企業 | office,workspace | team,professional | business,collaboration |
+
+#### ステップ2: images/ディレクトリの作成と画像ダウンロード
+
+```bash
+# ディレクトリ作成
+mkdir -p dist/[client-name]/images
+
+# 業種に合わせてUnsplash Source APIから画像をダウンロード（必須）
+# 例: 企業・不動産の場合（Gaia LLCなど）
+curl -L -o dist/[client-name]/images/hero-a.jpg "https://source.unsplash.com/1920x1080/?office-building,architecture"
+curl -L -o dist/[client-name]/images/hero-b.jpg "https://source.unsplash.com/1920x1080/?modern-building,business"
+curl -L -o dist/[client-name]/images/hero-c.jpg "https://source.unsplash.com/1920x1080/?architecture,cityscape"
+```
+
+#### ステップ3: HTMLでの実装（必須）
+
+**方法1: <img>タグを使用した実装（推奨）**
+
+```html
+<!-- ヒーローセクションの構造 -->
+<section class="hero">
+  <!-- ヒーロー画像（必須） -->
+  <img src="images/hero-a.jpg" alt="企業のビジョンを表現する建築物" class="hero-image" loading="eager">
+
+  <!-- 暗いオーバーレイでテキストを読みやすく -->
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>VALUE CREATION</h1>
+    <p>価値創造</p>
+  </div>
+</section>
+```
+
+```css
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000; /* 画像読み込み中の背景色 */
+}
+
+/* ヒーロー画像（必須） */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* テキストを読みやすくするためのオーバーレイ */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+```
+
+**方法2: background-imageを使用した実装**
+
+```html
+<section class="hero" style="background-image: url('images/hero-a.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>VALUE CREATION</h1>
+    <p>価値創造</p>
+  </div>
+</section>
+```
+
+```css
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000; /* 画像読み込み中の背景色 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+```
+
+---
+
+### パターン別の実装チェックリスト
+
+#### パターンA実装チェックリスト
+- ✅ **`images/hero-a.jpg` ファイルが存在する（必須）**
+- ✅ **ヒーローセクションに`<img src="images/hero-a.jpg">`タグが存在（必須）**
+- ✅ 業種に適した画像キーワードでダウンロードされている
+- ✅ `.hero-image` のCSSが正しく設定されている（object-fit: cover）
+- ✅ `.hero-overlay` でテキストが読みやすくなっている
+- ✅ `.hero-content` が最前面に表示される（`z-index: 2`）
+
+#### パターンB実装チェックリスト
+- ✅ **`images/hero-b.jpg` ファイルが存在する（必須）**
+- ✅ **ヒーローセクションに`<img src="images/hero-b.jpg">`タグが存在（必須）**
+- ✅ パターンAとは異なる画像キーワードを使用
+- ✅ 画像とテキストの重なり順が正しい（z-index設定）
+
+#### パターンC実装チェックリスト
+- ✅ **`images/hero-c.jpg` ファイルが存在する（必須）**
+- ✅ **ヒーローセクションに`<img src="images/hero-c.jpg">`タグが存在（必須）**
+- ✅ パターンA・Bとは異なる画像キーワードを使用
+- ✅ 斜め分割やパララックス効果（オプション）
+- ✅ JavaScriptでのパララックススクロール実装（オプション）
+
+---
+
+### アクセシビリティ要件
+
+すべてのヒーロー画像には適切なalt属性を設定してください：
+
+```html
+<section class="hero" aria-label="メインビジュアル">
+  <img src="images/hero-a.jpg" alt="企業のビジョンを表現する建築物" class="hero-image" loading="eager">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>VALUE CREATION</h1>
+    <p>価値創造</p>
+  </div>
+</section>
+```
+
+---
+
+### 推奨画像サイズ
+- ヒーロー画像: 1920x1080px（Unsplash Source APIで自動）
+- セクション画像: 800x600px
+- カードサムネイル: 400x300px
+
+---
+
+### お客様提供画像がある場合
+
+お客様から画像素材が提供されている場合は、それを優先的に使用してください：
+
+- **ヒーロー画像**: お客様提供画像を優先（images/フォルダに配置）
+- ロゴ: そのまま使用
+- 施設写真: そのまま使用（必要に応じて最適化）
+- 製品画像: そのまま使用
+- スタッフ写真: そのまま使用
+
+**ヒーロー画像がない場合は、必ず業種に適したUnsplash画像をダウンロードしてください。**
+```
+
+---
+
+## カラーパレット指定（重要）
+
+```
+## カラーパレット
+
+**重要: 全パターン共通でブランドカラーを使用してください。色で差別化せず、レイアウトで差別化します。**
+
+### 全パターン共通（A/B/C）
+- Primary: #[hex] （ブランドのメインカラー）
+- Secondary: #[hex] （背景や補助的な色）
+- Accent: #[hex] （強調色、CTA、リンクなど）
+- Background: #ffffff または #f5f5f5
+- Text: #333333 または #2c2c2c
+
+**各パターンでの色の使用量の違い:**
+- パターンA: 色使いは控えめ。白背景メイン、アクセントカラーは最小限
+- パターンB: バランス型。適度に背景色を使用、セクションごとに区切り
+- パターンC: ダイナミック。アクセントカラーを大胆に使用、グラデーション活用
+
+※ ブランドカラーが指定されていない場合は、事業内容から適切な配色を抽出してください
+```
+
+---
+
+## 使用例
+
+### Gaia LLCの場合
+
+```
+以下の事業内容Markdownファイルを基に、3パターンの異なるデザインのホームページを作成し、
+`dist/gaia-llc/` ディレクトリに統合して出力してください。
+
+## 入力ファイル
+@gaia_kumamoto.md
+
+## 参照すべき分析結果
+- @DESIGN_PATTERNS.md
+- @analysis/analysis-report.json
+- @analysis/screenshots/
+
+## 出力先
+`dist/gaia-llc/`
+- index.html（pattern-aと同じ内容、トップページ）
+- pattern-a.html, pattern-b.html, pattern-c.html（パターン切り替えナビゲーション付き）
+
+## 業種
+企業（不動産事業・建築工事設計・広告看板事業）
+
+## 作成パターン
+（上記の基本プロンプトと同じ）
+
+## 技術仕様
+HTML/CSS/JS版で作成してください。
+
+よろしくお願いします。
+```
+
+---
+
+## 注意事項
+
+1. **分析結果の活用**
+   - 必ず@DESIGN_PATTERNS.mdと@analysis/analysis-report.jsonを参照する
+   - 実績サイトの共通パターン（ヒーローセクション、複数セクション構成など）を踏襲する
+
+2. **3パターンの差別化**
+   - 各パターンは明確に異なるデザインアプローチを取る
+   - お客様が選択肢を比較できるよう、それぞれの特徴を明確にする
+
+3. **レスポンシブ対応**
+   - モバイル、タブレット、デスクトップすべてに対応
+   - 分析結果にはモバイル情報が少ないため、独自の判断も必要
+
+4. **アクセシビリティ**
+   - セマンティックHTML
+   - 適切なalt属性
+   - キーボード操作対応
+
+5. **パフォーマンス**
+   - 画像最適化
+   - CSSの効率化
+   - 不要なJavaScriptを避ける
+
+---
+
+## デプロイ
+
+上記の手順に従って生成されたファイルは、そのままデプロイ可能です。
+
+### デプロイコマンド
+
+```bash
+# package.jsonに以下のスクリプトがあることを確認
+{
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  }
+}
+
+# デプロイ実行
+npm run deploy
+```
+
+### デプロイURL
+`https://[username].github.io/[repo-name]/[client-name]/`
+
+### 確認事項
+
+デプロイ後、以下を確認:
+- ✅ index.html（パターンA）がトップページとして表示される
+- ✅ **ヒーロー画像が全パターンで正しく表示されている**
+- ✅ **images/hero-a.jpg, hero-b.jpg, hero-c.jpgが読み込まれている**
+- ✅ ヘッダーナビゲーションで各パターン間を移動できる
+- ✅ CSS/JSが正しく読み込まれている
+- ✅ レスポンシブデザインが機能している
+- ✅ ブラウザの開発者ツールでネットワークエラーがない（画像404エラーなし）
+
+### デプロイ実例
+
+**Gaia LLCの場合:**
+- トップ: https://seki-seki.github.io/auto-hp/gaia-llc/
+- Pattern A: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-a.html
+- Pattern B: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-b.html
+- Pattern C: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-c.html
