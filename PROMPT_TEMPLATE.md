@@ -7,7 +7,8 @@
 ## 基本プロンプト
 
 ```
-以下の事業内容Markdownファイルを基に、3パターンの異なるデザインのホームページを作成してください。
+以下の事業内容Markdownファイルを基に、3パターンの異なるデザインのホームページを作成し、
+`dist/[client-name]/` ディレクトリに統合して出力してください。
 
 # 入力ファイル
 @gaia_kumamoto.md （または該当する事業内容ファイル）
@@ -16,6 +17,11 @@
 - @DESIGN_PATTERNS.md - レイアウトパターンとコンポーネントの特徴
 - @analysis/analysis-report.json - 実績サイトの詳細分析データ
 - @analysis/screenshots/ - 実績サイトのスクリーンショット（視覚的参考）
+
+# 出力先
+`dist/[client-name]/` （例: `dist/gaia-llc/`）
+- index.html（pattern-aと同じ内容、トップページ）
+- pattern-a.html, pattern-b.html, pattern-c.html（ナビゲーション付き）
 
 # 作成パターン
 
@@ -118,17 +124,24 @@
 - バニラJavaScript（最小限）
 - フォルダ構成:
   ```
-  /[client-name]-pattern-[A/B/C]/
-  ├── index.html
+  dist/[client-name]/
+  ├── index.html              # パターンAと同じ内容（トップページ）
+  ├── pattern-a.html          # パターンA（ナビゲーション付き）
+  ├── pattern-b.html          # パターンB（ナビゲーション付き）
+  ├── pattern-c.html          # パターンC（ナビゲーション付き）
   ├── css/
-  │   ├── reset.css
-  │   ├── variables.css
-  │   ├── style.css
-  │   └── responsive.css
-  ├── js/
-  │   └── main.js
-  ├── images/
-  └── README.md
+  │   ├── pattern-a/
+  │   │   ├── reset.css
+  │   │   ├── variables.css
+  │   │   ├── style.css
+  │   │   └── responsive.css
+  │   ├── pattern-b/
+  │   └── pattern-c/
+  └── js/
+      ├── pattern-a/
+      │   └── main.js
+      ├── pattern-b/
+      └── pattern-c/
   ```
 
 ### React版の場合
@@ -137,42 +150,71 @@
 - CSS Modules or Styled Components
 - フォルダ構成:
   ```
-  /[client-name]-pattern-[A/B/C]/
-  ├── src/
-  │   ├── components/
-  │   ├── data/
-  │   ├── styles/
-  │   ├── App.jsx
-  │   └── index.jsx
-  ├── public/
-  └── package.json
+  dist/[client-name]/
+  ├── index.html              # ビルド後のエントリーポイント
+  ├── assets/                 # ビルド後のアセット
+  └── ...（ビルド成果物）
+
+  src/                        # 開発用ソース（distとは別）
+  ├── patterns/
+  │   ├── PatternA/
+  │   ├── PatternB/
+  │   └── PatternC/
+  ├── components/
+  ├── App.jsx                 # パターン切り替えロジック
+  └── index.jsx
   ```
 
 ## 出力形式
 
-各パターンを以下の形式で出力してください：
+3つのパターンを統合した形で以下の形式で出力してください：
 
 1. **ディレクトリ作成**
-   - `gaia-pattern-a/`
-   - `gaia-pattern-b/`
-   - `gaia-pattern-c/`
+   - `dist/[client-name]/` （統合出力ディレクトリ）
 
-2. **各ディレクトリ内容**
-   - 完全に動作するホームページ一式
-   - README.md（デザインコンセプトと特徴を記載）
+2. **ディレクトリ内容**
+   - `index.html` - パターンAと同じ内容（トップページ）
+   - `pattern-a.html` - パターンA（ナビゲーションヘッダー付き）
+   - `pattern-b.html` - パターンB（ナビゲーションヘッダー付き）
+   - `pattern-c.html` - パターンC（ナビゲーションヘッダー付き）
+   - `css/pattern-{a,b,c}/` - 各パターンのCSS
+   - `js/pattern-{a,b,c}/` - 各パターンのJS
 
-3. **プレビュー用説明**
-   - 各パターンの特徴を簡潔に説明
-   - デザインの意図・コンセプト
-   - 推奨する利用シーン
+3. **ヘッダーナビゲーション（全HTMLに必須）**
+   ```html
+   <header class="header">
+     <div class="header-inner">
+       <a href="index.html" class="logo">[クライアント名]</a>
+       <nav class="nav">
+         <a href="pattern-a.html">Pattern A</a>
+         <a href="pattern-b.html">Pattern B</a>
+         <a href="pattern-c.html">Pattern C</a>
+       </nav>
+       <button class="mobile-menu-toggle" aria-label="Menu">
+         <span></span>
+         <span></span>
+         <span></span>
+       </button>
+     </div>
+   </header>
+   ```
+   - 現在表示中のパターンには `style="font-weight: 700; color: var(--color-accent);"` を追加
+
+4. **CSS/JSパス**
+   - pattern-a.html: `css/pattern-a/`, `js/pattern-a/`
+   - pattern-b.html: `css/pattern-b/`, `js/pattern-b/`
+   - pattern-c.html: `css/pattern-c/`, `js/pattern-c/`
 
 # 実行手順
 
 1. 入力Markdownを読み込み、会社情報を抽出
 2. 分析結果を参照し、適切なレイアウト・コンポーネントを選択
-3. パターンAから順番に作成
-4. 各パターン完成後、次のパターンへ
-5. 3パターン完成後、比較表を作成
+3. `dist/[client-name]/` ディレクトリを作成
+4. パターンA、B、Cをそれぞれ作成（pattern-{a,b,c}.html）
+   - 各HTMLには最初からパターン切り替えヘッダーを含める
+   - CSS/JSは `css/pattern-{a,b,c}/`, `js/pattern-{a,b,c}/` に配置
+5. `index.html` を作成（pattern-a.html と同じ内容）
+6. デプロイ準備完了（`npm run deploy` で即座にデプロイ可能）
 
 よろしくお願いします。
 ```
@@ -629,7 +671,8 @@ function generateHeroBackground(brandProfile) {
 ### Gaia LLCの場合
 
 ```
-以下の事業内容Markdownファイルを基に、3パターンの異なるデザインのホームページを作成してください。
+以下の事業内容Markdownファイルを基に、3パターンの異なるデザインのホームページを作成し、
+`dist/gaia-llc/` ディレクトリに統合して出力してください。
 
 # 入力ファイル
 @gaia_kumamoto.md
@@ -639,15 +682,13 @@ function generateHeroBackground(brandProfile) {
 - @analysis/analysis-report.json
 - @analysis/screenshots/
 
+# 出力先
+`dist/gaia-llc/`
+- index.html（pattern-aと同じ内容、トップページ）
+- pattern-a.html, pattern-b.html, pattern-c.html（パターン切り替えナビゲーション付き）
+
 # 業種
 企業（不動産事業・建築工事設計・広告看板事業）
-
-# 推奨ナビゲーション
-- ホーム / HOME
-- 事業内容 / BUSINESS
-- 会社概要 / COMPANY
-- メッセージ / MESSAGE
-- お問い合わせ / CONTACT
 
 # 作成パターン
 （上記の基本プロンプトと同じ）
@@ -686,278 +727,9 @@ HTML/CSS/JS版で作成してください。
 
 ---
 
-## デプロイ準備（統合ギャラリー版）
+## デプロイ
 
-3つのパターンを1つのサイトとして統合し、ヘッダーで切り替えられるようにデプロイする手順です。
-
-### プロンプト例
-
-```
-3つのデザインパターンをヘッダーで切り替えられるデザインギャラリーとしてデプロイしてください。
-
-# 要件
-
-## 1. ギャラリートップページ作成
-
-### ファイル名
-`index.html`
-
-### ヘッダー構造
-```html
-<header class="header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">[クライアント名] Design Gallery</a>
-    <nav>
-      <ul class="nav-menu" role="menubar">
-        <li role="none"><a href="pattern-a.html" role="menuitem">Pattern A</a></li>
-        <li role="none"><a href="pattern-b.html" role="menuitem">Pattern B</a></li>
-        <li role="none"><a href="pattern-c.html" role="menuitem">Pattern C</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-```
-
-### コンテンツ要素
-- 3つのデザインパターンを紹介するランディングページ
-- 各パターンの特徴説明とプレビューカード
-- 各パターンへのリンクボタン
-
-## 2. 各パターンページの統合（pattern-a.html, pattern-b.html, pattern-c.html）
-
-### ベースファイル
-既存の各パターンの `index.html` をコピーして作成
-
-### ヘッダーナビゲーションの置き換え
-
-**既存のナビゲーション部分を削除し、以下に置き換え:**
-
-#### Pattern A (pattern-a.html) の場合:
-```html
-<header class="header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">[元のロゴ名]</a>
-
-    <nav class="nav">
-      <a href="index.html">Gallery</a>
-      <a href="pattern-a.html" style="font-weight: 700; color: var(--color-accent);">Pattern A</a>
-      <a href="pattern-b.html">Pattern B</a>
-      <a href="pattern-c.html">Pattern C</a>
-    </nav>
-
-    <button class="mobile-menu-toggle" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
-```
-
-#### Pattern B (pattern-b.html) の場合:
-```html
-<header class="header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">[元のロゴ名]</a>
-
-    <nav class="nav">
-      <a href="index.html">Gallery</a>
-      <a href="pattern-a.html">Pattern A</a>
-      <a href="pattern-b.html" style="font-weight: 700; color: var(--color-accent);">Pattern B</a>
-      <a href="pattern-c.html">Pattern C</a>
-    </nav>
-
-    <button class="mobile-menu-toggle" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
-```
-
-#### Pattern C (pattern-c.html) の場合:
-```html
-<header class="header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">[元のロゴ名]</a>
-
-    <nav class="nav">
-      <a href="index.html">Gallery</a>
-      <a href="pattern-a.html">Pattern A</a>
-      <a href="pattern-b.html">Pattern B</a>
-      <a href="pattern-c.html" style="font-weight: 700; color: var(--color-accent);">Pattern C</a>
-    </nav>
-
-    <button class="mobile-menu-toggle" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
-```
-
-**重要ポイント:**
-- 現在表示中のパターンには `style="font-weight: 700; color: var(--color-accent);"` を追加
-- 元のヘッダーの構造（`.header-inner` や `.mobile-menu-toggle` など）は維持
-- 元のナビゲーション項目（Business, Company, Message など）は削除し、Gallery/Pattern A/B/C に置き換え
-
-### CSS/JSのパス修正
-
-**元のパス:**
-```html
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<script src="js/main.js"></script>
-```
-
-**修正後（pattern-a.html の場合）:**
-```html
-<link rel="stylesheet" href="css/pattern-a/reset.css">
-<link rel="stylesheet" href="css/pattern-a/variables.css">
-<link rel="stylesheet" href="css/pattern-a/style.css">
-<link rel="stylesheet" href="css/pattern-a/responsive.css">
-<script src="js/pattern-a/main.js"></script>
-```
-
-※ pattern-b.html は `css/pattern-b/`, pattern-c.html は `css/pattern-c/` に変更
-
-## 3. ディレクトリ構造
-```
-dist/[client-name]-designs/
-├── index.html              # ギャラリートップページ
-├── pattern-a.html          # パターンA（ナビゲーション付き）
-├── pattern-b.html          # パターンB（ナビゲーション付き）
-├── pattern-c.html          # パターンC（ナビゲーション付き）
-├── css/
-│   ├── pattern-a/          # パターンAのCSS一式
-│   │   ├── reset.css
-│   │   ├── variables.css
-│   │   ├── style.css
-│   │   └── responsive.css
-│   ├── pattern-b/          # パターンBのCSS一式
-│   └── pattern-c/          # パターンCのCSS一式
-└── js/
-    ├── pattern-a/          # パターンAのJS
-    │   └── main.js
-    ├── pattern-b/          # パターンBのJS
-    └── pattern-c/          # パターンCのJS
-```
-
-## 4. デプロイ手順
-1. 上記のディレクトリ構造でファイルを作成
-2. `npm run deploy` を実行してGitHub Pagesにデプロイ
-3. デプロイURL: `https://[username].github.io/[repo-name]/[client-name]-designs/`
-
-よろしくお願いします。
-```
-
-### 実装のポイント
-
-#### ギャラリートップページ（index.html）
-- 3つのパターンカードを横並びまたは縦並びで配置
-- 各カードに:
-  - パターン名（Pattern A: Modern Minimal など）
-  - コンセプト説明（2-3行）
-  - 「View Pattern」ボタン
-- レスポンシブデザイン対応
-- 統一感のあるシンプルなデザイン
-
-#### ナビゲーション統合の詳細
-
-各パターンページのヘッダー全体を置き換えます。**元のヘッダー構造は維持しつつ、ナビゲーション部分のみを変更**します。
-
-**変更前の典型的なヘッダー:**
-```html
-<header class="header">
-  <div class="header-inner">
-    <a href="#home" class="logo">GAIA</a>
-
-    <nav class="nav">
-      <a href="#business">Business</a>
-      <a href="#company">Company</a>
-      <a href="#message">Message</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <button class="mobile-menu-toggle" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
-```
-
-**変更後（Pattern A の場合）:**
-```html
-<header class="header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">GAIA</a>
-
-    <nav class="nav">
-      <a href="index.html">Gallery</a>
-      <a href="pattern-a.html" style="font-weight: 700; color: var(--color-accent);">Pattern A</a>
-      <a href="pattern-b.html">Pattern B</a>
-      <a href="pattern-c.html">Pattern C</a>
-    </nav>
-
-    <button class="mobile-menu-toggle" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
-```
-
-**変更のポイント:**
-1. ロゴのhrefを `#home` から `index.html` に変更
-2. `<nav class="nav">` 内のリンクを全て置き換え
-3. 現在のページに該当するリンクにインラインスタイルを追加
-4. その他の要素（`.header-inner`, `.mobile-menu-toggle` など）は変更しない
-
-#### アセットパスの修正
-
-元のパターンディレクトリから統合版へコピーする際、すべてのCSS/JSのパスを修正します。
-
-**変更前（元のindex.html）:**
-```html
-<head>
-  <!-- ... -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-  <!-- ... -->
-  <script src="js/main.js"></script>
-</body>
-```
-
-**変更後（pattern-a.html の場合）:**
-```html
-<head>
-  <!-- ... -->
-  <link rel="stylesheet" href="css/pattern-a/reset.css">
-  <link rel="stylesheet" href="css/pattern-a/variables.css">
-  <link rel="stylesheet" href="css/pattern-a/style.css">
-  <link rel="stylesheet" href="css/pattern-a/responsive.css">
-</head>
-<body>
-  <!-- ... -->
-  <script src="js/pattern-a/main.js"></script>
-</body>
-```
-
-**一括置換の例:**
-- Pattern A: `css/` → `css/pattern-a/`, `js/` → `js/pattern-a/`
-- Pattern B: `css/` → `css/pattern-b/`, `js/` → `js/pattern-b/`
-- Pattern C: `css/` → `css/pattern-c/`, `js/` → `js/pattern-c/`
+上記の手順に従って生成されたファイルは、そのままデプロイ可能です。
 
 ### デプロイコマンド
 
@@ -973,28 +745,21 @@ dist/[client-name]-designs/
 npm run deploy
 ```
 
+### デプロイURL
+`https://[username].github.io/[repo-name]/[client-name]/`
+
 ### 確認事項
 
 デプロイ後、以下を確認:
-- ✅ ギャラリートップページが表示される
-- ✅ 各パターンへのリンクが機能する
+- ✅ index.html（パターンA）がトップページとして表示される
 - ✅ ヘッダーナビゲーションで各パターン間を移動できる
 - ✅ CSS/JSが正しく読み込まれている
 - ✅ レスポンシブデザインが機能している
 
----
+### デプロイ実例
 
-## デプロイ実例
-
-### Gaia LLCの場合
-
-```
-https://seki-seki.github.io/auto-hp/gaia-designs/のように
-各デザインをヘッダーで切り替えられるようにしてデプロイしてください。
-```
-
-**完成例:**
-- トップ: https://seki-seki.github.io/auto-hp/gaia-designs/
-- Pattern A: https://seki-seki.github.io/auto-hp/gaia-designs/pattern-a.html
-- Pattern B: https://seki-seki.github.io/auto-hp/gaia-designs/pattern-b.html
-- Pattern C: https://seki-seki.github.io/auto-hp/gaia-designs/pattern-c.html
+**Gaia LLCの場合:**
+- トップ: https://seki-seki.github.io/auto-hp/gaia-llc/
+- Pattern A: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-a.html
+- Pattern B: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-b.html
+- Pattern C: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-c.html
