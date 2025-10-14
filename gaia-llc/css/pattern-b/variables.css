@@ -1,0 +1,77 @@
+/* CSS Variables - Gaia LLC Brand Colors */
+:root {
+  /* Brand Colors */
+  --color-primary: #2c5f2d;
+  --color-primary-light: #3d7a3f;
+  --color-primary-dark: #1d3f1e;
+  --color-secondary: #f5f5f5;
+  --color-accent: #97ba97;
+  --color-accent-light: #b8d4b8;
+
+  /* Text Colors */
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-white: #ffffff;
+
+  /* Background Colors */
+  --color-bg-white: #ffffff;
+  --color-bg-light: #f5f5f5;
+  --color-bg-dark: #2c2c2c;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-xxl: 8rem;
+
+  /* Font Families */
+  --font-primary: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  --font-heading: 'Georgia', 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', serif;
+
+  /* Font Sizes */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  --font-size-5xl: 4rem;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* Container Width */
+  --container-max-width: 1200px;
+  --container-padding: 2rem;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+  :root {
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    --font-size-5xl: 3rem;
+    --container-padding: 1rem;
+  }
+}
