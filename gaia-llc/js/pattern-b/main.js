@@ -1,79 +1,85 @@
-// Pattern B JavaScript
+// Pattern B - Main JavaScript
 
+// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const menuToggle = document.getElementById('menuToggle');
-  const mainNav = document.getElementById('mainNav');
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('.nav');
 
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      mainNav.classList.toggle('active');
+  if (mobileMenuToggle && nav) {
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      nav.classList.toggle('active');
     });
 
-    // Close menu when clicking nav links
-    const navLinks = mainNav.querySelectorAll('a');
+    // Close menu when clicking on a link
+    const navLinks = nav.querySelectorAll('a');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        mainNav.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        nav.classList.remove('active');
       });
     });
   }
 
-  // Smooth Scroll for Anchor Links
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-
-      // Skip if href is just "#"
-      if (href === '#') return;
-
       e.preventDefault();
-      const target = document.querySelector(href);
-
+      const target = document.querySelector(this.getAttribute('href'));
       if (target) {
-        const headerOffset = 80;
-        const elementPosition = target.offsetTop;
-        const offsetPosition = elementPosition - headerOffset;
-
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const targetPosition = target.offsetTop - headerHeight;
         window.scrollTo({
-          top: offsetPosition,
+          top: targetPosition,
           behavior: 'smooth'
         });
       }
     });
   });
 
-  // Card Animation on Scroll
+  // Fade-in animation on scroll
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }, index * 100);
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe cards for staggered animation
-  const cards = document.querySelectorAll('.card, .feature-box, .mission-card, .message-box');
-  cards.forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    observer.observe(card);
+  // Observe all cards and sections
+  document.querySelectorAll('.card, .section').forEach(element => {
+    observer.observe(element);
   });
 
-  // Observe sections
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(section => {
-    observer.observe(section);
+  // Card hover effect enhancement
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    });
   });
+
+  // Header scroll effect
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 50) {
+      header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+    } else {
+      header.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.15)';
+    }
+  });
+
+  // Add loaded class to body for animations
+  setTimeout(() => {
+    document.body.classList.add('loaded');
+  }, 100);
 });
+
+// Log page view
+console.log('Gaia LLC - Pattern B loaded');

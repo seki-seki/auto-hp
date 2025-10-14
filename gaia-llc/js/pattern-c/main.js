@@ -1,62 +1,78 @@
-// Pattern C JavaScript
+// Pattern C - Main JavaScript
 
+// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const menuToggle = document.getElementById('menuToggle');
-  const mainNav = document.getElementById('mainNav');
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('.nav');
 
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      mainNav.classList.toggle('active');
+  if (mobileMenuToggle && nav) {
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      nav.classList.toggle('active');
     });
 
-    // Close menu when clicking nav links
-    const navLinks = mainNav.querySelectorAll('a');
+    // Close menu when clicking on a link
+    const navLinks = nav.querySelectorAll('a');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        mainNav.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        nav.classList.remove('active');
       });
     });
   }
 
-  // Smooth Scroll for Anchor Links
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-
-      // Skip if href is just "#"
-      if (href === '#') return;
-
       e.preventDefault();
-      const target = document.querySelector(href);
-
+      const target = document.querySelector(this.getAttribute('href'));
       if (target) {
-        const headerOffset = 80;
-        const elementPosition = target.offsetTop;
-        const offsetPosition = elementPosition - headerOffset;
-
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const targetPosition = target.offsetTop - headerHeight;
         window.scrollTo({
-          top: offsetPosition,
+          top: targetPosition,
           behavior: 'smooth'
         });
       }
     });
   });
 
-  // Parallax Effect for Hero Background
-  const heroBackground = document.querySelector('.hero-background');
+  // Parallax effect for hero and other elements
+  let ticking = false;
 
-  if (heroBackground) {
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const rate = scrolled * 0.5;
-      heroBackground.style.transform = `skewY(-6deg) translateY(${rate}px)`;
+  function updateParallax() {
+    const scrolled = window.pageYOffset;
+
+    // Hero parallax
+    const hero = document.querySelector('.hero');
+    if (hero) {
+      const heroImage = hero.querySelector('.hero-image');
+      if (heroImage) {
+        heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    }
+
+    // Parallax elements
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(element => {
+      const speed = element.dataset.speed || 0.5;
+      const yPos = -(scrolled * speed);
+      element.style.transform = `translateY(${yPos}px)`;
     });
+
+    ticking = false;
   }
 
-  // Intersection Observer for Fade-In Animations
+  function requestTick() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', requestTick);
+
+  // Intersection Observer for fade-in animations
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -66,59 +82,83 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0) scale(1)';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe business features
-  const businessFeatures = document.querySelectorAll(
-    '.business-feature-large, .business-feature-medium, .business-feature-small'
-  );
-
-  businessFeatures.forEach((feature, index) => {
-    feature.style.opacity = '0';
-    feature.style.transform = 'translateY(30px) scale(0.95)';
-    feature.style.transition = `opacity 0.8s ease-out ${index * 0.1}s, transform 0.8s ease-out ${index * 0.1}s`;
-    observer.observe(feature);
+  // Observe sections and cards
+  const elementsToAnimate = document.querySelectorAll('.masonry-item, .section, .grid-content, .grid-visual');
+  elementsToAnimate.forEach(element => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(30px)';
+    element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(element);
   });
 
-  // Observe other sections
-  const sections = document.querySelectorAll('.feature-split, .message-asymmetric, .info-diagonal');
-  sections.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(40px)';
-    section.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-    observer.observe(section);
-  });
-
-  // Parallax effect for feature split sections
-  const featureSplitVisuals = document.querySelectorAll('.feature-split-visual');
-
+  // Header transparency on scroll
+  const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
-    featureSplitVisuals.forEach(visual => {
-      const rect = visual.getBoundingClientRect();
-      const scrolled = window.pageYOffset;
+    if (window.pageYOffset > 100) {
+      header.style.background = 'rgba(26, 26, 46, 0.98)';
+    } else {
+      header.style.background = 'rgba(26, 26, 46, 0.95)';
+    }
+  });
 
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        const rate = (scrolled - visual.offsetTop) * 0.3;
-        visual.style.transform = `translateY(${rate}px)`;
-      }
+  // Masonry item hover effect enhancement
+  const masonryItems = document.querySelectorAll('.masonry-item');
+  masonryItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+      this.style.zIndex = '10';
+    });
+    item.addEventListener('mouseleave', function() {
+      this.style.zIndex = '1';
     });
   });
 
-  // Diagonal blocks rotation on hover
-  const infoBlocks = document.querySelectorAll('.info-block');
+  // Grid visual tilt effect
+  const gridVisuals = document.querySelectorAll('.grid-visual');
+  gridVisuals.forEach(visual => {
+    visual.addEventListener('mousemove', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-  infoBlocks.forEach(block => {
-    block.addEventListener('mouseenter', () => {
-      block.style.transition = 'transform 0.3s ease-out';
-      block.style.transform = 'rotate(0deg) scale(1.02)';
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = (y - centerY) / 20;
+      const rotateY = (centerX - x) / 20;
+
+      this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
 
-    block.addEventListener('mouseleave', () => {
-      const rotation = block.classList.contains('info-block-mission') ? '-2deg' : '2deg';
-      block.style.transform = `rotate(${rotation}) scale(1)`;
+    visual.addEventListener('mouseleave', function() {
+      this.style.transform = 'perspective(1000px) rotateY(5deg)';
     });
   });
+
+  // CTA pulse animation enhancement
+  const ctaButtons = document.querySelectorAll('.cta-button-large, .hero-cta');
+  ctaButtons.forEach(button => {
+    button.addEventListener('mouseenter', function() {
+      this.style.animation = 'none';
+      setTimeout(() => {
+        this.style.animation = '';
+      }, 10);
+    });
+  });
+
+  // Add loaded class to body for animations
+  setTimeout(() => {
+    document.body.classList.add('loaded');
+  }, 100);
+
+  // Initial parallax update
+  updateParallax();
 });
+
+// Log page view
+console.log('Gaia LLC - Pattern C loaded');

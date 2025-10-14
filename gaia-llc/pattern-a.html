@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="合同会社ガイア - 価値創造を通じて社会に貢献する不動産・建築・広告のトータルソリューション企業">
+  <meta name="description" content="合同会社ガイア - 不動産事業、建築工事設計、広告看板事業など、価値創造を通じて社会に貢献する企業です。">
   <title>Gaia LLC | 合同会社ガイア - VALUE CREATION</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/pattern-a/reset.css">
   <link rel="stylesheet" href="css/pattern-a/variables.css">
   <link rel="stylesheet" href="css/pattern-a/style.css">
+  <link rel="stylesheet" href="css/pattern-a/responsive.css">
 </head>
 <body>
-  <!-- Header Navigation -->
+
+  <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">Gaia LLC</a>
-      <nav class="nav" id="mainNav">
+      <nav class="nav">
         <a href="pattern-a.html" style="font-weight: 700; color: var(--color-accent);">Pattern A</a>
         <a href="pattern-b.html">Pattern B</a>
         <a href="pattern-c.html">Pattern C</a>
       </nav>
-      <button class="mobile-menu-toggle" aria-label="Menu" id="menuToggle">
+      <button class="mobile-menu-toggle" aria-label="Menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,229 +32,212 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-background"></div>
+  <section class="hero" aria-label="メインビジュアル">
+    <img src="images/hero-a.jpg" alt="企業のビジョンを表現する建築物" class="hero-image" loading="eager">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="hero-title">VALUE CREATION</h1>
-      <p class="hero-subtitle">価値創造</p>
-      <p class="hero-description">
-        私たちの使命は「価値を創造し、社会に還元すること」です。
-      </p>
-      <a href="#business" class="hero-scroll" aria-label="Scroll down">
-        <span>SCROLL</span>
-      </a>
+      <h1>VALUE CREATION</h1>
+      <p>価値創造</p>
+    </div>
+    <div class="scroll-indicator">
+      <p>SCROLL</p>
+      <span>↓</span>
     </div>
   </section>
 
   <!-- Business Section -->
-  <section class="section section-business" id="business">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title-en">BUSINESS</span>
-        <span class="section-title-ja">事業内容</span>
-      </h2>
-      <div class="business-cards">
-        <div class="business-card">
-          <div class="business-card-icon">🏢</div>
-          <h3 class="business-card-title">不動産事業</h3>
-          <p class="business-card-description">
-            独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応致します
-          </p>
+  <section id="business" class="section">
+    <div class="section-container">
+      <h2 class="section-title">事業の目的</h2>
+      <p class="section-subtitle">BUSINESS</p>
+      <div class="business-list">
+        <div class="business-item">
+          <h3>不動産事業</h3>
+          <p>独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応致します</p>
         </div>
-        <div class="business-card">
-          <div class="business-card-icon">🏗️</div>
-          <h3 class="business-card-title">建築の工事設計</h3>
-          <p class="business-card-description">
-            最高のデザインと独自性を追求した建築工事の設計を提供します
-          </p>
+        <div class="business-item">
+          <h3>建築の工事設計</h3>
+          <p>最高のデザインと独自性を追求した建築工事設計を提供いたします</p>
         </div>
-        <div class="business-card">
-          <div class="business-card-icon">📢</div>
-          <h3 class="business-card-title">広告看板事業</h3>
-          <p class="business-card-description">
-            お客様の希望の看板広告を独自のデザインで最適化し不動産条件も含め他にはない唯一無二の広告を提案
-          </p>
+        <div class="business-item">
+          <h3>広告看板事業</h3>
+          <p>お客様の希望の看板広告を独自のデザインで最適化し不動産条件も含め他にはない唯一無二の広告を提案</p>
         </div>
-      </div>
-      <div class="business-additional">
-        <ul class="business-list">
-          <li>生命保険募集に関する業務</li>
-          <li>損害保険代理店事業</li>
-          <li>不動産コンサルタント業務</li>
-          <li>住宅地・別荘地の開発造成</li>
-        </ul>
+        <div class="business-item">
+          <h3>生命保険募集に関する業務</h3>
+          <p>お客様のライフプランに合わせた最適な保険プランをご提案いたします</p>
+        </div>
+        <div class="business-item">
+          <h3>損害保険代理店事業</h3>
+          <p>万が一のリスクに備え、適切な損害保険をご案内いたします</p>
+        </div>
+        <div class="business-item">
+          <h3>不動産コンサルタント業務</h3>
+          <p>不動産投資や運用に関する専門的なアドバイスを提供いたします</p>
+        </div>
+        <div class="business-item">
+          <h3>住宅地・別荘地の開発造成</h3>
+          <p>快適な住環境の創造を目指した開発事業を展開しています</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Feature Section -->
-  <section class="section section-feature">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title-en">PRESENTATION</span>
-        <span class="section-title-ja">会社プレゼンテーション</span>
-      </h2>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <h3 class="feature-title">Design × Place</h3>
-          <p class="feature-subtitle">最高のデザインと独自性</p>
-        </div>
-        <div class="feature-item">
-          <h3 class="feature-title">Creation</h3>
-          <p class="feature-subtitle">自由な創造力</p>
-        </div>
-        <div class="feature-item">
-          <h3 class="feature-title">Signboard Business</h3>
-          <p class="feature-subtitle">唯一無二の広告を提案</p>
-        </div>
+  <!-- Philosophy Section -->
+  <section id="philosophy" class="section section-alt">
+    <div class="section-container">
+      <h2 class="section-title">会社プレゼンテーション</h2>
+      <p class="section-subtitle">COMPANY PRESENTATION</p>
+      <div class="section-content">
+        <h3 style="font-size: 24px; margin: 48px 0 24px; color: var(--color-primary);">陶芸</h3>
+        <p style="font-size: 20px; font-weight: 600; margin-bottom: 16px;">Design × Place</p>
+        <p style="margin-bottom: 32px;">最高のデザインと独自性</p>
+
+        <h3 style="font-size: 24px; margin: 48px 0 24px; color: var(--color-primary);">Creation</h3>
+        <p style="margin-bottom: 32px;">自由な創造力</p>
+
+        <h3 style="font-size: 24px; margin: 48px 0 24px; color: var(--color-primary);">Signboard Business</h3>
+        <p style="margin-bottom: 32px;">お客様の希望の看板広告を独自のデザインで最適化し不動産条件も含め他にはない唯一無二の広告を提案</p>
+
+        <h3 style="font-size: 24px; margin: 48px 0 24px; color: var(--color-primary);">看板・ストリートサイド広告</h3>
+        <p style="margin-bottom: 32px;">これからの時代はデジタルでは再現出来ない独自性とメディアミックス</p>
+
+        <h3 style="font-size: 24px; margin: 48px 0 24px; color: var(--color-primary);">感性と価値の裏付けをサービスに</h3>
       </div>
     </div>
   </section>
 
   <!-- Message Section -->
-  <section class="section section-message" id="message">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title-en">MESSAGE</span>
-        <span class="section-title-ja">代表メッセージ</span>
-      </h2>
-      <div class="message-content">
-        <p class="message-text">
-          私たちの使命は「価値を創造し、社会に還元すること」です。
-        </p>
-        <p class="message-text">
-          激しく変化する現代社会において、単にモノやサービスを提供するだけではなく、人々の期待を超える「新たな価値」を生み出すことこそが企業に求められる本質的な役割だと私たちは考えています。
-        </p>
-        <p class="message-text">
-          創業以来、私たちは常に「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切にしながら事業を展開してまいりました。
-        </p>
-        <p class="message-text">
-          お客様、パートナー企業、そして地域社会とのつながりを大切にし、共に成長していける関係を築いていくことが、さらなる価値創造につながると確信しております。
-        </p>
-        <p class="message-text">
-          これからも変化を恐れず挑戦を続け、持続可能な社会の実現に貢献してまいります。
-        </p>
+  <section id="message" class="section">
+    <div class="section-container">
+      <h2 class="section-title">Message</h2>
+      <p class="section-subtitle">代表メッセージ</p>
+      <div class="section-content">
+        <div class="message-content">
+          <p style="margin-bottom: 24px;">私たちの使命は「価値を創造し、社会に還元すること」です。</p>
+
+          <p style="margin-bottom: 24px;">激しく変化する現代社会において、単にモノやサービスを提供するだけではなく、人々の期待を超える「新たな価値」を生み出すことこそが企業に求められる本質的な役割だと私たちは考えています。</p>
+
+          <p style="margin-bottom: 24px;">創業以来、私たちは常に「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切にしながら事業を展開してまいりました。</p>
+
+          <p style="margin-bottom: 24px;">お客様、パートナー企業、そして地域社会とのつながりを大切にし、共に成長していける関係を築いていくことが、さらなる価値創造につながると確信しております。</p>
+
+          <p style="margin-bottom: 24px;">これからも変化を恐れず挑戦を続け、持続可能な社会の実現に貢献してまいります。</p>
+
+          <p style="margin-bottom: 24px;">皆様にとってなくてはならない存在であり続けるために、社員一同、心を一つにして邁進してまいります。</p>
+
+          <p>今後とも一層のご支援とご指導を賜りますよう、よろしくお願い申し上げます。</p>
+        </div>
         <p class="message-signature">代表社員　井上真意</p>
       </div>
     </div>
   </section>
 
   <!-- Mission Section -->
-  <section class="section section-mission" id="mission">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title-en">MISSION</span>
-        <span class="section-title-ja">私たちの使命</span>
-      </h2>
-      <div class="mission-content">
-        <p class="mission-text">
-          お客様にとって最適な価値の創造を常に考え提案し形にするのが弊社の役割だと考えています
-        </p>
-        <div class="mission-highlight">
-          <h3>Realestate</h3>
-          <p>独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応致します</p>
-        </div>
+  <section id="mission" class="section section-alt">
+    <div class="section-container">
+      <h2 class="section-title">Mission</h2>
+      <p class="section-subtitle">私たちの使命</p>
+      <div class="section-content">
+        <p style="font-size: 20px; line-height: 2; text-align: center; margin-bottom: 48px;">お客様にとって最適な価値の創造を常に考え提案し形にするのが弊社の役割だと考えています</p>
+
+        <h3 style="font-size: 24px; margin: 48px 0 24px; color: var(--color-primary); text-align: center;">Realestate</h3>
+        <p style="text-align: center;">独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応致します</p>
       </div>
     </div>
   </section>
 
-  <!-- Company Section -->
-  <section class="section section-company" id="company">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title-en">COMPANY</span>
-        <span class="section-title-ja">会社概要</span>
-      </h2>
-      <div class="company-info">
-        <table class="company-table">
-          <tr>
-            <th>会社名</th>
-            <td>Gaia LLC / 合同会社ガイア</td>
-          </tr>
-          <tr>
-            <th>資本金</th>
-            <td>200万円</td>
-          </tr>
-          <tr>
-            <th>設立日</th>
-            <td>平成25年11月1日</td>
-          </tr>
-          <tr>
-            <th>法人番号</th>
-            <td>5330003005421</td>
-          </tr>
-          <tr>
-            <th>所在地</th>
-            <td>熊本県熊本市中央区帯山５丁目３８番２５号</td>
-          </tr>
-        </table>
+  <!-- Company Info Section -->
+  <section id="company" class="section">
+    <div class="section-container">
+      <h2 class="section-title">会社概要</h2>
+      <p class="section-subtitle">COMPANY</p>
+      <div class="section-content">
+        <div class="company-info">
+          <div class="info-item">
+            <div class="info-label">会社名</div>
+            <div class="info-value">Gaiya LLC<br>合同会社ガイア</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">資本金</div>
+            <div class="info-value">200万円</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">設立日</div>
+            <div class="info-value">平成25年11月1日</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">法人番号</div>
+            <div class="info-value">5330003005421</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">所在地</div>
+            <div class="info-value">熊本県熊本市中央区帯山5丁目38番25号</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">代表社員</div>
+            <div class="info-value">井上真意</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="section section-cta" id="contact">
-    <div class="container">
-      <h2 class="cta-title">お問い合わせ</h2>
-      <p class="cta-description">
-        価値創造のパートナーとして、お客様のビジネスをサポートいたします。
-      </p>
-      <a href="tel:0962345678" class="cta-button">お電話でのお問い合わせ</a>
+  <section id="contact" class="section cta-section">
+    <div class="section-container">
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">CONTACT</p>
+      <p style="font-size: 18px; margin-bottom: 24px;">価値創造のパートナーとして、お気軽にご相談ください</p>
+      <div class="contact-phone">
+        <a href="tel:0961234567" style="color: white;">096-123-4567</a>
+      </div>
+      <a href="#contact-form" class="cta-button">お問い合わせフォーム</a>
     </div>
   </section>
 
-  <!-- Access Section -->
-  <section class="section section-access" id="access">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title-en">ACCESS</span>
-        <span class="section-title-ja">アクセス</span>
-      </h2>
-      <div class="access-content">
-        <div class="access-info">
-          <p class="access-address">
-            〒862-0924<br>
-            熊本県熊本市中央区帯山５丁目３８番２５号
-          </p>
-        </div>
-        <div class="access-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.6847384326677!2d130.74285231519684!3d32.78808948096866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ3JzE3LjEiTiAxMzDCsDQ0JzQzLjkiRQ!5e0!3m2!1sja!2sjp!4v1620000000000!5m2!1sja!2sjp"
-            width="100%"
-            height="400"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            title="Gaia LLC 所在地">
-          </iframe>
-        </div>
+  <!-- Map Section -->
+  <section id="access" class="section">
+    <div class="section-container">
+      <h2 class="section-title">アクセス</h2>
+      <p class="section-subtitle">ACCESS</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.2938744764!2d130.7382!3d32.7932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ3JzM1LjUiTiAxMzDCsDQ0JzE3LjUiRQ!5e0!3m2!1sja!2sjp!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Gaia LLC 地図">
+        </iframe>
+      </div>
+      <div class="address-info">
+        <p style="font-weight: 600; margin-bottom: 8px;">〒862-0924</p>
+        <p>熊本県熊本市中央区帯山5丁目38番25号</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-company">
-          <h3 class="footer-logo">Gaia LLC</h3>
-          <p class="footer-tagline">VALUE CREATION</p>
-        </div>
-        <nav class="footer-nav">
-          <a href="#business">事業内容</a>
-          <a href="#message">代表メッセージ</a>
-          <a href="#mission">ミッション</a>
-          <a href="#company">会社概要</a>
-          <a href="#contact">お問い合わせ</a>
-        </nav>
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="#business">事業内容</a>
+        <a href="#philosophy">会社紹介</a>
+        <a href="#message">メッセージ</a>
+        <a href="#mission">ミッション</a>
+        <a href="#company">会社概要</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <div class="footer-info">
+        <p>Gaiya LLC | 合同会社ガイア</p>
+        <p>〒862-0924 熊本県熊本市中央区帯山5丁目38番25号</p>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2025 Gaia LLC. All rights reserved.</p>
-        <p class="footer-credit">Design by 東海岸制作所</p>
-      </div>
+      <p class="copyright">© 2025 Gaia LLC. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- JavaScript -->
   <script src="js/pattern-a/main.js"></script>
+
 </body>
 </html>
