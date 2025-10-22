@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaia LLC — モダンミニマル</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: 'Inter', 'Noto Sans JP', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #fdfdfd;
+      color: #1a1a1a;
+      font-size: 16px;
+    }
+    header,
+    main {
+      padding: clamp(1.5rem, 2.5vw, 4rem);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      display: grid;
+      gap: clamp(1.5rem, 2vw, 3rem);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: center;
+      padding-block-start: clamp(3rem, 6vw, 6rem);
+      padding-block-end: clamp(2rem, 5vw, 5rem);
+    }
+    header h1 {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      letter-spacing: 0.04em;
+      margin: 0;
+    }
+    header p {
+      margin: 0;
+      color: #4a4a4a;
+      max-width: 32ch;
+    }
+    section {
+      padding-block: clamp(2.5rem, 5vw, 4rem);
+      display: grid;
+      gap: clamp(1.5rem, 2.5vw, 3rem);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: start;
+      border-block-start: 1px solid #ececec;
+    }
+    section:first-of-type {
+      border-top: none;
+    }
+    h2 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      margin: 0;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 0;
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .section-body {
+      display: grid;
+      gap: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    ul li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      color: #353535;
+    }
+    ul li span {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 999px;
+      background: #0f62fe;
+      margin-top: 0.4rem;
+      flex-shrink: 0;
+    }
+    .grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      padding: 1.25rem;
+      border-radius: 18px;
+      border: 1px solid #ebebeb;
+      background: #fff;
+      display: grid;
+      gap: 1rem;
+      box-shadow: 0 10px 30px rgba(15, 15, 15, 0.04);
+      transition: transform 0.3s ease;
+    }
+    .card:focus-within,
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #dcdcdc;
+    }
+    .meta {
+      font-weight: 600;
+      color: #1f1f1f;
+    }
+    .message {
+      background: linear-gradient(135deg, rgba(15, 98, 254, 0.08), rgba(111, 194, 255, 0.12));
+      border-radius: 24px;
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      display: grid;
+      gap: 1.25rem;
+    }
+    blockquote {
+      margin: 0;
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      color: #272727;
+    }
+    .signature {
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .mission-list {
+      display: grid;
+      gap: 1rem;
+    }
+    .mission-item {
+      padding: 1.25rem;
+      border-left: 3px solid #0f62fe;
+      background: #f6f9ff;
+      border-radius: 12px;
+    }
+    footer {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: #757575;
+      font-size: 0.95rem;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+    }
+    @media (min-width: 900px) {
+      .message {
+        grid-template-columns: minmax(240px, 320px) 1fr;
+        align-items: center;
+      }
+      .message svg {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Gaia LLC</h1>
+      <p>価値創造をコアに、不動産から広告まで横断的にプロジェクトを編成し、地域社会へ持続可能なインパクトを与えます。</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 320 260" role="img" aria-labelledby="heroTitle heroDesc" width="100%">
+        <title id="heroTitle">価値創造のモジュラーライン</title>
+        <desc id="heroDesc">幾何学的な線と円が連鎖して価値を象徴する抽象図形</desc>
+        <defs>
+          <linearGradient id="gradHero" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0f62fe" stop-opacity="0.25" />
+            <stop offset="100%" stop-color="#67c5ff" stop-opacity="0.55" />
+          </linearGradient>
+        </defs>
+        <rect x="10" y="10" width="300" height="240" rx="28" fill="url(#gradHero)" />
+        <g stroke="#0f62fe" stroke-width="2" fill="none" opacity="0.8">
+          <path d="M55 70h70l25 40h105" />
+          <path d="M55 120h55l18 28h95" opacity="0.6" />
+          <path d="M55 170h95l28 45h45" opacity="0.4" />
+        </g>
+        <g fill="#0f62fe">
+          <circle cx="55" cy="70" r="6" />
+          <circle cx="125" cy="70" r="6" />
+          <circle cx="150" cy="110" r="6" />
+          <circle cx="230" cy="110" r="6" />
+          <circle cx="200" cy="215" r="8" fill="#1f8fff" />
+        </g>
+      </svg>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div>
+        <h2>Value Creation</h2>
+        <p>Gaia LLCはローカルからグローバルまで連なる価値連鎖をデザインし、信頼性の高い体験で顧客に応えます。</p>
+      </div>
+      <div class="section-body">
+        <svg viewBox="0 0 240 160" role="img" aria-labelledby="vcTitle vcDesc">
+          <title id="vcTitle">拡張するアーク</title>
+          <desc id="vcDesc">重なる半円が価値の波及を表現する抽象図形</desc>
+          <g stroke="#0f62fe" stroke-width="2" fill="none">
+            <path d="M20 140c0-60 45-110 100-110s100 50 100 110" />
+            <path d="M50 140c0-45 32-90 70-90s70 45 70 90" opacity="0.7" />
+            <path d="M80 140c0-30 18-60 40-60s40 30 40 60" opacity="0.45" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>事業の目的</h2>
+        <p>地域の特性と未来志向を掛け合わせ、複数領域のノウハウをシームレスに提供します。</p>
+      </div>
+      <div class="section-body">
+        <ul>
+          <li><span aria-hidden="true"></span>不動産事業</li>
+          <li><span aria-hidden="true"></span>建築の工事設計</li>
+          <li><span aria-hidden="true"></span>広告看板事業</li>
+          <li><span aria-hidden="true"></span>生命保険募集に関する業務</li>
+          <li><span aria-hidden="true"></span>損害保険代理店事業</li>
+          <li><span aria-hidden="true"></span>不動産コンサルタント業務</li>
+          <li><span aria-hidden="true"></span>住宅地・別荘地の開発造成</li>
+        </ul>
+        <svg viewBox="0 0 240 160" role="img" aria-labelledby="scopeTitle scopeDesc">
+          <title id="scopeTitle">多層ネットワーク</title>
+          <desc id="scopeDesc">複数のノードが線でつながるネットワークの図</desc>
+          <g stroke="#0f62fe" stroke-width="1.5" fill="none">
+            <path d="M40 120l60-70 40 35 50-55" />
+            <path d="M40 120l80 20 70-35" opacity="0.7" />
+          </g>
+          <g fill="#0f62fe">
+            <circle cx="40" cy="120" r="6" />
+            <circle cx="100" cy="50" r="5" />
+            <circle cx="140" cy="85" r="5" />
+            <circle cx="190" cy="30" r="6" />
+            <circle cx="210" cy="105" r="6" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>会社概要</h2>
+        <p>熊本を基点に地域密着型で価値共創を実現します。</p>
+      </div>
+      <div class="section-body">
+        <div class="grid">
+          <div class="card" tabindex="0">
+            <h3>基本情報</h3>
+            <p class="meta">Gaiya LLC / 合同会社ガイア</p>
+            <p><strong>資本金:</strong> 200万円<br /><strong>所在地:</strong> 熊本県熊本市中央区帯山５丁目３８番２５号</p>
+          </div>
+          <div class="card" tabindex="0">
+            <h3>設立</h3>
+            <p>平成25年11月1日</p>
+            <p><strong>法人番号:</strong> 5330003005421</p>
+          </div>
+        </div>
+        <svg viewBox="0 0 260 140" role="img" aria-labelledby="profileTitle profileDesc">
+          <title id="profileTitle">熊本から広がるレイヤー</title>
+          <desc id="profileDesc">中心から四方へ広がる円弧を描いた図形</desc>
+          <defs>
+            <linearGradient id="profileGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0f62fe" stop-opacity="0.2" />
+              <stop offset="100%" stop-color="#61a6ff" stop-opacity="0.5" />
+            </linearGradient>
+          </defs>
+          <path d="M30 110c25-60 175-60 200 0" fill="url(#profileGrad)" />
+          <g stroke="#0f62fe" stroke-width="1.5" fill="none" opacity="0.9">
+            <path d="M40 110c20-45 160-45 180 0" />
+            <path d="M55 110c15-30 130-30 160 0" opacity="0.6" />
+          </g>
+          <circle cx="130" cy="70" r="18" fill="#fff" stroke="#0f62fe" stroke-width="1.5" />
+          <circle cx="130" cy="70" r="6" fill="#0f62fe" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>会社プレゼンテーション</h2>
+        <p>多様な分野で感性と価値を磨きあげ、唯一無二の提案を行います。</p>
+      </div>
+      <div class="section-body">
+        <div class="grid">
+          <div class="card" tabindex="0">
+            <svg viewBox="0 0 120 60" role="img" aria-labelledby="ceramicTitle ceramicDesc">
+              <title id="ceramicTitle">陶芸のリズム</title>
+              <desc id="ceramicDesc">波打つ線が陶芸の手触りを表現</desc>
+              <path d="M5 40c15-18 30-18 45 0s30 18 45 0" fill="none" stroke="#0f62fe" stroke-width="2" />
+            </svg>
+            <h3>陶芸 — Design × Place</h3>
+            <p>最高のデザインと独自性を備えたプロダクトを地域の文脈に合わせて提供します。</p>
+          </div>
+          <div class="card" tabindex="0">
+            <svg viewBox="0 0 120 60" role="img" aria-labelledby="creationTitle creationDesc">
+              <title id="creationTitle">創造のスパーク</title>
+              <desc id="creationDesc">重なる四角が拡張的な発想を示す</desc>
+              <rect x="10" y="20" width="28" height="20" fill="#0f62fe" opacity="0.25" rx="4" />
+              <rect x="35" y="15" width="28" height="25" fill="#0f62fe" opacity="0.45" rx="4" />
+              <rect x="60" y="10" width="30" height="30" fill="#0f62fe" opacity="0.65" rx="5" />
+            </svg>
+            <h3>Creation</h3>
+            <p>自由な創造力で体験価値を企画し、形にします。</p>
+          </div>
+          <div class="card" tabindex="0">
+            <svg viewBox="0 0 120 60" role="img" aria-labelledby="signboardTitle signboardDesc">
+              <title id="signboardTitle">看板のフレーム</title>
+              <desc id="signboardDesc">立体的なフレームが広告の構造を表す</desc>
+              <g fill="none" stroke="#0f62fe" stroke-width="2">
+                <rect x="15" y="10" width="70" height="40" rx="6" />
+                <rect x="30" y="20" width="40" height="20" rx="4" opacity="0.6" />
+              </g>
+            </svg>
+            <h3>Signboard Business</h3>
+            <p>不動産条件とクリエイティブを統合し、唯一無二の広告体験を提案します。</p>
+          </div>
+          <div class="card" tabindex="0">
+            <svg viewBox="0 0 120 60" role="img" aria-labelledby="outdoorTitle outdoorDesc">
+              <title id="outdoorTitle">ストリートの視線</title>
+              <desc id="outdoorDesc">方向性を持った矢印が視線誘導を表現</desc>
+              <g stroke="#0f62fe" stroke-width="2" fill="none">
+                <path d="M10 30h60" />
+                <path d="M70 30l15-10v20z" fill="#0f62fe" />
+              </g>
+            </svg>
+            <h3>看板・ストリートサイド広告</h3>
+            <p>メディアミックスでリアルの価値を強化し、街に新しい景観を生み出します。</p>
+          </div>
+          <div class="card" tabindex="0">
+            <svg viewBox="0 0 120 60" role="img" aria-labelledby="senseTitle senseDesc">
+              <title id="senseTitle">感性のハーモニー</title>
+              <desc id="senseDesc">円形が重なり合い感性の共鳴を描く</desc>
+              <g fill="#0f62fe" opacity="0.2">
+                <circle cx="30" cy="30" r="18" />
+                <circle cx="52" cy="30" r="18" />
+                <circle cx="74" cy="30" r="18" />
+              </g>
+            </svg>
+            <h3>感性と価値の裏付け</h3>
+            <p>リサーチとデザインを融合させ、説得力あるソリューションで市場へ価値を届けます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="message">
+        <svg viewBox="0 0 200 200" role="img" aria-labelledby="messageTitle messageDesc">
+          <title id="messageTitle">共創のリング</title>
+          <desc id="messageDesc">重なるリングが協働を示す抽象図形</desc>
+          <g fill="none" stroke="#0f62fe" stroke-width="1.8">
+            <circle cx="90" cy="100" r="60" opacity="0.6" />
+            <circle cx="110" cy="90" r="50" opacity="0.4" />
+            <circle cx="120" cy="110" r="40" opacity="0.8" />
+          </g>
+        </svg>
+        <div>
+          <h2>Message</h2>
+          <blockquote>
+            私たちの使命は「価値を創造し、社会に還元すること」です。期待を超える価値を生み出すことこそが企業に求められる本質的な役割だと考えています。
+          </blockquote>
+          <p>創業以来、「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切に事業を展開してまいりました。お客様、パートナー、地域社会と共に成長できる関係を築き、価値創造を加速させます。</p>
+          <p class="signature">代表社員 井上真意</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>Mission</h2>
+        <p>常に顧客価値を見つめ、提案から実装まで一貫したサポートを提供します。</p>
+      </div>
+      <div class="mission-list">
+        <div class="mission-item">
+          <h3>Realestate</h3>
+          <p>独自ネットワークと知識を活かし、賃貸から投資まで幅広いニーズに対応します。</p>
+          <svg viewBox="0 0 200 80" role="img" aria-labelledby="missionTitle missionDesc">
+            <title id="missionTitle">価値の道筋</title>
+            <desc id="missionDesc">上下するラインが成長と導きを表す</desc>
+            <polyline points="10,70 60,40 110,55 150,25 190,35" fill="none" stroke="#0f62fe" stroke-width="2" />
+            <circle cx="60" cy="40" r="4" fill="#0f62fe" />
+            <circle cx="150" cy="25" r="4" fill="#0f62fe" />
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© Gaia LLC</footer>
+</body>
+</html>

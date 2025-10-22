@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaia LLC — ダークグラデーション</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: 'Manrope', 'Noto Sans JP', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.65;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, #2c3be0 0%, #0a0d16 45%, #05060c 100%);
+      color: #f2f4ff;
+      font-size: 16px;
+    }
+    main {
+      padding: clamp(1.5rem, 3vw, 4rem);
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: clamp(2.5rem, 4vw, 4.5rem);
+    }
+    header {
+      padding: clamp(2.5rem, 5vw, 6rem) clamp(1.5rem, 3vw, 4rem);
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: clamp(2rem, 4vw, 3.5rem);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: center;
+    }
+    header h1 {
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    header p {
+      margin: 0;
+      color: rgba(236, 240, 255, 0.72);
+      max-width: 36ch;
+    }
+    section {
+      position: relative;
+      backdrop-filter: blur(22px);
+      background: linear-gradient(140deg, rgba(44, 70, 210, 0.22), rgba(15, 18, 32, 0.86));
+      border: 1px solid rgba(116, 148, 255, 0.18);
+      border-radius: 28px;
+      padding: clamp(1.8rem, 3vw, 3rem);
+      overflow: hidden;
+      display: grid;
+      gap: 1.75rem;
+    }
+    section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(95, 201, 255, 0.22), transparent 55%);
+      pointer-events: none;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 0;
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+    }
+    .stack {
+      display: grid;
+      gap: 1.25rem;
+    }
+    .pill-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      background: rgba(120, 140, 255, 0.16);
+      color: #f4f7ff;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .glass-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .glass-card {
+      padding: 1.5rem;
+      border-radius: 20px;
+      background: rgba(12, 15, 30, 0.65);
+      border: 1px solid rgba(116, 148, 255, 0.22);
+      display: grid;
+      gap: 1rem;
+      min-height: 220px;
+    }
+    blockquote {
+      margin: 0;
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      color: rgba(242, 244, 255, 0.9);
+    }
+    .signature {
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: rgba(172, 197, 255, 0.9);
+    }
+    footer {
+      padding: 2.5rem 1.5rem 4rem;
+      text-align: center;
+      color: rgba(196, 206, 255, 0.65);
+      font-size: 0.95rem;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+    .section-content {
+      position: relative;
+      display: grid;
+      gap: 1.5rem;
+      z-index: 1;
+    }
+    .hero-visual {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="section-content">
+      <h1>Gaia LLC</h1>
+      <p>価値創造のプロフェッショナルとして、ダークモードの世界で輝く体験を設計します。</p>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 360 280" role="img" aria-labelledby="hero2Title hero2Desc" width="100%">
+        <title id="hero2Title">光彩のガラスアーチ</title>
+        <desc id="hero2Desc">重なり合う透明のアーチに光が差し込む様子を抽象化した図形</desc>
+        <defs>
+          <linearGradient id="hero2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7dd0ff" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#4d6bff" stop-opacity="0.45" />
+            <stop offset="100%" stop-color="#141836" stop-opacity="0.1" />
+          </linearGradient>
+          <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="12" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <rect x="30" y="20" width="300" height="220" rx="36" fill="rgba(10, 14, 30, 0.6)" stroke="rgba(125, 208, 255, 0.35)" />
+        <g fill="url(#hero2Gradient)" filter="url(#glow)" opacity="0.9">
+          <path d="M60 220c0-88 52-160 120-160s120 72 120 160" opacity="0.8" />
+          <path d="M100 220c0-60 32-110 80-110s80 50 80 110" opacity="0.6" />
+          <path d="M140 220c0-40 18-72 40-72s40 32 40 72" opacity="0.5" />
+        </g>
+        <g fill="#8c9bff" opacity="0.8">
+          <circle cx="90" cy="70" r="8" />
+          <circle cx="210" cy="60" r="10" />
+          <circle cx="250" cy="95" r="6" />
+        </g>
+      </svg>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="section-content">
+        <h2>Value Creation</h2>
+        <p>価値創造は光の層のように重なり、ビジネスの各側面へ浸透します。Gaia LLCはその光を設計し、信頼へと変換します。</p>
+        <div class="pill-list">
+          <span class="pill">信頼設計</span>
+          <span class="pill">地域共創</span>
+          <span class="pill">未来思考</span>
+        </div>
+      </div>
+      <svg viewBox="0 0 320 200" role="img" aria-labelledby="valueWaveTitle valueWaveDesc">
+        <title id="valueWaveTitle">グラデーションウェーブ</title>
+        <desc id="valueWaveDesc">波のような曲線が光を帯びながら広がる図形</desc>
+        <defs>
+          <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6de1ff" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#557aff" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#1f2760" stop-opacity="0.4" />
+          </linearGradient>
+        </defs>
+        <path d="M0 160c60-40 120-40 180 0s120 40 180 0v40H0z" fill="url(#waveGrad)" opacity="0.85" />
+        <path d="M0 120c60-36 120-36 180 0s120 36 180 0" fill="none" stroke="rgba(189, 215, 255, 0.6)" stroke-width="2" />
+      </svg>
+    </section>
+
+    <section>
+      <div class="section-content">
+        <h2>事業の目的</h2>
+        <p>マルチドメインの専門性を束ね、顧客の期待を超える提案へ。</p>
+        <div class="stack">
+          <div class="pill">不動産・建築</div>
+          <div class="pill">広告・看板</div>
+          <div class="pill">保険・コンサルティング</div>
+        </div>
+      </div>
+      <svg viewBox="0 0 320 200" role="img" aria-labelledby="scopeNebulaTitle scopeNebulaDesc">
+        <title id="scopeNebulaTitle">ネビュラネットワーク</title>
+        <desc id="scopeNebulaDesc">放射状に広がる点と線がネットワークを表す</desc>
+        <defs>
+          <radialGradient id="nebula" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="rgba(150, 205, 255, 0.9)" />
+            <stop offset="70%" stop-color="rgba(49, 69, 180, 0.2)" />
+            <stop offset="100%" stop-color="rgba(15, 18, 32, 0)" />
+          </radialGradient>
+        </defs>
+        <circle cx="160" cy="100" r="120" fill="url(#nebula)" />
+        <g stroke="rgba(156, 188, 255, 0.6)" stroke-width="1.5" fill="none">
+          <path d="M160 30l-70 40 10 70 70 30 70-30 10-70z" />
+          <path d="M90 70l140 80" opacity="0.6" />
+          <path d="M90 140l140-70" opacity="0.6" />
+        </g>
+        <g fill="#9ac0ff">
+          <circle cx="160" cy="30" r="6" />
+          <circle cx="90" cy="70" r="6" />
+          <circle cx="240" cy="70" r="6" />
+          <circle cx="100" cy="160" r="6" />
+          <circle cx="220" cy="150" r="6" />
+          <circle cx="160" cy="170" r="8" />
+        </g>
+      </svg>
+    </section>
+
+    <section>
+      <div class="section-content">
+        <h2>会社概要</h2>
+        <p>熊本から世界へ広がる価値のオーロラ。</p>
+        <div class="glass-grid">
+          <div class="glass-card">
+            <h3>Corporate Data</h3>
+            <p><strong>資本金:</strong> 200万円<br />
+              <strong>所在地:</strong> 熊本県熊本市中央区帯山５丁目３８番２５号</p>
+          </div>
+          <div class="glass-card">
+            <h3>Identity</h3>
+            <p><strong>商号:</strong> Gaiya LLC / 合同会社ガイア<br />
+              <strong>設立:</strong> 平成25年11月1日<br />
+              <strong>法人番号:</strong> 5330003005421</p>
+          </div>
+        </div>
+      </div>
+      <svg viewBox="0 0 320 200" role="img" aria-labelledby="companyAuroraTitle companyAuroraDesc">
+        <title id="companyAuroraTitle">オーロラグリッド</title>
+        <desc id="companyAuroraDesc">波打つ光がグリッド状に広がる抽象表現</desc>
+        <defs>
+          <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#78f0ff" stop-opacity="0.8" />
+            <stop offset="50%" stop-color="#6a7aff" stop-opacity="0.6" />
+            <stop offset="100%" stop-color="#2a3760" stop-opacity="0.1" />
+          </linearGradient>
+        </defs>
+        <rect x="20" y="40" width="280" height="120" rx="24" fill="rgba(9, 12, 26, 0.6)" stroke="rgba(122, 150, 255, 0.3)" />
+        <path d="M30 150c40-20 80-20 120 0s80 20 120 0" fill="none" stroke="rgba(160, 200, 255, 0.45)" stroke-width="2" />
+        <path d="M30 120c40-32 80-32 120 0s80 32 120 0" fill="url(#aurora)" opacity="0.8" />
+      </svg>
+    </section>
+
+    <section>
+      <div class="section-content">
+        <h2>会社プレゼンテーション</h2>
+        <p>触感的でダイナミックな体験を創出し、リアルな接点を磨き上げます。</p>
+        <div class="glass-grid">
+          <div class="glass-card">
+            <svg viewBox="0 0 140 80" role="img" aria-labelledby="ceramicDarkTitle ceramicDarkDesc">
+              <title id="ceramicDarkTitle">夜明けの窯</title>
+              <desc id="ceramicDarkDesc">光を帯びた器が暗闇から浮かび上がる</desc>
+              <path d="M20 50c20-25 80-25 100 0" fill="none" stroke="#84b3ff" stroke-width="2.5" />
+              <ellipse cx="70" cy="52" rx="50" ry="18" fill="rgba(132, 179, 255, 0.2)" />
+            </svg>
+            <h3>陶芸 — Design × Place</h3>
+            <p>器づくりに宿るストーリーを、空間と時間に合わせて演出します。</p>
+          </div>
+          <div class="glass-card">
+            <svg viewBox="0 0 140 80" role="img" aria-labelledby="creationDarkTitle creationDarkDesc">
+              <title id="creationDarkTitle">創造のプリズム</title>
+              <desc id="creationDarkDesc">分光された三角形がアイデアの広がりを象徴</desc>
+              <g fill="none" stroke="#9bd4ff" stroke-width="2">
+                <polygon points="20,60 50,20 80,60" />
+                <polygon points="40,60 70,20 100,60" opacity="0.6" />
+              </g>
+            </svg>
+            <h3>Creation</h3>
+            <p>分野を超えたコラボレーションで、自由な創造力を実現します。</p>
+          </div>
+          <div class="glass-card">
+            <svg viewBox="0 0 140 80" role="img" aria-labelledby="signboardDarkTitle signboardDarkDesc">
+              <title id="signboardDarkTitle">光るシグネチャー</title>
+              <desc id="signboardDarkDesc">ライトアップされた看板を象徴する矩形</desc>
+              <rect x="25" y="20" width="80" height="40" rx="8" fill="rgba(125, 204, 255, 0.15)" stroke="#7dd0ff" stroke-width="2" />
+              <line x1="20" y1="60" x2="110" y2="60" stroke="rgba(153, 193, 255, 0.4)" stroke-width="2" />
+            </svg>
+            <h3>Signboard Business</h3>
+            <p>ロケーションとデザインの融合で、唯一無二の広告価値を提案します。</p>
+          </div>
+          <div class="glass-card">
+            <svg viewBox="0 0 140 80" role="img" aria-labelledby="streetDarkTitle streetDarkDesc">
+              <title id="streetDarkTitle">ストリートフロー</title>
+              <desc id="streetDarkDesc">光の矢印が街の流れを示す</desc>
+              <path d="M20 40h60" stroke="#8cb0ff" stroke-width="2" />
+              <polygon points="80,32 102,40 80,48" fill="#8cb0ff" opacity="0.7" />
+            </svg>
+            <h3>看板・ストリートサイド広告</h3>
+            <p>アナログとデジタルを組み合わせ、街に新たな動線を生み出します。</p>
+          </div>
+          <div class="glass-card">
+            <svg viewBox="0 0 140 80" role="img" aria-labelledby="senseDarkTitle senseDarkDesc">
+              <title id="senseDarkTitle">感性のトポグラフィ</title>
+              <desc id="senseDarkDesc">重なる円が価値のレイヤーを表す</desc>
+              <g fill="rgba(125, 208, 255, 0.25)">
+                <circle cx="40" cy="40" r="18" />
+                <circle cx="62" cy="36" r="16" />
+                <circle cx="86" cy="44" r="18" />
+              </g>
+            </svg>
+            <h3>感性と価値の裏付け</h3>
+            <p>データと感性の両面から、信頼できる価値提案を構築します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-content">
+        <h2>Message</h2>
+        <blockquote>
+          私たちの使命は「価値を創造し、社会に還元すること」。光と影のコントラストが示すように、変化を恐れず挑戦し続けます。
+        </blockquote>
+        <p>本質を問い続け、ユーザー視点と未来志向を掛け合わせた事業開発で、期待を超える価値を提供します。</p>
+        <p class="signature">代表社員 井上真意</p>
+      </div>
+      <svg viewBox="0 0 320 200" role="img" aria-labelledby="messageHaloTitle messageHaloDesc">
+        <title id="messageHaloTitle">ハローレイヤー</title>
+        <desc id="messageHaloDesc">重なった円弧が共鳴する光を表す</desc>
+        <defs>
+          <radialGradient id="halo" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stop-color="rgba(146, 203, 255, 0.95)" />
+            <stop offset="60%" stop-color="rgba(86, 122, 255, 0.2)" />
+            <stop offset="100%" stop-color="rgba(12, 16, 32, 0)" />
+          </radialGradient>
+        </defs>
+        <circle cx="160" cy="100" r="120" fill="url(#halo)" />
+        <g fill="none" stroke="rgba(176, 210, 255, 0.5)" stroke-width="2">
+          <circle cx="160" cy="100" r="90" />
+          <circle cx="160" cy="100" r="60" opacity="0.6" />
+        </g>
+      </svg>
+    </section>
+
+    <section>
+      <div class="section-content">
+        <h2>Mission</h2>
+        <p>顧客に最適な価値を形にするエクスペリエンスを、リアルとデジタルの境界で創造します。</p>
+        <h3>Realestate</h3>
+        <p>独自のネットワークを活かし、賃貸から投資まで柔軟に支援します。</p>
+      </div>
+      <svg viewBox="0 0 320 200" role="img" aria-labelledby="missionFlowTitle missionFlowDesc">
+        <title id="missionFlowTitle">軌道フロー</title>
+        <desc id="missionFlowDesc">複数の軌道が交差しながら流れる</desc>
+        <g fill="none" stroke="#7fd2ff" stroke-width="2">
+          <path d="M20 160c40-70 120-70 160 0s120 70 160 0" opacity="0.8" />
+          <path d="M0 120c40-50 120-50 160 0s120 50 160 0" opacity="0.5" />
+        </g>
+        <g fill="#7fd2ff">
+          <circle cx="100" cy="80" r="6" />
+          <circle cx="220" cy="120" r="6" />
+          <circle cx="180" cy="40" r="8" opacity="0.75" />
+        </g>
+      </svg>
+    </section>
+  </main>
+  <footer>© Gaia LLC</footer>
+</body>
+</html>
