@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b3d91" />
+      <stop offset="55%" stop-color="#0075ff" />
+      <stop offset="100%" stop-color="#ff6f61" />
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.95)" />
+      <stop offset="60%" stop-color="rgba(0,118,255,0.55)" />
+      <stop offset="100%" stop-color="rgba(0,118,255,0)" />
+    </radialGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36b37e" />
+      <stop offset="100%" stop-color="#ff6f61" />
+    </linearGradient>
+    <clipPath id="clip-curve">
+      <path d="M0,640 C220,560 380,700 600,640 C820,580 980,660 1200,600 L1200,800 L0,800 Z" />
+    </clipPath>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      <circle cx="0" cy="0" r="2" fill="rgba(255,255,255,0.4)" />
+      <circle cx="80" cy="80" r="2" fill="rgba(0,118,255,0.4)" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg-gradient)" />
+  <rect width="1200" height="800" fill="url(#grid)" />
+  <g opacity="0.7" clip-path="url(#clip-curve)">
+    <rect width="1200" height="800" fill="url(#wave)" opacity="0.55" />
+  </g>
+  <g opacity="0.8">
+    <circle cx="320" cy="240" r="180" fill="url(#orb)" />
+    <circle cx="900" cy="180" r="140" fill="rgba(255,255,255,0.18)" />
+  </g>
+  <g fill="none" stroke="#36b37e" stroke-width="3" opacity="0.65">
+    <path d="M120,540 C260,420 480,440 660,520 C820,590 1010,550 1120,420" />
+    <path d="M80,600 C260,480 560,500 920,640" opacity="0.5" />
+  </g>
+  <g fill="none" stroke="#ff6f61" stroke-width="2" opacity="0.55">
+    <path d="M200,360 C380,260 620,320 820,260" />
+    <path d="M300,440 C520,380 760,420 980,360" opacity="0.6" />
+  </g>
+  <g opacity="0.75">
+    <circle cx="1060" cy="520" r="90" fill="rgba(255,255,255,0.12)" />
+    <circle cx="1020" cy="520" r="45" fill="rgba(0,118,255,0.45)" />
+  </g>
+</svg>
