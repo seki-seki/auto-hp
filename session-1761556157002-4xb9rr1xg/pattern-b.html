@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia LLC - 価値創造を通じた不動産・建築・広告事業</title>
+    <style>
+        :root {
+            --primary-color: #2C5F7C;
+            --secondary-color: #E8A962;
+            --accent-color: #4A8FA0;
+            --text-color: #333333;
+            --text-light: #666666;
+            --bg-light: #F8F9FA;
+            --bg-section: #E8EFF3;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .logo-sub {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            display: block;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: var(--bg-light);
+            color: var(--primary-color);
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .phone-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--accent-color);
+        }
+
+        /* Hero Section - Split Layout */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 600px;
+            align-items: center;
+        }
+
+        .hero-content {
+            padding: 4rem 3rem;
+            background: var(--primary-color);
+            color: var(--white);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-subtitle {
+            font-size: 0.875rem;
+            letter-spacing: 0.3em;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-button-primary,
+        .hero-button-secondary {
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .hero-button-primary {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        .hero-button-primary:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .hero-button-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .hero-button-secondary:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        .hero-image {
+            height: 100%;
+            background: url('images/hero-b.jpg') center/cover no-repeat;
+            min-height: 600px;
+        }
+
+        /* Section Common */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-subtitle {
+            font-size: 0.875rem;
+            letter-spacing: 0.3em;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--text-light);
+        }
+
+        /* Services Section - Grid Layout */
+        .services {
+            background: var(--white);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 2px solid var(--bg-light);
+            border-radius: 10px;
+            padding: 2.5rem;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(44, 95, 124, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--bg-section);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* About Section - 2 Column */
+        .about {
+            background: var(--bg-section);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+
+        .about-image {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .company-details {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .detail-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--bg-light);
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .detail-value {
+            color: var(--text-light);
+        }
+
+        /* Features Section - 3 Column Cards */
+        .features {
+            background: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-section);
+            border-radius: 10px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-10px);
+        }
+
+        .feature-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            transition: color 0.3s;
+        }
+
+        .feature-card:hover .feature-number {
+            color: var(--white);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
+
+        .feature-card:hover h3 {
+            color: var(--white);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            transition: color 0.3s;
+        }
+
+        .feature-card:hover p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Message Section - 2 Column */
+        .message {
+            background: var(--bg-section);
+        }
+
+        .message-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .message-aside {
+            text-align: center;
+        }
+
+        .message-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .representative-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        .representative-title {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .message-content {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .message-content p {
+            color: var(--text-light);
+            line-height: 2;
+            margin-bottom: 1.5rem;
+        }
+
+        /* CTA Section - Grid */
+        .cta-section {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .cta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 10px;
+        }
+
+        .contact-method {
+            margin-bottom: 2rem;
+        }
+
+        .contact-method h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .contact-method .large {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+
+        .contact-method a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .contact-hours {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin-top: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-white,
+        .btn-outline {
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        .btn-white:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Access Section - Grid */
+        .access {
+            background: var(--white);
+        }
+
+        .access-grid {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .access-info {
+            background: var(--bg-section);
+            padding: 2.5rem;
+            border-radius: 10px;
+        }
+
+        .access-info h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-label {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            font-size: 1rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #1A3A4D;
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image {
+                min-height: 400px;
+            }
+
+            .about-grid,
+            .cta-grid,
+            .message-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .access-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                Gaia LLC
+                <span class="logo-sub">合同会社ガイア</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">会社概要</a></li>
+                    <li><a href="#services">事業内容</a></li>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#message">メッセージ</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:0961234567" class="phone-link">📞 096-123-4567</a>
+                <a href="#contact" class="cta-button">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">VALUE CREATION</p>
+            <h1 class="hero-title">価値創造</h1>
+            <p class="hero-description">
+                不動産・建築・広告のプロフェッショナルとして、お客様に最適な価値を創造し、未来を形にします。感性と価値の裏付けをサービスに。
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="hero-button-primary">事業内容を見る</a>
+                <a href="#contact" class="hero-button-secondary">お問い合わせ</a>
+            </div>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle">SERVICES</p>
+                <h2 class="section-title">事業内容</h2>
+                <p class="section-description">多角的な事業展開により、お客様のあらゆるニーズにお応えします</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>不動産事業</h3>
+                    <p>独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応致します。お客様にとって最適な価値の創造を常に考え提案し形にします。</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📐</div>
+                    <h3>建築の工事設計</h3>
+                    <p>最高のデザインと独自性を追求し、Design × Placeをコンセプトに建築の工事設計を手がけます。自由な創造力で、唯一無二の空間を提供します。</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🪧</div>
+                    <h3>広告看板事業</h3>
+                    <p>お客様の希望の看板広告を独自のデザインで最適化し不動産条件も含め他にはない唯一無二の広告を提案。デジタルでは再現できない独自性を実現します。</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>保険関連事業</h3>
+                    <p>生命保険募集業務及び損害保険代理店事業を通じて、お客様の大切な資産と未来を守るサポートを提供致します。</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>不動産コンサルタント</h3>
+                    <p>豊富な経験と専門知識を活かし、不動産に関する様々な課題解決をサポート。住宅地・別荘地の開発造成も手がけます。</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h3>住宅地・別荘地の開発</h3>
+                    <p>豊かな自然環境と利便性を兼ね備えた、理想の住環境を提案。長期的な価値を見据えた開発造成を行います。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="section-subtitle">COMPANY</p>
+                    <h3>会社概要</h3>
+                    <p>
+                        合同会社ガイアは、平成25年11月1日に設立された、不動産・建築・広告を中心とした総合サービス企業です。
+                    </p>
+                    <p>
+                        「価値を創造し、社会に還元すること」を使命とし、お客様の期待を超える新たな価値を生み出すことに注力しています。
+                    </p>
+                    <p>
+                        独自のネットワークと専門知識を活かし、不動産事業から建築設計、広告看板事業まで、幅広い分野でサービスを提供しています。
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <div class="company-details">
+                        <div class="detail-item">
+                            <div class="detail-label">会社名</div>
+                            <div class="detail-value">合同会社ガイア（Gaia LLC）</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">代表社員</div>
+                            <div class="detail-value">井上真意</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">資本金</div>
+                            <div class="detail-value">200万円</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">設立日</div>
+                            <div class="detail-value">平成25年11月1日</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">法人番号</div>
+                            <div class="detail-value">5330003005421</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">所在地</div>
+                            <div class="detail-value">〒862-0924<br>熊本県熊本市中央区帯山５丁目３８番２５号</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle">FEATURES</p>
+                <h2 class="section-title">Gaiaの強み</h2>
+                <p class="section-description">感性と価値の裏付けをサービスに</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Design × Place</h3>
+                    <p>最高のデザインと独自性を追求し、場所の特性を活かした唯一無二の価値を創造します</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>自由な創造力</h3>
+                    <p>既成概念にとらわれない自由な発想で、お客様の期待を超える提案を実現します</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>独自のネットワーク</h3>
+                    <p>長年培ってきた信頼関係とネットワークで、最適なソリューションを提供します</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section id="message" class="message">
+        <div class="section-container">
+            <div class="message-grid">
+                <div class="message-aside">
+                    <p class="section-subtitle">MESSAGE</p>
+                    <h2 class="message-title">代表メッセージ</h2>
+                    <p class="representative-name">井上真意</p>
+                    <p class="representative-title">代表社員</p>
+                </div>
+
+                <div class="message-content">
+                    <p>
+                        私たちの使命は「価値を創造し、社会に還元すること」です。
+                    </p>
+                    <p>
+                        激しく変化する現代社会において、単にモノやサービスを提供するだけではなく、人々の期待を超える「新たな価値」を生み出すことこそが企業に求められる本質的な役割だと私たちは考えています。
+                    </p>
+                    <p>
+                        創業以来、私たちは常に「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切にしながら事業を展開してまいりました。
+                    </p>
+                    <p>
+                        お客様、パートナー企業、そして地域社会とのつながりを大切にし、共に成長していける関係を築いていくことが、さらなる価値創造につながると確信しております。
+                    </p>
+                    <p>
+                        これからも変化を恐れず挑戦を続け、持続可能な社会の実現に貢献してまいります。皆様にとってなくてはならない存在であり続けるために、社員一同、心を一つにして邁進してまいります。
+                    </p>
+                    <p>
+                        今後とも一層のご支援とご指導を賜りますよう、よろしくお願い申し上げます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="section-container">
+            <div class="cta-grid">
+                <div class="cta-content">
+                    <h2>お問い合わせ</h2>
+                    <p>
+                        ご相談・お見積もりは無料です。<br>
+                        お気軽にお問い合わせください。
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="mailto:info@gaia-llc.jp" class="btn-white">メールでお問い合わせ</a>
+                        <a href="tel:0961234567" class="btn-outline">お電話でお問い合わせ</a>
+                    </div>
+                </div>
+
+                <div class="cta-contact-info">
+                    <div class="contact-method">
+                        <h3>お電話でのお問い合わせ</h3>
+                        <p class="large"><a href="tel:0961234567">096-123-4567</a></p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>メールでのお問い合わせ</h3>
+                        <p class="large"><a href="mailto:info@gaia-llc.jp">info@gaia-llc.jp</a></p>
+                    </div>
+
+                    <div class="contact-hours">
+                        <p>受付時間：平日 9:00 - 18:00</p>
+                        <p>※土日祝日はお休みをいただいております</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="access">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle">ACCESS</p>
+                <h2 class="section-title">アクセス</h2>
+            </div>
+
+            <div class="access-grid">
+                <div class="access-info">
+                    <h3>所在地情報</h3>
+                    <div class="info-item">
+                        <p class="info-label">会社名</p>
+                        <p class="info-value">合同会社ガイア（Gaia LLC）</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="info-label">郵便番号</p>
+                        <p class="info-value">〒862-0924</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="info-label">住所</p>
+                        <p class="info-value">熊本県熊本市中央区帯山５丁目３８番２５号</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="info-label">電話番号</p>
+                        <p class="info-value">096-123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="info-label">営業時間</p>
+                        <p class="info-value">平日 9:00 - 18:00</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.1234567890123!2d130.7234567890123!3d32.789012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ3JzIwLjQiTiAxMzDCsDQzJzI0LjQiRQ!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Gaia LLC</h3>
+                    <p>合同会社ガイア</p>
+                    <p>〒862-0924<br>熊本県熊本市中央区帯山５丁目３８番２５号</p>
+                    <p>TEL: 096-123-4567</p>
+                    <p>営業時間：平日 9:00 - 18:00</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>事業内容</h3>
+                    <ul>
+                        <li><a href="#services">不動産事業</a></li>
+                        <li><a href="#services">建築の工事設計</a></li>
+                        <li><a href="#services">広告看板事業</a></li>
+                        <li><a href="#services">保険関連事業</a></li>
+                        <li><a href="#services">不動産コンサルタント</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>サイトマップ</h3>
+                    <ul>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#services">事業内容</a></li>
+                        <li><a href="#features">特徴</a></li>
+                        <li><a href="#message">メッセージ</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <ul>
+                        <li><a href="tel:0961234567">📞 096-123-4567</a></li>
+                        <li><a href="mailto:info@gaia-llc.jp">📧 info@gaia-llc.jp</a></li>
+                        <li><a href="#contact">お問い合わせフォーム</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gaia LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .feature-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
