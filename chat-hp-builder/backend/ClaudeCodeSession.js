@@ -28,6 +28,7 @@ class ClaudeCodeSession {
       "acceptEdits",
       "--allowed-tools",
       "Bash(curl:*)",
+      "Bash(convert:*)",
       "Bash(mkdir:*)",
       "Bash(cp:*)",
       "Bash(npm:*)",
