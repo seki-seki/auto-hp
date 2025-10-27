@@ -21,26 +21,10 @@ class ClaudeCodeSession {
     console.log(`[${this.sessionId}] Output dir: ${this.outputDir}`);
 
     // Claude Codeをptyで起動（Maxプランは認証済みなのでAPIキー不要）
-    // --permission-mode acceptEdits: すべての編集を自動許可
-    // --allowed-tools: HP作成に必要なツールを列挙
+    // --permission-mode bypassPermissions: すべてのパーミッションチェックをバイパス
     const claudeArgs = [
       "--permission-mode",
-      "acceptEdits",
-      "--allowed-tools",
-      "Bash(curl:*)",
-      "Bash(convert:*)",
-      "Bash(mkdir:*)",
-      "Bash(cp:*)",
-      "Bash(npm:*)",
-      "Bash(node:*)",
-      "Bash(ls:*)",
-      "Bash(cat:*)",
-      "Bash(tree:*)",
-      "Edit",
-      "Write",
-      "Read",
-      "Glob",
-      "Grep",
+      "bypassPermissions",
     ];
 
     this.ptyProcess = pty.spawn("claude", claudeArgs, {
