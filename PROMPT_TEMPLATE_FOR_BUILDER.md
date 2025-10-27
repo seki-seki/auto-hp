@@ -1,4 +1,4 @@
-# ホームページ作成プロンプトテンプレート
+# ホームページ作成プロンプトテンプレート（Chat HP Builder用）
 
 このテンプレートは、Claude Codeにホームページを作成させる際に使用します。
 
@@ -352,8 +352,6 @@
    ls -lh dist/[client-name]/images/
    # hero-a.jpg, hero-b.jpg, hero-c.jpg が存在することを確認
    ```
-
-8. デプロイ準備完了（`npm run deploy` で即座にデプロイ可能）
 
 【重要】上記の手順に従って、今すぐホームページ作成を開始してください。
 確認や質問は不要です。直ちに作業を進めてください。
@@ -721,45 +719,3 @@ HTML/CSS/JS版で作成してください。
    - 画像最適化
    - CSSの効率化
    - 不要なJavaScriptを避ける
-
----
-
-## デプロイ
-
-上記の手順に従って生成されたファイルは、そのままデプロイ可能です。
-
-### デプロイコマンド
-
-```bash
-# package.jsonに以下のスクリプトがあることを確認
-{
-  "scripts": {
-    "deploy": "gh-pages -d dist"
-  }
-}
-
-# デプロイ実行
-npm run deploy
-```
-
-### デプロイURL
-`https://[username].github.io/[repo-name]/[client-name]/`
-
-### 確認事項
-
-デプロイ後、以下を確認:
-- ✅ index.html（パターンA）がトップページとして表示される
-- ✅ **ヒーロー画像が全パターンで正しく表示されている**
-- ✅ **images/hero-a.jpg, hero-b.jpg, hero-c.jpgが読み込まれている**
-- ✅ ヘッダーナビゲーションで各パターン間を移動できる
-- ✅ CSS/JSが正しく読み込まれている
-- ✅ レスポンシブデザインが機能している
-- ✅ ブラウザの開発者ツールでネットワークエラーがない（画像404エラーなし）
-
-### デプロイ実例
-
-**Gaia LLCの場合:**
-- トップ: https://seki-seki.github.io/auto-hp/gaia-llc/
-- Pattern A: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-a.html
-- Pattern B: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-b.html
-- Pattern C: https://seki-seki.github.io/auto-hp/gaia-llc/pattern-c.html
