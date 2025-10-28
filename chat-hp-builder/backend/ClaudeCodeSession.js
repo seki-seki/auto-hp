@@ -13,6 +13,23 @@ class ClaudeCodeSession {
     this.isProcessing = false;
     this.messageQueue = [];
     this.lastOutputTime = Date.now();
+    this.logCallbacks = []; // ログを受け取るコールバック関数の配列
+  }
+
+  // ログコールバックを登録
+  onLog(callback) {
+    this.logCallbacks.push(callback);
+  }
+
+  // ログを全てのコールバックに送信
+  emitLog(message) {
+    this.logCallbacks.forEach(callback => {
+      try {
+        callback(message);
+      } catch (error) {
+        // コールバックエラーは無視
+      }
+    });
   }
 
   async start() {
@@ -50,11 +67,15 @@ class ClaudeCodeSession {
 
       // 意味のある出力のみログ表示
       // - 5文字以上
-      // - 直前のログと異なる内容、または1秒以上経過
+      // - 直前のログと異なる内容（最初の10文字を比較）、または1秒以上経過
       // - 英数字や記号を含む
       const trimmedData = cleanData.trim();
       const now = Date.now();
-      const isDifferent = trimmedData !== lastLoggedContent;
+
+      // 最初の10文字が同じかチェック（秒数やトークン数の違いを無視）
+      const currentPrefix = trimmedData.substring(0, 10);
+      const lastPrefix = lastLoggedContent.substring(0, 10);
+      const isDifferent = currentPrefix !== lastPrefix;
       const hasCooldownPassed = now - lastLogTime > LOG_COOLDOWN;
 
       if (
@@ -69,6 +90,7 @@ class ClaudeCodeSession {
         }
 
         console.log(`[${this.sessionId}] ${trimmedData}`);
+        this.emitLog(trimmedData); // フロントエンドにも送信
         lastLoggedContent = trimmedData;
         lastLogTime = now;
       }

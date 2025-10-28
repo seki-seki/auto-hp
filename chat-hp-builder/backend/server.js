@@ -16,6 +16,7 @@ app.use('/preview', express.static(path.join(__dirname, '../../dist')));
 // セッション管理
 const sessions = new Map();
 const sessionMessages = new Map(); // メッセージ履歴を保存
+const sessionLogStreams = new Map(); // SSEクライアントを保存
 
 // PROMPT_TEMPLATE_FOR_BUILDERを起動時に読み込む
 let PROMPT_TEMPLATE = '';
@@ -304,6 +305,52 @@ app.post('/api/session/:id/close', async (req, res) => {
   }
 
   res.json({ success: true });
+});
+
+// SSE: リアルタイムログストリーム
+app.get('/api/session/:id/logs', (req, res) => {
+  const sessionId = req.params.id;
+
+  // SSEヘッダーを設定
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+
+  console.log(`[${sessionId}] SSE client connected`);
+
+  // クライアント情報を保存
+  const clientId = Date.now();
+  if (!sessionLogStreams.has(sessionId)) {
+    sessionLogStreams.set(sessionId, new Map());
+  }
+  sessionLogStreams.get(sessionId).set(clientId, res);
+
+  // セッションが存在する場合、ログコールバックを登録
+  const session = sessions.get(sessionId);
+  if (session) {
+    session.onLog((message) => {
+      try {
+        res.write(`data: ${JSON.stringify({ message })}\n\n`);
+      } catch (error) {
+        // クライアントが切断された場合
+      }
+    });
+  }
+
+  // 接続確認メッセージ
+  res.write(`data: ${JSON.stringify({ message: 'Connected to log stream' })}\n\n`);
+
+  // クライアントが切断した時のクリーンアップ
+  req.on('close', () => {
+    console.log(`[${sessionId}] SSE client disconnected`);
+    const clients = sessionLogStreams.get(sessionId);
+    if (clients) {
+      clients.delete(clientId);
+      if (clients.size === 0) {
+        sessionLogStreams.delete(sessionId);
+      }
+    }
+  });
 });
 
 // ヘルスチェック

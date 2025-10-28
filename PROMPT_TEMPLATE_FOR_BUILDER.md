@@ -407,19 +407,94 @@
    - 一般企業: `office`, `workspace`, `team`, `professional`
 
    ```bash
-   # 必ず実行してください！
+   # 【超重要】画像ダウンロードと検証スクリプト - 必ず実行してください！
+
    mkdir -p dist/[client-name]/images
 
-   # 業種に合わせて画像をダウンロード
-   # 例: 企業・不動産の場合
-   curl -L -o dist/[client-name]/images/hero-a.jpg "https://source.unsplash.com/1920x1080/?office-building,architecture"
-   curl -L -o dist/[client-name]/images/hero-b.jpg "https://source.unsplash.com/1920x1080/?modern-building,business"
-   curl -L -o dist/[client-name]/images/hero-c.jpg "https://source.unsplash.com/1920x1080/?architecture,cityscape"
+   # 画像ダウンロード関数（検証付き）
+   # 引数: $1=出力ファイル名, $2=キーワード1, $3=キーワード2（オプション）
+   download_and_verify_image() {
+       local output_file="$1"
+       local keyword1="$2"
+       local keyword2="${3:-}"
 
-   # 例: 保育園の場合
-   # curl -L -o dist/[client-name]/images/hero-a.jpg "https://source.unsplash.com/1920x1080/?children-playing,kindergarten"
-   # curl -L -o dist/[client-name]/images/hero-b.jpg "https://source.unsplash.com/1920x1080/?happy-kids,playground"
-   # curl -L -o dist/[client-name]/images/hero-c.jpg "https://source.unsplash.com/1920x1080/?children-learning,education"
+       # LoremFlickrで業種別画像をダウンロード
+       local url="https://loremflickr.com/1920/1080/${keyword1}"
+       if [ -n "$keyword2" ]; then
+           url="https://loremflickr.com/1920/1080/${keyword1},${keyword2}"
+       fi
+
+       echo "📥 Downloading: $url"
+       curl -L -s -o "$output_file" "$url"
+
+       # ダウンロードしたファイルが本当に画像かチェック
+       local file_type=$(file -b "$output_file" | grep -i "image\|jpeg\|jpg\|png")
+
+       if [ -n "$file_type" ]; then
+           echo "✅ Success: $output_file is a valid image"
+           return 0
+       else
+           echo "❌ Error: $output_file is NOT an image (got: $(file -b "$output_file" | head -c 50))"
+           echo "🔄 Retrying with Picsum as fallback..."
+
+           # フォールバック: Picsumを使用（seedは元のファイル名からハッシュ生成）
+           local seed=$(echo "$output_file" | md5sum | cut -c1-8)
+           curl -L -s -o "$output_file" "https://picsum.photos/seed/${seed}/1920/1080"
+
+           file_type=$(file -b "$output_file" | grep -i "image\|jpeg\|jpg\|png")
+           if [ -n "$file_type" ]; then
+               echo "✅ Fallback success: $output_file"
+               return 0
+           else
+               echo "❌ Fallback failed: $output_file"
+               return 1
+           fi
+       fi
+   }
+
+   # 業種を判定してキーワードを設定
+   # 事業内容から判断して以下のいずれかを使用：
+
+   # 企業・不動産の場合（Gaia LLCなど）
+   INDUSTRY_TYPE="corporate"
+   HERO_KEYWORDS=("office" "building" "architecture" "business" "workspace" "cityscape")
+   SERVICE_KEYWORDS=("office" "meeting" "construction" "design" "teamwork" "professional")
+
+   # 保育園・福祉の場合
+   # INDUSTRY_TYPE="childcare"
+   # HERO_KEYWORDS=("children" "playground" "kindergarten" "education" "kids" "learning")
+   # SERVICE_KEYWORDS=("classroom" "toys" "playground" "teacher" "children" "activities")
+
+   # 医療機関の場合
+   # INDUSTRY_TYPE="medical"
+   # HERO_KEYWORDS=("hospital" "medical" "healthcare" "clinic" "doctor" "wellness")
+   # SERVICE_KEYWORDS=("medical" "equipment" "doctor" "clinic" "healthcare" "treatment")
+
+   # 飲食店の場合
+   # INDUSTRY_TYPE="restaurant"
+   # HERO_KEYWORDS=("restaurant" "food" "dining" "cuisine" "chef" "kitchen")
+   # SERVICE_KEYWORDS=("food" "plate" "cooking" "restaurant" "dish" "ingredients")
+
+   echo "🎨 Downloading images for industry type: $INDUSTRY_TYPE"
+
+   # ヒーロー画像（3パターン）
+   download_and_verify_image "dist/[client-name]/images/hero-1.jpg" "${HERO_KEYWORDS[0]}" "${HERO_KEYWORDS[1]}"
+   download_and_verify_image "dist/[client-name]/images/hero-2.jpg" "${HERO_KEYWORDS[2]}" "${HERO_KEYWORDS[3]}"
+   download_and_verify_image "dist/[client-name]/images/hero-3.jpg" "${HERO_KEYWORDS[4]}" "${HERO_KEYWORDS[5]}"
+
+   # サービス画像（4枚）
+   download_and_verify_image "dist/[client-name]/images/service-1.jpg" "${SERVICE_KEYWORDS[0]}"
+   download_and_verify_image "dist/[client-name]/images/service-2.jpg" "${SERVICE_KEYWORDS[1]}"
+   download_and_verify_image "dist/[client-name]/images/service-3.jpg" "${SERVICE_KEYWORDS[2]}"
+   download_and_verify_image "dist/[client-name]/images/service-4.jpg" "${SERVICE_KEYWORDS[3]}"
+
+   # 最終確認
+   echo ""
+   echo "📊 Final verification:"
+   ls -lh dist/[client-name]/images/
+   echo ""
+   echo "🔍 File types:"
+   file dist/[client-name]/images/*.jpg
    ```
 
 6. **パターンA、B、Cの純粋版を作成（pattern-{a,b,c}.html）**
@@ -433,6 +508,7 @@
    - pattern-{a,b,c}.htmlのコンテンツをそのままコピー
    - 最上部に**パターン切り替えナビゲーション**を追加
    - サイト本来のヘッダーを下にずらすため `body { padding-top: 3rem; }` を追加
+   - **重要**: JavaScriptで動的にコンテンツを読み込む場合、`:contains()`セレクタは使用しないこと（標準CSSセレクタではない）
    - **これらはプレビュー専用です**
 
 8. **`index.html` を作成（リダイレクト専用）**
@@ -531,15 +607,15 @@
 
 ### ステップ1: 業種の特定と適切なキーワードの選定
 
-事業内容Markdownから業種を特定し、以下のキーワードマッピングを使用してください：
+事業内容Markdownから業種を特定し、以下のキーワードマッピングを使用してください（LoremFlickr用）：
 
-| 業種 | パターンA キーワード | パターンB キーワード | パターンC キーワード |
-|------|---------------------|---------------------|---------------------|
-| 企業・不動産 | office-building,architecture | modern-building,business | architecture,cityscape |
-| 保育園・福祉 | children-playing,kindergarten | happy-kids,playground | children-learning,education |
-| 医療機関 | hospital,medical-clinic | healthcare,clean-environment | medical-technology,care |
-| 飲食店 | restaurant,food | dining,chef | culinary,cuisine |
-| 一般企業 | office,workspace | team,professional | business,collaboration |
+| 業種 | ヒーロー画像キーワード例 | サービス画像キーワード例 |
+|------|---------------------|---------------------|
+| 企業・不動産 | office+building, architecture+business, workspace+cityscape | office, meeting, construction, design |
+| 保育園・福祉 | children+playground, kindergarten+education, kids+learning | classroom, toys, playground, teacher |
+| 医療機関 | hospital+medical, healthcare+clinic, doctor+wellness | medical, equipment, clinic, treatment |
+| 飲食店 | restaurant+food, dining+chef, cuisine+kitchen | food, plate, cooking, dish |
+| 一般企業 | office+workspace, team+professional, business+collaboration | office, teamwork, meeting, workspace |
 
 ### ステップ2: images/ディレクトリの作成と画像ダウンロード
 
@@ -547,11 +623,21 @@
 # ディレクトリ作成
 mkdir -p dist/[client-name]/images
 
-# 業種に合わせてUnsplash Source APIから画像をダウンロード（必須）
-# 例: 企業・不動産の場合（Gaia LLCなど）
-curl -L -o dist/[client-name]/images/hero-a.jpg "https://source.unsplash.com/1920x1080/?office-building,architecture"
-curl -L -o dist/[client-name]/images/hero-b.jpg "https://source.unsplash.com/1920x1080/?modern-building,business"
-curl -L -o dist/[client-name]/images/hero-c.jpg "https://source.unsplash.com/1920x1080/?architecture,cityscape"
+# 画像をダウンロード（LoremFlickrを使用・検証付き・必須）
+# 上記で定義したdownload_and_verify_image関数を使用
+# 業種に応じてキーワードを変更してください
+
+# 例: 企業・不動産の場合
+download_and_verify_image "dist/[client-name]/images/hero-1.jpg" "office" "building"
+download_and_verify_image "dist/[client-name]/images/hero-2.jpg" "architecture" "business"
+download_and_verify_image "dist/[client-name]/images/hero-3.jpg" "workspace" "cityscape"
+download_and_verify_image "dist/[client-name]/images/service-1.jpg" "office"
+download_and_verify_image "dist/[client-name]/images/service-2.jpg" "meeting"
+download_and_verify_image "dist/[client-name]/images/service-3.jpg" "construction"
+download_and_verify_image "dist/[client-name]/images/service-4.jpg" "design"
+
+# 検証
+file dist/[client-name]/images/*.jpg
 ```
 
 ### ステップ3: HTMLでの実装（必須）

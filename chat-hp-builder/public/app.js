@@ -3,6 +3,7 @@ let sessionId = null;
 let messages = [];
 let currentPreviewUrl = null;
 let hasPreview = false; // プレビューが表示されたかどうか
+let activeEventSource = null; // SSE接続を保持
 
 // DOM要素
 const chatMessages = document.getElementById('chat-messages');
@@ -82,6 +83,34 @@ async function handleSend() {
   // ローディングインジケーターを表示
   const loadingId = addLoadingIndicator();
 
+  // 既存セッションの場合、SSE接続を確立
+  if (sessionId && !activeEventSource) {
+    try {
+      activeEventSource = new EventSource(`/api/session/${sessionId}/logs`);
+
+      activeEventSource.onmessage = (event) => {
+        try {
+          const logData = JSON.parse(event.data);
+          updateLoadingIndicator(loadingId, logData.message);
+        } catch (error) {
+          console.error('Error parsing SSE message:', error);
+        }
+      };
+
+      activeEventSource.onerror = (error) => {
+        console.error('SSE connection error:', error);
+        if (activeEventSource) {
+          activeEventSource.close();
+          activeEventSource = null;
+        }
+      };
+
+      console.log('SSE connection established');
+    } catch (error) {
+      console.error('Failed to establish SSE connection:', error);
+    }
+  }
+
   try {
     // APIリクエスト
     const isFirstMessage = messages.length === 1; // ユーザーメッセージを1つ追加した直後
@@ -129,6 +158,13 @@ async function handleSend() {
     removeLoadingIndicator(loadingId);
     addMessage('assistant', `❌ Error: ${error.message}`);
   } finally {
+    // Close SSE connection
+    if (activeEventSource) {
+      activeEventSource.close();
+      activeEventSource = null;
+      console.log('SSE connection closed');
+    }
+
     // UI復元
     chatInput.disabled = false;
     sendBtn.disabled = false;
@@ -184,6 +220,17 @@ function removeLoadingIndicator(loadingId) {
   const loadingDiv = document.getElementById(loadingId);
   if (loadingDiv) {
     loadingDiv.remove();
+  }
+}
+
+// ローディングインジケーターのテキストを更新
+function updateLoadingIndicator(loadingId, message) {
+  const loadingDiv = document.getElementById(loadingId);
+  if (loadingDiv) {
+    const span = loadingDiv.querySelector('span');
+    if (span) {
+      span.textContent = message;
+    }
   }
 }
 
