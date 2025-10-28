@@ -42,8 +42,9 @@
 
 # 出力先
 `dist/[client-name]/` （例: `dist/gaia-llc/`）
-- **index.html** - パターン切り替え機能付きのトップページ（pattern-aのコンテンツ + パターン切り替えヘッダー）
-- **pattern-a.html, pattern-b.html, pattern-c.html** - 各パターンの純粋なページ（サイト本来のヘッダーのみ、パターン切り替えヘッダーなし）
+- **index.html** - pattern-a-with-nav.htmlへのリダイレクトページ
+- **pattern-a.html, pattern-b.html, pattern-c.html** - 各パターンの純粋なページ（サイト本来のヘッダーのみ、パターン切り替えナビゲーションなし）**【最終納品用】**
+- **pattern-a-with-nav.html, pattern-b-with-nav.html, pattern-c-with-nav.html** - プレビュー用（パターン切り替えナビゲーション付き）
 - **images/** （ヒーロー画像やその他の画像を配置）
 
 # 作成パターン
@@ -148,15 +149,18 @@
 - フォルダ構成:
   ```
   dist/[client-name]/
-  ├── index.html              # パターンAと同じ内容（トップページ）
-  ├── pattern-a.html          # パターンA（ナビゲーション付き）
-  ├── pattern-b.html          # パターンB（ナビゲーション付き）
-  ├── pattern-c.html          # パターンC（ナビゲーション付き）
-  ├── images/                 # 【必須】画像ファイル
-  │   ├── hero-a.jpg          # パターンA用ヒーロー画像
-  │   ├── hero-b.jpg          # パターンB用ヒーロー画像
-  │   ├── hero-c.jpg          # パターンC用ヒーロー画像
-  │   └── placeholder.jpg     # 汎用プレースホルダー
+  ├── index.html                      # リダイレクト用HTMLファイル（pattern-a-with-nav.htmlへ）
+  ├── pattern-a.html                  # パターンA（ナビなし・最終納品用）
+  ├── pattern-b.html                  # パターンB（ナビなし・最終納品用）
+  ├── pattern-c.html                  # パターンC（ナビなし・最終納品用）
+  ├── pattern-a-with-nav.html         # パターンA（ナビあり・プレビュー用）
+  ├── pattern-b-with-nav.html         # パターンB（ナビあり・プレビュー用）
+  ├── pattern-c-with-nav.html         # パターンC（ナビあり・プレビュー用）
+  ├── images/                         # 【必須】画像ファイル
+  │   ├── hero-a.jpg                  # パターンA用ヒーロー画像
+  │   ├── hero-b.jpg                  # パターンB用ヒーロー画像
+  │   ├── hero-c.jpg                  # パターンC用ヒーロー画像
+  │   └── placeholder.jpg             # 汎用プレースホルダー
   ├── css/
   │   ├── pattern-a/
   │   │   ├── reset.css
@@ -201,63 +205,35 @@
    - `dist/[client-name]/` （統合出力ディレクトリ）
 
 2. **ディレクトリ内容**
-   - `index.html` - パターン切り替え機能付きトップページ（後述の仕様参照）
-   - `pattern-a.html` - パターンA（サイト本来のヘッダーのみ）
-   - `pattern-b.html` - パターンB（サイト本来のヘッダーのみ）
-   - `pattern-c.html` - パターンC（サイト本来のヘッダーのみ）
+   - `index.html` - リダイレクト専用ページ（pattern-a-with-nav.htmlへリダイレクト）
+   - `pattern-a.html` - パターンA（純粋版・最終納品用）
+   - `pattern-b.html` - パターンB（純粋版・最終納品用）
+   - `pattern-c.html` - パターンC（純粋版・最終納品用）
+   - `pattern-a-with-nav.html` - パターンA（プレビュー用・パターン切り替えナビゲーション付き）
+   - `pattern-b-with-nav.html` - パターンB（プレビュー用・パターン切り替えナビゲーション付き）
+   - `pattern-c-with-nav.html` - パターンC（プレビュー用・パターン切り替えナビゲーション付き）
    - `css/pattern-{a,b,c}/` - 各パターンのCSS
    - `js/pattern-{a,b,c}/` - 各パターンのJS
 
-3. **index.htmlの構造（パターン切り替え機能付き）**
-
-   index.htmlのみにパターン切り替え用のヘッダーを含めます：
+3. **index.htmlの構造（リダイレクト専用）**
 
    ```html
    <!DOCTYPE html>
    <html lang="ja">
    <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>[クライアント名]</title>
-     <link rel="stylesheet" href="css/pattern-a/reset.css">
-     <link rel="stylesheet" href="css/pattern-a/variables.css">
-     <link rel="stylesheet" href="css/pattern-a/style.css">
-     <link rel="stylesheet" href="css/pattern-a/responsive.css">
+     <meta http-equiv="refresh" content="0; url=pattern-a-with-nav.html">
+     <title>Redirecting...</title>
    </head>
    <body>
-     <!-- パターン切り替え用ヘッダー（index.htmlのみ） -->
-     <header class="pattern-switcher-header">
-       <div class="header-inner">
-         <a href="index.html" class="logo">[クライアント名]</a>
-         <nav class="pattern-nav">
-           <a href="index.html" style="font-weight: 700; color: var(--color-accent);">Pattern A</a>
-           <a href="pattern-b.html">Pattern B</a>
-           <a href="pattern-c.html">Pattern C</a>
-         </nav>
-       </div>
-     </header>
-
-     <!-- ここから下はpattern-a.htmlと同じコンテンツ -->
-     <header class="site-header">
-       <!-- サイト本来のヘッダー -->
-     </header>
-
-     <main>
-       <!-- pattern-aのコンテンツ -->
-     </main>
-
-     <footer>
-       <!-- フッター -->
-     </footer>
-
-     <script src="js/pattern-a/main.js"></script>
+     <p>Redirecting to <a href="pattern-a-with-nav.html">Pattern A</a>...</p>
    </body>
    </html>
    ```
 
-4. **pattern-a/b/c.htmlの構造（サイト本来のヘッダーのみ）**
+4. **pattern-{a,b,c}.htmlの構造（純粋版・最終納品用）**
 
-   pattern-a/b/c.htmlにはパターン切り替えヘッダーを含めず、サイト本来のヘッダーのみを配置：
+   サイト本来のヘッダーのみ。パターン切り替えナビゲーションは含まない：
 
    ```html
    <!DOCTYPE html>
@@ -272,7 +248,7 @@
      <link rel="stylesheet" href="css/pattern-a/responsive.css">
    </head>
    <body>
-     <!-- サイト本来のヘッダー（パターン切り替えヘッダーなし） -->
+     <!-- サイト本来のヘッダー -->
      <header class="site-header">
        <div class="header-inner">
          <a href="#" class="logo">[クライアント名]</a>
@@ -298,11 +274,97 @@
    </html>
    ```
 
-5. **CSS/JSパス**
-   - index.html: `css/pattern-a/`, `js/pattern-a/`（Pattern Aと同じスタイル）
-   - pattern-a.html: `css/pattern-a/`, `js/pattern-a/`
-   - pattern-b.html: `css/pattern-b/`, `js/pattern-b/`
-   - pattern-c.html: `css/pattern-c/`, `js/pattern-c/`
+5. **pattern-{a,b,c}-with-nav.htmlの構造（プレビュー用）**
+
+   pattern-{a,b,c}.htmlと同じコンテンツに加えて、最上部にパターン切り替えナビゲーションを追加：
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="ja">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>[クライアント名] - Pattern A</title>
+     <link rel="stylesheet" href="css/pattern-a/reset.css">
+     <link rel="stylesheet" href="css/pattern-a/variables.css">
+     <link rel="stylesheet" href="css/pattern-a/style.css">
+     <link rel="stylesheet" href="css/pattern-a/responsive.css">
+     <style>
+       /* パターン切り替えナビゲーション用のスタイル */
+       .pattern-switcher-nav {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background: linear-gradient(135deg, #2c5282 0%, #4a90a4 100%);
+         color: white;
+         z-index: 10000;
+         padding: 0.8rem 2rem;
+         box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+       }
+       .pattern-switcher-nav .nav-inner {
+         max-width: 1200px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       .pattern-switcher-nav a {
+         color: white;
+         text-decoration: none;
+         padding: 0.5rem 1rem;
+         border-radius: 5px;
+         transition: background 0.3s;
+       }
+       .pattern-switcher-nav a:hover {
+         background: rgba(255,255,255,0.2);
+       }
+       .pattern-switcher-nav a.active {
+         background: white;
+         color: #2c5282;
+         font-weight: bold;
+       }
+       /* サイト本来のヘッダーを下にずらす */
+       body {
+         padding-top: 3rem;
+       }
+     </style>
+   </head>
+   <body>
+     <!-- パターン切り替えナビゲーション（プレビュー用） -->
+     <nav class="pattern-switcher-nav">
+       <div class="nav-inner">
+         <span>デザインパターン選択:</span>
+         <div>
+           <a href="pattern-a-with-nav.html" class="active">Pattern A</a>
+           <a href="pattern-b-with-nav.html">Pattern B</a>
+           <a href="pattern-c-with-nav.html">Pattern C</a>
+         </div>
+       </div>
+     </nav>
+
+     <!-- 以下、pattern-a.htmlと同じ内容 -->
+     <header class="site-header">
+       <!-- サイト本来のヘッダー -->
+     </header>
+
+     <main>
+       <!-- コンテンツ -->
+     </main>
+
+     <footer>
+       <!-- フッター -->
+     </footer>
+
+     <script src="js/pattern-a/main.js"></script>
+   </body>
+   </html>
+   ```
+
+6. **CSS/JSパス**
+   - pattern-a.html / pattern-a-with-nav.html: `css/pattern-a/`, `js/pattern-a/`
+   - pattern-b.html / pattern-b-with-nav.html: `css/pattern-b/`, `js/pattern-b/`
+   - pattern-c.html / pattern-c-with-nav.html: `css/pattern-c/`, `js/pattern-c/`
 
 # 実行手順
 
@@ -336,18 +398,24 @@
    # curl -L -o dist/[client-name]/images/hero-c.jpg "https://source.unsplash.com/1920x1080/?children-learning,education"
    ```
 
-6. **パターンA、B、Cをそれぞれ作成（pattern-{a,b,c}.html）**
-   - **【重要】各HTMLにはサイト本来のヘッダーのみを含める（パターン切り替えヘッダーは含めない）**
+6. **パターンA、B、Cの純粋版を作成（pattern-{a,b,c}.html）**
+   - **【重要】各HTMLにはサイト本来のヘッダーのみを含める（パターン切り替えナビゲーションは含めない）**
    - **【必須】各HTMLに必ず `<img src="images/hero-X.jpg" class="hero-image">` タグを含める**
    - 学習データのレイアウトパターンを参考に、レイアウトを忠実に再現
    - CSS/JSは `css/pattern-{a,b,c}/`, `js/pattern-{a,b,c}/` に配置
+   - **これらが最終納品用のファイルです**
 
-7. **`index.html` を作成**
-   - pattern-a.htmlのコンテンツをベースにする
-   - **パターン切り替え用ヘッダー**を最上部に追加
-   - その下にサイト本来のヘッダーとコンテンツを配置
+7. **パターンA、B、Cのプレビュー版を作成（pattern-{a,b,c}-with-nav.html）**
+   - pattern-{a,b,c}.htmlのコンテンツをそのままコピー
+   - 最上部に**パターン切り替えナビゲーション**を追加
+   - サイト本来のヘッダーを下にずらすため `body { padding-top: 3rem; }` を追加
+   - **これらはプレビュー専用です**
 
-8. **画像の存在確認**
+8. **`index.html` を作成（リダイレクト専用）**
+   - pattern-a-with-nav.htmlへの自動リダイレクト
+   - `<meta http-equiv="refresh" content="0; url=pattern-a-with-nav.html">` を使用
+
+9. **画像の存在確認**
    ```bash
    ls -lh dist/[client-name]/images/
    # hero-a.jpg, hero-b.jpg, hero-c.jpg が存在することを確認
