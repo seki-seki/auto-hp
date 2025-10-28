@@ -1,0 +1,315 @@
+uid=0 body
+  uid=1 div
+    uid=2 div
+      uid=3 div
+  uid=4 script
+  uid=5 div
+    uid=6 article
+      uid=7 section "Drive to the Future
+					走り続ける人の力になりたい"
+        uid=8 div "Drive to the Future
+					走り続ける人の力になりたい"
+          uid=9 div
+            uid=10 div
+              uid=11 video
+          uid=12 div "Drive to the Future
+					走り続ける人の力になりたい"
+            uid=13 div "Drive to the Future"
+            uid=14 div "走り続ける人の力になりたい"
+      uid=15 section
+        uid=16 div
+          uid=17 div "G-STYLEKUMAMOTO"
+            uid=18 div
+              uid=19 span
+            uid=20 div
+              uid=21 img
+            uid=22 div "G-STYLEKUMAMOTO"
+              uid=23 span "G-STYLEKUMAMOTO"
+                uid=24 br
+          uid=25 div
+            uid=26 div
+              uid=27 div
+                uid=28 div "OUR MISSION"
+                uid=29 h3 "安全・快適なトータルカーライフを過ごして頂くために"
+                  uid=30 br
+              uid=31 div
+                uid=32 p
+            uid=33 div
+              uid=34 ul
+                uid=35 button "Previous"
+                uid=36 div
+                  uid=37 listbox
+                    uid=38 li
+                      uid=39 div
+                        uid=40 a
+                          uid=41 span
+                            uid=42 span
+                          uid=43 div
+                            uid=44 h4 "メンテナンス"
+                            uid=45 p "板金修理・レッカー対応可能車検整備・保険"
+                    uid=46 option
+                      uid=47 div
+                        uid=48 a
+                          uid=49 span
+                            uid=50 span
+                          uid=51 div
+                            uid=52 h4 "長期レンタカー"
+                            uid=53 p "長期レンタカー専門店「熊本レンタカー」"
+                    uid=54 option
+                      uid=55 div
+                        uid=56 a
+                          uid=57 span
+                            uid=58 span
+                          uid=59 div
+                            uid=60 h4 "カーエアコンサービス"
+                            uid=61 p "次世代冷媒のエアコン整備・燃費改善"
+                    uid=62 option
+                      uid=63 div
+                        uid=64 a
+                          uid=65 span
+                            uid=66 span
+                          uid=67 div
+                            uid=68 h4 "ケータリングカー製作"
+                            uid=69 p "オリジナル移動販売の製作・改造・レンタル"
+                    uid=70 option "車買取販売
+											
+												無料買取査定・中古車オークション中古車"
+                      uid=71 div "車買取販売
+											
+												無料買取査定・中古車オークション中古車"
+                        uid=72 a "車買取販売
+											
+												無料買取査定・中古車オークション中古車"
+                          uid=73 span
+                            uid=74 span
+                          uid=75 div "車買取販売
+											
+												無料買取査定・中古車オークション中古車"
+                            uid=76 h4 "車買取販売"
+                            uid=77 p "無料買取査定・中古車オークション中古車"
+                    uid=78 option
+                      uid=79 div
+                        uid=80 a
+                          uid=81 span
+                            uid=82 span
+                          uid=83 div
+                            uid=84 h4 "メンテナンス"
+                            uid=85 p "板金修理・レッカー対応可能車検整備・保険"
+                    uid=86 li
+                      uid=87 div
+                        uid=88 a
+                          uid=89 span
+                            uid=90 span
+                          uid=91 div
+                            uid=92 h4 "長期レンタカー"
+                            uid=93 p "長期レンタカー専門店「熊本レンタカー」"
+                uid=94 button "Next"
+      uid=95 section
+        uid=96 div
+          uid=97 h2 "選ばれる理由"
+            uid=98 img
+            uid=99 span "選ばれる理由"
+          uid=100 div "中古車を中心に目指すは地域No.1店"
+          uid=101 p
+            uid=102 br
+          uid=103 div
+            uid=104 ul
+              uid=105 li "Interview with customer
+									お客様との面談"
+                uid=106 a "Interview with customer
+									お客様との面談"
+                  uid=107 dl "Interview with customer
+									お客様との面談"
+                    uid=108 dt "Interview with customer"
+                    uid=109 dd "お客様との面談"
+              uid=110 li "Cost reduction
+									厳選仕入れ＋コスト削減"
+                uid=111 a "Cost reduction
+									厳選仕入れ＋コスト削減"
+                  uid=112 dl "Cost reduction
+									厳選仕入れ＋コスト削減"
+                    uid=113 dt "Cost reduction"
+                    uid=114 dd "厳選仕入れ＋コスト削減"
+              uid=115 li "Cleared the criteria
+									基準クリアの品質"
+                uid=116 a "Cleared the criteria
+									基準クリアの品質"
+                  uid=117 dl "Cleared the criteria
+									基準クリアの品質"
+                    uid=118 dt "Cleared the criteria"
+                    uid=119 dd "基準クリアの品質"
+              uid=120 li "Loan car available
+									代車をご用意"
+                uid=121 a "Loan car available
+									代車をご用意"
+                  uid=122 dl "Loan car available
+									代車をご用意"
+                    uid=123 dt "Loan car available"
+                    uid=124 dd "代車をご用意"
+              uid=125 li "Maintenance Plan
+									ベストな整備プラン"
+                uid=126 a "Maintenance Plan
+									ベストな整備プラン"
+                  uid=127 dl "Maintenance Plan
+									ベストな整備プラン"
+                    uid=128 dt "Maintenance Plan"
+                    uid=129 dd "ベストな整備プラン"
+              uid=130 li "Customer Appreciation Day
+									お客様感謝祭"
+                uid=131 a "Customer Appreciation Day
+									お客様感謝祭"
+                  uid=132 dl "Customer Appreciation Day
+									お客様感謝祭"
+                    uid=133 dt "Customer Appreciation Day"
+                    uid=134 dd "お客様感謝祭"
+      uid=135 section
+        uid=136 div
+          uid=137 h2 "クルマで未来を創造する"
+            uid=138 img
+            uid=139 span "クルマで未来を創造する"
+          uid=140 div
+            uid=141 div
+              uid=142 img
+            uid=143 div
+              uid=144 img
+              uid=145 dl
+                uid=146 dt "会社概要"
+                uid=147 dd
+                  uid=148 br
+              uid=149 div "詳細はこちら"
+                uid=150 a "詳細はこちら"
+                  uid=151 span "詳細はこちら"
+          uid=152 div
+            uid=153 div
+              uid=154 img
+            uid=155 div
+              uid=156 img
+              uid=157 dl
+                uid=158 dt "お問い合わせ"
+                uid=159 dd
+                  uid=160 br
+              uid=161 div "詳細はこちら"
+                uid=162 a "詳細はこちら"
+                  uid=163 span "詳細はこちら"
+          uid=164 div "Kumamoto Rentacar
+							長期専門店熊本レンタカー"
+            uid=165 a "Kumamoto Rentacar
+							長期専門店熊本レンタカー"
+              uid=166 dl "Kumamoto Rentacar
+							長期専門店熊本レンタカー"
+                uid=167 dt "Kumamoto Rentacar"
+                uid=168 dd "長期専門店熊本レンタカー"
+      uid=169 section
+        uid=170 div
+          uid=171 svg
+            uid=172 defs
+              uid=173 clippath
+                uid=174 path
+            uid=175 rect
+            uid=176 g
+              uid=177 image
+        uid=178 div
+          uid=179 h2 "製作実績"
+            uid=180 img
+            uid=181 span "製作実績"
+          uid=182 div "移動販売車・ケータリングカー製作例"
+          uid=183 div
+            uid=184 ul
+              uid=185 li
+                uid=186 div
+                  uid=187 img
+                uid=188 dl
+                  uid=189 dt "キッチンカー"
+                  uid=190 dd "キッチントレーラー"
+                    uid=191 a "キッチントレーラー"
+              uid=192 li
+                uid=193 div
+                  uid=194 img
+                uid=195 dl
+                  uid=196 dt "キッチンカー"
+                  uid=197 dd "キッチントレーラー"
+                    uid=198 a "キッチントレーラー"
+              uid=199 li
+                uid=200 div
+                  uid=201 img
+                uid=202 dl
+                  uid=203 dt "キッチンカー"
+                  uid=204 dd "キッチントレーラー"
+                    uid=205 a "キッチントレーラー"
+          uid=206 div "一覧へ"
+            uid=207 a "一覧へ"
+              uid=208 span "一覧へ"
+      uid=209 section
+        uid=210 img
+      uid=211 section
+        uid=212 div
+          uid=213 div "新着情報NEWS"
+            uid=214 span "新着情報"
+            uid=215 span "NEWS"
+          uid=216 ul
+            uid=217 li
+              uid=218 dl
+                uid=219 dt "2025.05.01"
+                  uid=220 time "2025.05.01"
+                uid=221 dd "スナップオン PSPP134PRO02 導入しました"
+                  uid=222 a "スナップオン PSPP134PRO02 導入しました"
+            uid=223 li "2025.04.12
+							
+									GW期間中の休業日ご案内"
+              uid=224 dl "2025.04.12
+							
+									GW期間中の休業日ご案内"
+                uid=225 dt "2025.04.12"
+                  uid=226 time "2025.04.12"
+                uid=227 dd "GW期間中の休業日ご案内"
+                  uid=228 a "GW期間中の休業日ご案内"
+            uid=229 li "2025.01.01
+							
+									新年のご挨拶申し上げます"
+              uid=230 dl "2025.01.01
+							
+									新年のご挨拶申し上げます"
+                uid=231 dt "2025.01.01"
+                  uid=232 time "2025.01.01"
+                uid=233 dd "新年のご挨拶申し上げます"
+                  uid=234 a "新年のご挨拶申し上げます"
+            uid=235 li "2024.12.02
+							
+									年末年始の休業日ご案内"
+              uid=236 dl "2024.12.02
+							
+									年末年始の休業日ご案内"
+                uid=237 dt "2024.12.02"
+                  uid=238 time "2024.12.02"
+                uid=239 dd "年末年始の休業日ご案内"
+                  uid=240 a "年末年始の休業日ご案内"
+            uid=241 li "2024.08.19
+							
+									KCMフェスティバル2024開催"
+              uid=242 dl "2024.08.19
+							
+									KCMフェスティバル2024開催"
+                uid=243 dt "2024.08.19"
+                  uid=244 time "2024.08.19"
+                uid=245 dd "KCMフェスティバル2024開催"
+                  uid=246 a "KCMフェスティバル2024開催"
+          uid=247 div "一覧へ"
+            uid=248 a "一覧へ"
+              uid=249 span "一覧へ"
+      uid=250 section
+        uid=251 img
+    uid=252 footer
+      uid=253 div
+        uid=254 div
+          uid=255 div "〒862-0916
+						熊本市東区佐土原3丁目3454-1"
+            uid=256 a
+              uid=257 img
+          uid=258 div
+            uid=259 img
+      uid=260 iframe
+      uid=261 p
+        uid=262 small
+          uid=263 a "Higashikaigan Inc."
+            uid=264 span "Higashikaigan Inc."
+    uid=265 span

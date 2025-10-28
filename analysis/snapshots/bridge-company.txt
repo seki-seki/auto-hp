@@ -1,0 +1,220 @@
+uid=0 body
+  uid=1 header
+    uid=2 div
+      uid=3 div
+        uid=4 h1
+    uid=5 div
+      uid=6 script
+      uid=7 script
+      uid=8 div "PrevNext"
+        uid=9 div "PrevNext"
+          uid=10 div
+            uid=11 div
+              uid=12 a
+                uid=13 img
+            uid=14 div
+              uid=15 img
+          uid=16 div "PrevNext"
+            uid=17 div
+              uid=18 ul
+                uid=19 li
+                uid=20 li
+            uid=21 div "PrevNext"
+      uid=22 div "Top
+選ばれる理由
+会社概要
+施工実績
+ブログ"
+        uid=23 nav "Top
+選ばれる理由
+会社概要
+施工実績
+ブログ"
+          uid=24 div "Top
+選ばれる理由
+会社概要
+施工実績
+ブログ"
+            uid=25 ul "Top
+選ばれる理由
+会社概要
+施工実績
+ブログ"
+              uid=26 li "Top"
+                uid=27 a "Top"
+              uid=28 li "選ばれる理由"
+                uid=29 a "選ばれる理由"
+              uid=30 li "会社概要"
+                uid=31 a "会社概要"
+              uid=32 li "施工実績"
+                uid=33 a "施工実績"
+              uid=34 li "ブログ"
+                uid=35 a "ブログ"
+  uid=36 section
+    uid=37 div
+      uid=38 div
+        uid=39 img
+      uid=40 h2 "建物の状況、お客様のご予算に応じた塗料でご提案します。"
+      uid=41 p
+        uid=42 br
+      uid=43 div
+        uid=44 div
+          uid=45 a
+            uid=46 img
+        uid=47 div
+          uid=48 a
+            uid=49 img
+        uid=50 div
+          uid=51 a
+            uid=52 img
+        uid=53 div
+          uid=54 a
+            uid=55 img
+        uid=56 div
+          uid=57 a
+            uid=58 img
+  uid=59 section
+    uid=60 div
+      uid=61 div
+        uid=62 img
+      uid=63 h2 "施工ラインナップ"
+      uid=64 p
+        uid=65 br
+        uid=66 br
+        uid=67 br
+  uid=68 section
+    uid=69 a
+      uid=70 img
+  uid=71 section
+    uid=72 div
+      uid=73 div
+        uid=74 img
+      uid=75 h2 "「確かな施工技術をお値打ち適正価格で」を可能にしております。"
+      uid=76 div
+        uid=77 div
+          uid=78 p
+            uid=79 br
+            uid=80 br
+          uid=81 div "選ばれる理由
+ 施工事例"
+            uid=82 div "選ばれる理由"
+              uid=83 a "選ばれる理由"
+                uid=84 i
+            uid=85 div "施工事例"
+              uid=86 a "施工事例"
+                uid=87 i
+        uid=88 div
+          uid=89 img
+  uid=90 section
+    uid=91 div
+      uid=92 div
+        uid=93 img
+      uid=94 h2
+        uid=95 br
+      uid=96 div
+        uid=97 div
+          uid=98 img
+          uid=99 p
+        uid=100 div
+          uid=101 img
+          uid=102 p
+        uid=103 div
+          uid=104 img
+          uid=105 p
+        uid=106 div
+          uid=107 img
+          uid=108 p
+        uid=109 div
+          uid=110 img
+          uid=111 p
+  uid=112 section
+    uid=113 div
+      uid=114 div
+        uid=115 img
+        uid=116 h2 "太陽光発電システム メンテナンス"
+        uid=117 p
+          uid=118 br
+        uid=119 div "詳しくはこちら"
+          uid=120 a "詳しくはこちら"
+            uid=121 i
+  uid=122 section
+    uid=123 div
+      uid=124 div
+        uid=125 img
+      uid=126 h2 "工事が完了してからが、お客様との本当のお付き合いであると考えています。"
+      uid=127 div
+        uid=128 div
+          uid=129 p
+            uid=130 br
+          uid=131 div "会社概要"
+            uid=132 a "会社概要"
+              uid=133 i
+  uid=134 div
+    uid=135 a
+      uid=136 i
+  uid=137 footer
+    uid=138 div
+      uid=139 div
+        uid=140 div "お問い合わせ"
+          uid=141 div
+            uid=142 div
+              uid=143 a
+                uid=144 img
+          uid=145 div
+            uid=146 img
+          uid=147 div "お問い合わせ"
+            uid=148 a "お問い合わせ"
+        uid=149 nav "Top
+選ばれる理由
+会社概要
+お問い合せ
+施工実績
+ガイナ
+塗装
+太陽光
+リフォーム
+ブログ"
+          uid=150 div "Top
+選ばれる理由
+会社概要
+お問い合せ
+施工実績
+ガイナ
+塗装
+太陽光
+リフォーム
+ブログ"
+            uid=151 ul "Top
+選ばれる理由
+会社概要
+お問い合せ
+施工実績
+ガイナ
+塗装
+太陽光
+リフォーム
+ブログ"
+              uid=152 li "Top"
+                uid=153 a "Top"
+              uid=154 li "選ばれる理由"
+                uid=155 a "選ばれる理由"
+              uid=156 li "会社概要"
+                uid=157 a "会社概要"
+              uid=158 li "お問い合せ"
+                uid=159 a "お問い合せ"
+              uid=160 li "施工実績"
+                uid=161 a "施工実績"
+              uid=162 li "ガイナ"
+                uid=163 a "ガイナ"
+              uid=164 li "塗装"
+                uid=165 a "塗装"
+              uid=166 li "太陽光"
+                uid=167 a "太陽光"
+              uid=168 li "リフォーム"
+                uid=169 a "リフォーム"
+              uid=170 li "ブログ"
+                uid=171 a "ブログ"
+    uid=172 div
+      uid=173 small
+        uid=174 a "Higashikaigan Inc."
+          uid=175 span "Higashikaigan Inc."

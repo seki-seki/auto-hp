@@ -1,0 +1,1442 @@
+[
+  {
+    "site": "大井保育園",
+    "version": "desktop",
+    "filename": "ooi-hoikuen",
+    "url": "https://ooi-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/ooi-hoikuen.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/ooi-hoikuen.txt"
+  },
+  {
+    "site": "大井保育園",
+    "version": "mobile",
+    "filename": "ooi-hoikuen-mobile",
+    "url": "https://ooi-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/ooi-hoikuen-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/ooi-hoikuen-mobile.txt"
+  },
+  {
+    "site": "社会福祉法人ヒトトナリ",
+    "version": "desktop",
+    "filename": "hitotonari",
+    "url": "https://hitotonari.or.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hitotonari.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hitotonari.txt"
+  },
+  {
+    "site": "社会福祉法人ヒトトナリ",
+    "version": "mobile",
+    "filename": "hitotonari-mobile",
+    "url": "https://hitotonari.or.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hitotonari-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hitotonari-mobile.txt"
+  },
+  {
+    "site": "原中央保育園",
+    "version": "desktop",
+    "filename": "harachuou-hoikuen",
+    "url": "https://harachuou-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/harachuou-hoikuen.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/harachuou-hoikuen.txt"
+  },
+  {
+    "site": "原中央保育園",
+    "version": "mobile",
+    "filename": "harachuou-hoikuen-mobile",
+    "url": "https://harachuou-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/harachuou-hoikuen-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/harachuou-hoikuen-mobile.txt"
+  },
+  {
+    "site": "医療法人徳治会",
+    "version": "desktop",
+    "filename": "motoki-ortho",
+    "url": "https://motoki-ortho.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-ortho.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-ortho.txt"
+  },
+  {
+    "site": "医療法人徳治会",
+    "version": "mobile",
+    "filename": "motoki-ortho-mobile",
+    "url": "https://motoki-ortho.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-ortho-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-ortho-mobile.txt"
+  },
+  {
+    "site": "まごころ保育園",
+    "version": "desktop",
+    "filename": "magokoro-hoikuen",
+    "url": "https://magokoro-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/magokoro-hoikuen.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/magokoro-hoikuen.txt"
+  },
+  {
+    "site": "まごころ保育園",
+    "version": "mobile",
+    "filename": "magokoro-hoikuen-mobile",
+    "url": "https://magokoro-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/magokoro-hoikuen-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/magokoro-hoikuen-mobile.txt"
+  },
+  {
+    "site": "熊本空港レンタカー",
+    "version": "desktop",
+    "filename": "kumamotokuukou-rentacar",
+    "url": "https://kumamoto-rentacar.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kumamotokuukou-rentacar.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kumamotokuukou-rentacar.txt"
+  },
+  {
+    "site": "熊本空港レンタカー",
+    "version": "mobile",
+    "filename": "kumamotokuukou-rentacar-mobile",
+    "url": "https://kumamoto-rentacar.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kumamotokuukou-rentacar-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kumamotokuukou-rentacar-mobile.txt"
+  },
+  {
+    "site": "空港前保育園",
+    "version": "desktop",
+    "filename": "kukomae-hoikuen",
+    "url": "https://kukomae-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kukomae-hoikuen.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kukomae-hoikuen.txt"
+  },
+  {
+    "site": "空港前保育園",
+    "version": "mobile",
+    "filename": "kukomae-hoikuen-mobile",
+    "url": "https://kukomae-hoikuen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kukomae-hoikuen-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kukomae-hoikuen-mobile.txt"
+  },
+  {
+    "site": "医療法人徳治会",
+    "version": "desktop",
+    "filename": "motoki-implant",
+    "url": "https://www.motoki-implant.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-implant.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-implant.txt"
+  },
+  {
+    "site": "医療法人徳治会",
+    "version": "mobile",
+    "filename": "motoki-implant-mobile",
+    "url": "https://www.motoki-implant.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-implant-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-implant-mobile.txt"
+  },
+  {
+    "site": "宗像市株式会社KKS（海神）",
+    "version": "desktop",
+    "filename": "kks-wadatsumi",
+    "url": "https://kks-wadatsumi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kks-wadatsumi.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kks-wadatsumi.txt"
+  },
+  {
+    "site": "宗像市株式会社KKS（海神）",
+    "version": "mobile",
+    "filename": "kks-wadatsumi-mobile",
+    "url": "https://kks-wadatsumi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kks-wadatsumi-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kks-wadatsumi-mobile.txt"
+  },
+  {
+    "site": "小倉南区株式会社ヤスキグループ",
+    "version": "desktop",
+    "filename": "yasuki-group",
+    "url": "https://yasuki-group.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yasuki-group.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yasuki-group.txt"
+  },
+  {
+    "site": "小倉南区株式会社ヤスキグループ",
+    "version": "mobile",
+    "filename": "yasuki-group-mobile",
+    "url": "https://yasuki-group.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yasuki-group-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yasuki-group-mobile.txt"
+  },
+  {
+    "site": "医療法人徳治会",
+    "version": "desktop",
+    "filename": "motoki-dental-prevention",
+    "url": "https://www.motoki-dental-prevention.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-dental-prevention.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-dental-prevention.txt"
+  },
+  {
+    "site": "医療法人徳治会",
+    "version": "mobile",
+    "filename": "motoki-dental-prevention-mobile",
+    "url": "https://www.motoki-dental-prevention.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-dental-prevention-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-dental-prevention-mobile.txt"
+  },
+  {
+    "site": "博多区株式会社フードチャンネル",
+    "version": "desktop",
+    "filename": "food-ch",
+    "url": "https://food-ch.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/food-ch.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/food-ch.txt"
+  },
+  {
+    "site": "博多区株式会社フードチャンネル",
+    "version": "mobile",
+    "filename": "food-ch-mobile",
+    "url": "https://food-ch.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/food-ch-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/food-ch-mobile.txt"
+  },
+  {
+    "site": "宮崎市一口餃子の大明神",
+    "version": "desktop",
+    "filename": "daimyojin",
+    "url": "https://daimyojin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/daimyojin.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/daimyojin.txt"
+  },
+  {
+    "site": "宮崎市一口餃子の大明神",
+    "version": "mobile",
+    "filename": "daimyojin-mobile",
+    "url": "https://daimyojin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/daimyojin-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/daimyojin-mobile.txt"
+  },
+  {
+    "site": "朝倉市株式会社えん",
+    "version": "desktop",
+    "filename": "en-corporation",
+    "url": "https://en-corporation.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/en-corporation.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/en-corporation.txt"
+  },
+  {
+    "site": "朝倉市株式会社えん",
+    "version": "mobile",
+    "filename": "en-corporation-mobile",
+    "url": "https://en-corporation.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/en-corporation-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/en-corporation-mobile.txt"
+  },
+  {
+    "site": "株式会社ミナタ工業",
+    "version": "desktop",
+    "filename": "minata",
+    "url": "https://minata.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/minata.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/minata.txt"
+  },
+  {
+    "site": "株式会社ミナタ工業",
+    "version": "mobile",
+    "filename": "minata-mobile",
+    "url": "https://minata.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/minata-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/minata-mobile.txt"
+  },
+  {
+    "site": "春日市はらだ歯科",
+    "version": "desktop",
+    "filename": "harada-dentalclinic",
+    "url": "https://harada-dentalclinic.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/harada-dentalclinic.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/harada-dentalclinic.txt"
+  },
+  {
+    "site": "春日市はらだ歯科",
+    "version": "mobile",
+    "filename": "harada-dentalclinic-mobile",
+    "url": "https://harada-dentalclinic.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/harada-dentalclinic-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/harada-dentalclinic-mobile.txt"
+  },
+  {
+    "site": "宇佐市末宗建設株式会社",
+    "version": "desktop",
+    "filename": "suemune",
+    "url": "https://suemune.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/suemune.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/suemune.txt"
+  },
+  {
+    "site": "宇佐市末宗建設株式会社",
+    "version": "mobile",
+    "filename": "suemune-mobile",
+    "url": "https://suemune.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/suemune-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/suemune-mobile.txt"
+  },
+  {
+    "site": "税理士法人TIC",
+    "version": "desktop",
+    "filename": "tictax",
+    "url": "https://tictax.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tictax.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tictax.txt"
+  },
+  {
+    "site": "税理士法人TIC",
+    "version": "mobile",
+    "filename": "tictax-mobile",
+    "url": "https://tictax.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tictax-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tictax-mobile.txt"
+  },
+  {
+    "site": "延岡市株式会社黒田建築",
+    "version": "desktop",
+    "filename": "kurodakenchiku",
+    "url": "https://kurodakenchiku.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kurodakenchiku.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kurodakenchiku.txt"
+  },
+  {
+    "site": "延岡市株式会社黒田建築",
+    "version": "mobile",
+    "filename": "kurodakenchiku-mobile",
+    "url": "https://kurodakenchiku.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kurodakenchiku-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kurodakenchiku-mobile.txt"
+  },
+  {
+    "site": "小倉北区有吉祐睡眠クリニック",
+    "version": "desktop",
+    "filename": "you-sleepclinic",
+    "url": "https://you-sleepclinic.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/you-sleepclinic.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/you-sleepclinic.txt"
+  },
+  {
+    "site": "小倉北区有吉祐睡眠クリニック",
+    "version": "mobile",
+    "filename": "you-sleepclinic-mobile",
+    "url": "https://you-sleepclinic.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/you-sleepclinic-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/you-sleepclinic-mobile.txt"
+  },
+  {
+    "site": "朝倉市からだよかよね",
+    "version": "desktop",
+    "filename": "yokayone",
+    "url": "https://yokayone.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yokayone.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yokayone.txt"
+  },
+  {
+    "site": "朝倉市からだよかよね",
+    "version": "mobile",
+    "filename": "yokayone-mobile",
+    "url": "https://yokayone.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yokayone-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yokayone-mobile.txt"
+  },
+  {
+    "site": "那珂川市株式会社三正",
+    "version": "desktop",
+    "filename": "sanshou340",
+    "url": "https://sanshou340.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sanshou340.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sanshou340.txt"
+  },
+  {
+    "site": "那珂川市株式会社三正",
+    "version": "mobile",
+    "filename": "sanshou340-mobile",
+    "url": "https://sanshou340.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sanshou340-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sanshou340-mobile.txt"
+  },
+  {
+    "site": "門司区医療法人辻医院",
+    "version": "desktop",
+    "filename": "tsuji-clinic",
+    "url": "https://tsuji-iin.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tsuji-clinic.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tsuji-clinic.txt"
+  },
+  {
+    "site": "門司区医療法人辻医院",
+    "version": "mobile",
+    "filename": "tsuji-clinic-mobile",
+    "url": "https://tsuji-iin.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tsuji-clinic-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tsuji-clinic-mobile.txt"
+  },
+  {
+    "site": "株式会社優和コンサルティング",
+    "version": "desktop",
+    "filename": "yuuwa-consulting",
+    "url": "https://yuuwa-consulting.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yuuwa-consulting.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yuuwa-consulting.txt"
+  },
+  {
+    "site": "株式会社優和コンサルティング",
+    "version": "mobile",
+    "filename": "yuuwa-consulting-mobile",
+    "url": "https://yuuwa-consulting.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yuuwa-consulting-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yuuwa-consulting-mobile.txt"
+  },
+  {
+    "site": "株式会社羽野組",
+    "version": "desktop",
+    "filename": "hanogumi",
+    "url": "https://hanogumi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanogumi.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanogumi.txt"
+  },
+  {
+    "site": "株式会社羽野組",
+    "version": "mobile",
+    "filename": "hanogumi-mobile",
+    "url": "https://hanogumi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanogumi-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanogumi-mobile.txt"
+  },
+  {
+    "site": "小倉北区株式会社connecthome",
+    "version": "desktop",
+    "filename": "connecthome",
+    "url": "https://connecthome.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/connecthome.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/connecthome.txt"
+  },
+  {
+    "site": "小倉北区株式会社connecthome",
+    "version": "mobile",
+    "filename": "connecthome-mobile",
+    "url": "https://connecthome.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/connecthome-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/connecthome-mobile.txt"
+  },
+  {
+    "site": "モトキデンタルクリニック",
+    "version": "desktop",
+    "filename": "motoki-dental",
+    "url": "https://motoki-dental.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-dental.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-dental.txt"
+  },
+  {
+    "site": "モトキデンタルクリニック",
+    "version": "mobile",
+    "filename": "motoki-dental-mobile",
+    "url": "https://motoki-dental.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/motoki-dental-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/motoki-dental-mobile.txt"
+  },
+  {
+    "site": "小倉北区ストレスケアクリニック小倉",
+    "version": "desktop",
+    "filename": "s-care-cl-kokura",
+    "url": "https://s-care-cl-kokura.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/s-care-cl-kokura.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/s-care-cl-kokura.txt"
+  },
+  {
+    "site": "小倉北区ストレスケアクリニック小倉",
+    "version": "mobile",
+    "filename": "s-care-cl-kokura-mobile",
+    "url": "https://s-care-cl-kokura.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/s-care-cl-kokura-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/s-care-cl-kokura-mobile.txt"
+  },
+  {
+    "site": "若松区株式会社銘酒館倉松",
+    "version": "desktop",
+    "filename": "kuramatsu",
+    "url": "https://kuramatsu.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kuramatsu.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kuramatsu.txt"
+  },
+  {
+    "site": "若松区株式会社銘酒館倉松",
+    "version": "mobile",
+    "filename": "kuramatsu-mobile",
+    "url": "https://kuramatsu.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kuramatsu-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kuramatsu-mobile.txt"
+  },
+  {
+    "site": "オスカー整骨院 六本松院",
+    "version": "desktop",
+    "filename": "oscar-seikotsu-ropponmatsu",
+    "url": "https://oscar-japan.co.jp/ropponmatsu/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-ropponmatsu.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-ropponmatsu.txt"
+  },
+  {
+    "site": "オスカー整骨院 六本松院",
+    "version": "mobile",
+    "filename": "oscar-seikotsu-ropponmatsu-mobile",
+    "url": "https://oscar-japan.co.jp/ropponmatsu/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-ropponmatsu-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-ropponmatsu-mobile.txt"
+  },
+  {
+    "site": "筑前町株式会社佐藤木材",
+    "version": "desktop",
+    "filename": "sato-mokuzai",
+    "url": "https://sato-mokuzai.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sato-mokuzai.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sato-mokuzai.txt"
+  },
+  {
+    "site": "筑前町株式会社佐藤木材",
+    "version": "mobile",
+    "filename": "sato-mokuzai-mobile",
+    "url": "https://sato-mokuzai.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sato-mokuzai-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sato-mokuzai-mobile.txt"
+  },
+  {
+    "site": "粕屋町株式会社パワーupレンタリース福岡",
+    "version": "desktop",
+    "filename": "powerup-rentacar",
+    "url": "https://powerup-fukuoka.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/powerup-rentacar.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/powerup-rentacar.txt"
+  },
+  {
+    "site": "粕屋町株式会社パワーupレンタリース福岡",
+    "version": "mobile",
+    "filename": "powerup-rentacar-mobile",
+    "url": "https://powerup-fukuoka.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/powerup-rentacar-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/powerup-rentacar-mobile.txt"
+  },
+  {
+    "site": "八幡西区ミクニ建設株式会社",
+    "version": "desktop",
+    "filename": "mikunikensetsu",
+    "url": "https://mikunikensetsu.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/mikunikensetsu.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/mikunikensetsu.txt"
+  },
+  {
+    "site": "八幡西区ミクニ建設株式会社",
+    "version": "mobile",
+    "filename": "mikunikensetsu-mobile",
+    "url": "https://mikunikensetsu.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/mikunikensetsu-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/mikunikensetsu-mobile.txt"
+  },
+  {
+    "site": "博多区株式会社ニシトク",
+    "version": "desktop",
+    "filename": "nishitoku",
+    "url": "https://nishitoku.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/nishitoku.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/nishitoku.txt"
+  },
+  {
+    "site": "博多区株式会社ニシトク",
+    "version": "mobile",
+    "filename": "nishitoku-mobile",
+    "url": "https://nishitoku.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/nishitoku-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/nishitoku-mobile.txt"
+  },
+  {
+    "site": "博多区勝king株式会社",
+    "version": "desktop",
+    "filename": "repeater",
+    "url": "https://repeater.ne.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/repeater.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/repeater.txt"
+  },
+  {
+    "site": "博多区勝king株式会社",
+    "version": "mobile",
+    "filename": "repeater-mobile",
+    "url": "https://repeater.ne.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/repeater-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/repeater-mobile.txt"
+  },
+  {
+    "site": "延岡市株式会社日章ビルテック",
+    "version": "desktop",
+    "filename": "nissho-bt",
+    "url": "https://nissho-bt.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/nissho-bt.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/nissho-bt.txt"
+  },
+  {
+    "site": "延岡市株式会社日章ビルテック",
+    "version": "mobile",
+    "filename": "nissho-bt-mobile",
+    "url": "https://nissho-bt.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/nissho-bt-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/nissho-bt-mobile.txt"
+  },
+  {
+    "site": "株式会社FSKホールディングス",
+    "version": "desktop",
+    "filename": "fsk-kumamoto",
+    "url": "https://fsk-kumamoto.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/fsk-kumamoto.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/fsk-kumamoto.txt"
+  },
+  {
+    "site": "株式会社FSKホールディングス",
+    "version": "mobile",
+    "filename": "fsk-kumamoto-mobile",
+    "url": "https://fsk-kumamoto.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/fsk-kumamoto-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/fsk-kumamoto-mobile.txt"
+  },
+  {
+    "site": "城南区マイスタディ九州",
+    "version": "desktop",
+    "filename": "mystudy-kyushu",
+    "url": "https://mystudy-kyushu.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/mystudy-kyushu.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/mystudy-kyushu.txt"
+  },
+  {
+    "site": "城南区マイスタディ九州",
+    "version": "mobile",
+    "filename": "mystudy-kyushu-mobile",
+    "url": "https://mystudy-kyushu.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/mystudy-kyushu-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/mystudy-kyushu-mobile.txt"
+  },
+  {
+    "site": "大木町株式会社ファーストパック",
+    "version": "desktop",
+    "filename": "firstpack",
+    "url": "https://firstpack.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/firstpack.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/firstpack.txt"
+  },
+  {
+    "site": "大木町株式会社ファーストパック",
+    "version": "mobile",
+    "filename": "firstpack-mobile",
+    "url": "https://firstpack.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/firstpack-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/firstpack-mobile.txt"
+  },
+  {
+    "site": "佐賀市はっとり歯科医院",
+    "version": "desktop",
+    "filename": "hattori-d",
+    "url": "https://hattori-d.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hattori-d.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hattori-d.txt"
+  },
+  {
+    "site": "佐賀市はっとり歯科医院",
+    "version": "mobile",
+    "filename": "hattori-d-mobile",
+    "url": "https://hattori-d.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hattori-d-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hattori-d-mobile.txt"
+  },
+  {
+    "site": "延岡市炭火焼ダイニング禄",
+    "version": "desktop",
+    "filename": "sumibiyaki-roku",
+    "url": "https://sumibiyaki-roku.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sumibiyaki-roku.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sumibiyaki-roku.txt"
+  },
+  {
+    "site": "延岡市炭火焼ダイニング禄",
+    "version": "mobile",
+    "filename": "sumibiyaki-roku-mobile",
+    "url": "https://sumibiyaki-roku.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sumibiyaki-roku-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sumibiyaki-roku-mobile.txt"
+  },
+  {
+    "site": "久留米市梅原建設株式会社",
+    "version": "desktop",
+    "filename": "umehara-cc",
+    "url": "https://umehara-cc.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/umehara-cc.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/umehara-cc.txt"
+  },
+  {
+    "site": "久留米市梅原建設株式会社",
+    "version": "mobile",
+    "filename": "umehara-cc-mobile",
+    "url": "https://umehara-cc.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/umehara-cc-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/umehara-cc-mobile.txt"
+  },
+  {
+    "site": "八幡西区武巳建設株式会社",
+    "version": "desktop",
+    "filename": "takemi-cons",
+    "url": "https://takemi-cons.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/takemi-cons.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/takemi-cons.txt"
+  },
+  {
+    "site": "八幡西区武巳建設株式会社",
+    "version": "mobile",
+    "filename": "takemi-cons-mobile",
+    "url": "https://takemi-cons.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/takemi-cons-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/takemi-cons-mobile.txt"
+  },
+  {
+    "site": "桜一心",
+    "version": "desktop",
+    "filename": "sakura-isshin",
+    "url": "https://sakura-isshin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sakura-isshin.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sakura-isshin.txt"
+  },
+  {
+    "site": "桜一心",
+    "version": "mobile",
+    "filename": "sakura-isshin-mobile",
+    "url": "https://sakura-isshin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sakura-isshin-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sakura-isshin-mobile.txt"
+  },
+  {
+    "site": "筑前町株式会社CENTRY",
+    "version": "desktop",
+    "filename": "centry",
+    "url": "https://centry.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/centry.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/centry.txt"
+  },
+  {
+    "site": "筑前町株式会社CENTRY",
+    "version": "mobile",
+    "filename": "centry-mobile",
+    "url": "https://centry.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/centry-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/centry-mobile.txt"
+  },
+  {
+    "site": "糟屋郡オスカー整骨院 志免院",
+    "version": "desktop",
+    "filename": "oscar-seikotsu-shime",
+    "url": "https://oscar-japan.co.jp/shime/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-shime.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-shime.txt"
+  },
+  {
+    "site": "糟屋郡オスカー整骨院 志免院",
+    "version": "mobile",
+    "filename": "oscar-seikotsu-shime-mobile",
+    "url": "https://oscar-japan.co.jp/shime/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-shime-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-shime-mobile.txt"
+  },
+  {
+    "site": "花田歯科医院 馬出院",
+    "version": "desktop",
+    "filename": "hanada-dental-maidashi",
+    "url": "https://hanada-dental.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanada-dental-maidashi.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanada-dental-maidashi.txt"
+  },
+  {
+    "site": "花田歯科医院 馬出院",
+    "version": "mobile",
+    "filename": "hanada-dental-maidashi-mobile",
+    "url": "https://hanada-dental.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanada-dental-maidashi-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanada-dental-maidashi-mobile.txt"
+  },
+  {
+    "site": "霧島市彩本舗",
+    "version": "desktop",
+    "filename": "irodori-honpo",
+    "url": "https://irodori-honpo.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/irodori-honpo.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/irodori-honpo.txt"
+  },
+  {
+    "site": "霧島市彩本舗",
+    "version": "mobile",
+    "filename": "irodori-honpo-mobile",
+    "url": "https://irodori-honpo.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/irodori-honpo-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/irodori-honpo-mobile.txt"
+  },
+  {
+    "site": "株式会社サステナブル建築研究所",
+    "version": "desktop",
+    "filename": "sal-1996",
+    "url": "https://sal-1996.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sal-1996.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sal-1996.txt"
+  },
+  {
+    "site": "株式会社サステナブル建築研究所",
+    "version": "mobile",
+    "filename": "sal-1996-mobile",
+    "url": "https://sal-1996.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/sal-1996-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/sal-1996-mobile.txt"
+  },
+  {
+    "site": "株式会社ニシジマ",
+    "version": "desktop",
+    "filename": "nishijima-paint",
+    "url": "https://nishijima-paint.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/nishijima-paint.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/nishijima-paint.txt"
+  },
+  {
+    "site": "株式会社ニシジマ",
+    "version": "mobile",
+    "filename": "nishijima-paint-mobile",
+    "url": "https://nishijima-paint.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/nishijima-paint-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/nishijima-paint-mobile.txt"
+  },
+  {
+    "site": "筑前町よね整骨院",
+    "version": "desktop",
+    "filename": "yone-seikotsuin",
+    "url": "https://yone-seikotsuin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yone-seikotsuin.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yone-seikotsuin.txt"
+  },
+  {
+    "site": "筑前町よね整骨院",
+    "version": "mobile",
+    "filename": "yone-seikotsuin-mobile",
+    "url": "https://yone-seikotsuin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yone-seikotsuin-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yone-seikotsuin-mobile.txt"
+  },
+  {
+    "site": "宮崎市光和建装株式会社",
+    "version": "desktop",
+    "filename": "kowakensou",
+    "url": "https://kowakensou.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kowakensou.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kowakensou.txt"
+  },
+  {
+    "site": "宮崎市光和建装株式会社",
+    "version": "mobile",
+    "filename": "kowakensou-mobile",
+    "url": "https://kowakensou.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kowakensou-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kowakensou-mobile.txt"
+  },
+  {
+    "site": "春日市採用サイト オスカー整骨院",
+    "version": "desktop",
+    "filename": "recruit-oscar-japan",
+    "url": "https://recruit.oscar-japan.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/recruit-oscar-japan.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/recruit-oscar-japan.txt"
+  },
+  {
+    "site": "春日市採用サイト オスカー整骨院",
+    "version": "mobile",
+    "filename": "recruit-oscar-japan-mobile",
+    "url": "https://recruit.oscar-japan.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/recruit-oscar-japan-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/recruit-oscar-japan-mobile.txt"
+  },
+  {
+    "site": "春日市株式会社オスカージャパン",
+    "version": "desktop",
+    "filename": "oscar-japan",
+    "url": "https://oscar-japan.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-japan.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-japan.txt"
+  },
+  {
+    "site": "春日市株式会社オスカージャパン",
+    "version": "mobile",
+    "filename": "oscar-japan-mobile",
+    "url": "https://oscar-japan.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-japan-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-japan-mobile.txt"
+  },
+  {
+    "site": "久留米市オスカー整骨院 久留米院",
+    "version": "desktop",
+    "filename": "oscar-seikotsuin-kurume",
+    "url": "https://oscar-japan.co.jp/kurume/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsuin-kurume.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsuin-kurume.txt"
+  },
+  {
+    "site": "久留米市オスカー整骨院 久留米院",
+    "version": "mobile",
+    "filename": "oscar-seikotsuin-kurume-mobile",
+    "url": "https://oscar-japan.co.jp/kurume/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsuin-kurume-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsuin-kurume-mobile.txt"
+  },
+  {
+    "site": "宗像市めし処 春乃日",
+    "version": "desktop",
+    "filename": "meshidokoro-harunohi",
+    "url": "https://meshidokoro-harunohi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/meshidokoro-harunohi.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/meshidokoro-harunohi.txt"
+  },
+  {
+    "site": "宗像市めし処 春乃日",
+    "version": "mobile",
+    "filename": "meshidokoro-harunohi-mobile",
+    "url": "https://meshidokoro-harunohi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/meshidokoro-harunohi-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/meshidokoro-harunohi-mobile.txt"
+  },
+  {
+    "site": "春日市花田歯科医院 春日院",
+    "version": "desktop",
+    "filename": "hanada-dental-kasuga",
+    "url": "https://hanada-dental.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanada-dental-kasuga.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanada-dental-kasuga.txt"
+  },
+  {
+    "site": "春日市花田歯科医院 春日院",
+    "version": "mobile",
+    "filename": "hanada-dental-kasuga-mobile",
+    "url": "https://hanada-dental.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanada-dental-kasuga-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanada-dental-kasuga-mobile.txt"
+  },
+  {
+    "site": "肉のひみつ基地",
+    "version": "desktop",
+    "filename": "29kichi",
+    "url": "https://29kichi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/29kichi.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/29kichi.txt"
+  },
+  {
+    "site": "肉のひみつ基地",
+    "version": "mobile",
+    "filename": "29kichi-mobile",
+    "url": "https://29kichi.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/29kichi-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/29kichi-mobile.txt"
+  },
+  {
+    "site": "若松区若戸整骨院",
+    "version": "desktop",
+    "filename": "wakato-seikotsuin",
+    "url": "https://wakato-seikotsuin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/wakato-seikotsuin.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/wakato-seikotsuin.txt"
+  },
+  {
+    "site": "若松区若戸整骨院",
+    "version": "mobile",
+    "filename": "wakato-seikotsuin-mobile",
+    "url": "https://wakato-seikotsuin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/wakato-seikotsuin-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/wakato-seikotsuin-mobile.txt"
+  },
+  {
+    "site": "若松区昇真s'ダイニング我笑",
+    "version": "desktop",
+    "filename": "dining-gaya",
+    "url": "https://dining-gaya.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/dining-gaya.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/dining-gaya.txt"
+  },
+  {
+    "site": "若松区昇真s'ダイニング我笑",
+    "version": "mobile",
+    "filename": "dining-gaya-mobile",
+    "url": "https://dining-gaya.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/dining-gaya-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/dining-gaya-mobile.txt"
+  },
+  {
+    "site": "株式会社Gスタイル熊本",
+    "version": "desktop",
+    "filename": "gstyle-kumamoto",
+    "url": "https://g-style111.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/gstyle-kumamoto.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/gstyle-kumamoto.txt"
+  },
+  {
+    "site": "株式会社Gスタイル熊本",
+    "version": "mobile",
+    "filename": "gstyle-kumamoto-mobile",
+    "url": "https://g-style111.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/gstyle-kumamoto-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/gstyle-kumamoto-mobile.txt"
+  },
+  {
+    "site": "株式会社野口建設",
+    "version": "desktop",
+    "filename": "noguchi-kensetu",
+    "url": "https://noguchi-kensetu.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/noguchi-kensetu.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/noguchi-kensetu.txt"
+  },
+  {
+    "site": "株式会社野口建設",
+    "version": "mobile",
+    "filename": "noguchi-kensetu-mobile",
+    "url": "https://noguchi-kensetu.co.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/noguchi-kensetu-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/noguchi-kensetu-mobile.txt"
+  },
+  {
+    "site": "株式会社yach",
+    "version": "desktop",
+    "filename": "yach-film",
+    "url": "https://yach-film.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yach-film.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yach-film.txt"
+  },
+  {
+    "site": "株式会社yach",
+    "version": "mobile",
+    "filename": "yach-film-mobile",
+    "url": "https://yach-film.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yach-film-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yach-film-mobile.txt"
+  },
+  {
+    "site": "株式会社FSK",
+    "version": "desktop",
+    "filename": "fsk-clean",
+    "url": "https://fsk-clean.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/fsk-clean.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/fsk-clean.txt"
+  },
+  {
+    "site": "株式会社FSK",
+    "version": "mobile",
+    "filename": "fsk-clean-mobile",
+    "url": "https://fsk-clean.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/fsk-clean-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/fsk-clean-mobile.txt"
+  },
+  {
+    "site": "Ballet Ecrin-エクラン-",
+    "version": "desktop",
+    "filename": "ecrin-ballet",
+    "url": "https://ecrin-ballet.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/ecrin-ballet.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/ecrin-ballet.txt"
+  },
+  {
+    "site": "Ballet Ecrin-エクラン-",
+    "version": "mobile",
+    "filename": "ecrin-ballet-mobile",
+    "url": "https://ecrin-ballet.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/ecrin-ballet-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/ecrin-ballet-mobile.txt"
+  },
+  {
+    "site": "SMART×SMART",
+    "version": "desktop",
+    "filename": "s-m-a-r-t",
+    "url": "https://s-m-a-r-t.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/s-m-a-r-t.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/s-m-a-r-t.txt"
+  },
+  {
+    "site": "SMART×SMART",
+    "version": "mobile",
+    "filename": "s-m-a-r-t-mobile",
+    "url": "https://s-m-a-r-t.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/s-m-a-r-t-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/s-m-a-r-t-mobile.txt"
+  },
+  {
+    "site": "すいれん法律事務所",
+    "version": "desktop",
+    "filename": "suiren-law",
+    "url": "https://suiren-law.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/suiren-law.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/suiren-law.txt"
+  },
+  {
+    "site": "すいれん法律事務所",
+    "version": "mobile",
+    "filename": "suiren-law-mobile",
+    "url": "https://suiren-law.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/suiren-law-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/suiren-law-mobile.txt"
+  },
+  {
+    "site": "八幡東区医療法人田原整形外科医院",
+    "version": "desktop",
+    "filename": "tahara-seikeigeka",
+    "url": "https://tahara-seikeigeka.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tahara-seikeigeka.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tahara-seikeigeka.txt"
+  },
+  {
+    "site": "八幡東区医療法人田原整形外科医院",
+    "version": "mobile",
+    "filename": "tahara-seikeigeka-mobile",
+    "url": "https://tahara-seikeigeka.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tahara-seikeigeka-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tahara-seikeigeka-mobile.txt"
+  },
+  {
+    "site": "春日市オスカー整骨院 春日院",
+    "version": "desktop",
+    "filename": "oscar-seikotsu-kasuga",
+    "url": "https://oscar-japan.co.jp/kasuga/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-kasuga.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-kasuga.txt"
+  },
+  {
+    "site": "春日市オスカー整骨院 春日院",
+    "version": "mobile",
+    "filename": "oscar-seikotsu-kasuga-mobile",
+    "url": "https://oscar-japan.co.jp/kasuga/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-kasuga-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-kasuga-mobile.txt"
+  },
+  {
+    "site": "八幡東区デイサービスセンターたはら",
+    "version": "desktop",
+    "filename": "tahara-dayservice",
+    "url": "https://tahara-dayservice.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tahara-dayservice.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tahara-dayservice.txt"
+  },
+  {
+    "site": "八幡東区デイサービスセンターたはら",
+    "version": "mobile",
+    "filename": "tahara-dayservice-mobile",
+    "url": "https://tahara-dayservice.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tahara-dayservice-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tahara-dayservice-mobile.txt"
+  },
+  {
+    "site": "八幡東区メディカルセンタースマート",
+    "version": "desktop",
+    "filename": "tahara-smart",
+    "url": "https://tahara-smart.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tahara-smart.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tahara-smart.txt"
+  },
+  {
+    "site": "八幡東区メディカルセンタースマート",
+    "version": "mobile",
+    "filename": "tahara-smart-mobile",
+    "url": "https://tahara-smart.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tahara-smart-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tahara-smart-mobile.txt"
+  },
+  {
+    "site": "小倉南区やす鍼灸整骨院",
+    "version": "desktop",
+    "filename": "yasu-shinkyuseikotsuin",
+    "url": "https://yasu-shinkyuseikotsuin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yasu-shinkyuseikotsuin.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yasu-shinkyuseikotsuin.txt"
+  },
+  {
+    "site": "小倉南区やす鍼灸整骨院",
+    "version": "mobile",
+    "filename": "yasu-shinkyuseikotsuin-mobile",
+    "url": "https://yasu-shinkyuseikotsuin.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yasu-shinkyuseikotsuin-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yasu-shinkyuseikotsuin-mobile.txt"
+  },
+  {
+    "site": "日置市大工の内野",
+    "version": "desktop",
+    "filename": "kagoshima-daiku",
+    "url": "https://kagoshima-daiku.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kagoshima-daiku.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kagoshima-daiku.txt"
+  },
+  {
+    "site": "日置市大工の内野",
+    "version": "mobile",
+    "filename": "kagoshima-daiku-mobile",
+    "url": "https://kagoshima-daiku.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kagoshima-daiku-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kagoshima-daiku-mobile.txt"
+  },
+  {
+    "site": "筑紫野市オスカー整骨院 二日市院",
+    "version": "desktop",
+    "filename": "oscar-seikotsu-futsukaichi",
+    "url": "https://oscar-japan.co.jp/futsukaichi/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-futsukaichi.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-futsukaichi.txt"
+  },
+  {
+    "site": "筑紫野市オスカー整骨院 二日市院",
+    "version": "mobile",
+    "filename": "oscar-seikotsu-futsukaichi-mobile",
+    "url": "https://oscar-japan.co.jp/futsukaichi/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-futsukaichi-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-futsukaichi-mobile.txt"
+  },
+  {
+    "site": "株式会社後藤純志建築設計事務所",
+    "version": "desktop",
+    "filename": "goto-sekkei",
+    "url": "https://goto-sekkei.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/goto-sekkei.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/goto-sekkei.txt"
+  },
+  {
+    "site": "株式会社後藤純志建築設計事務所",
+    "version": "mobile",
+    "filename": "goto-sekkei-mobile",
+    "url": "https://goto-sekkei.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/goto-sekkei-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/goto-sekkei-mobile.txt"
+  },
+  {
+    "site": "宇佐市株式会社いもとや",
+    "version": "desktop",
+    "filename": "imotoya",
+    "url": "http://www.imotoya.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/imotoya.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/imotoya.txt"
+  },
+  {
+    "site": "宇佐市株式会社いもとや",
+    "version": "mobile",
+    "filename": "imotoya-mobile",
+    "url": "http://www.imotoya.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/imotoya-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/imotoya-mobile.txt"
+  },
+  {
+    "site": "早良区オスカー整骨院 飯倉院",
+    "version": "desktop",
+    "filename": "oscar-seikotsu-iikura",
+    "url": "https://oscar-japan.co.jp/iikura/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-iikura.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-iikura.txt"
+  },
+  {
+    "site": "早良区オスカー整骨院 飯倉院",
+    "version": "mobile",
+    "filename": "oscar-seikotsu-iikura-mobile",
+    "url": "https://oscar-japan.co.jp/iikura/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/oscar-seikotsu-iikura-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/oscar-seikotsu-iikura-mobile.txt"
+  },
+  {
+    "site": "城南区株式会社グランムート",
+    "version": "desktop",
+    "filename": "grandmut",
+    "url": "https://grandmut.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/grandmut.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/grandmut.txt"
+  },
+  {
+    "site": "城南区株式会社グランムート",
+    "version": "mobile",
+    "filename": "grandmut-mobile",
+    "url": "https://grandmut.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/grandmut-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/grandmut-mobile.txt"
+  },
+  {
+    "site": "株式会社ティーエムシー",
+    "version": "desktop",
+    "filename": "tmc-fudousan",
+    "url": "https://www.tmc-fudousan.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tmc-fudousan.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tmc-fudousan.txt"
+  },
+  {
+    "site": "株式会社ティーエムシー",
+    "version": "mobile",
+    "filename": "tmc-fudousan-mobile",
+    "url": "https://www.tmc-fudousan.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/tmc-fudousan-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/tmc-fudousan-mobile.txt"
+  },
+  {
+    "site": "小倉北区勝しんきゅう整骨院",
+    "version": "desktop",
+    "filename": "katsushin516",
+    "url": "https://katsushin516.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/katsushin516.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/katsushin516.txt"
+  },
+  {
+    "site": "小倉北区勝しんきゅう整骨院",
+    "version": "mobile",
+    "filename": "katsushin516-mobile",
+    "url": "https://katsushin516.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/katsushin516-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/katsushin516-mobile.txt"
+  },
+  {
+    "site": "熊本市東区熊本レンタカー",
+    "version": "desktop",
+    "filename": "kumamoto-rentacar",
+    "url": "https://g-style111.jp/kumamoto-rentacar/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kumamoto-rentacar.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kumamoto-rentacar.txt"
+  },
+  {
+    "site": "熊本市東区熊本レンタカー",
+    "version": "mobile",
+    "filename": "kumamoto-rentacar-mobile",
+    "url": "https://g-style111.jp/kumamoto-rentacar/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kumamoto-rentacar-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kumamoto-rentacar-mobile.txt"
+  },
+  {
+    "site": "宗像市九蘭会",
+    "version": "desktop",
+    "filename": "kyurankai",
+    "url": "https://kyurankai.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kyurankai.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kyurankai.txt"
+  },
+  {
+    "site": "宗像市九蘭会",
+    "version": "mobile",
+    "filename": "kyurankai-mobile",
+    "url": "https://kyurankai.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kyurankai-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kyurankai-mobile.txt"
+  },
+  {
+    "site": "城南区株式会社店創ニュートン",
+    "version": "desktop",
+    "filename": "dnote-office",
+    "url": "http://dnote-office.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/dnote-office.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/dnote-office.txt"
+  },
+  {
+    "site": "城南区株式会社店創ニュートン",
+    "version": "mobile",
+    "filename": "dnote-office-mobile",
+    "url": "http://dnote-office.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/dnote-office-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/dnote-office-mobile.txt"
+  },
+  {
+    "site": "八幡東区SMART×SMART LP",
+    "version": "desktop",
+    "filename": "restart-diet",
+    "url": "https://restart-diet.s-m-a-r-t.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/restart-diet.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/restart-diet.txt"
+  },
+  {
+    "site": "八幡東区SMART×SMART LP",
+    "version": "mobile",
+    "filename": "restart-diet-mobile",
+    "url": "https://restart-diet.s-m-a-r-t.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/restart-diet-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/restart-diet-mobile.txt"
+  },
+  {
+    "site": "八幡西区一般社団法人北九州法面防災協会",
+    "version": "desktop",
+    "filename": "kitakyushu-norimen",
+    "url": "https://kitakyushu-norimen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kitakyushu-norimen.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kitakyushu-norimen.txt"
+  },
+  {
+    "site": "八幡西区一般社団法人北九州法面防災協会",
+    "version": "mobile",
+    "filename": "kitakyushu-norimen-mobile",
+    "url": "https://kitakyushu-norimen.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/kitakyushu-norimen-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/kitakyushu-norimen-mobile.txt"
+  },
+  {
+    "site": "春日市株式会社ブリッジ・カンパニー",
+    "version": "desktop",
+    "filename": "bridge-company",
+    "url": "http://bridge-company.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/bridge-company.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/bridge-company.txt"
+  },
+  {
+    "site": "春日市株式会社ブリッジ・カンパニー",
+    "version": "mobile",
+    "filename": "bridge-company-mobile",
+    "url": "http://bridge-company.net/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/bridge-company-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/bridge-company-mobile.txt"
+  },
+  {
+    "site": "博多区博多祇園メンタルクリニック",
+    "version": "desktop",
+    "filename": "gionmental",
+    "url": "http://gionmental.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/gionmental.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/gionmental.txt"
+  },
+  {
+    "site": "博多区博多祇園メンタルクリニック",
+    "version": "mobile",
+    "filename": "gionmental-mobile",
+    "url": "http://gionmental.jp/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/gionmental-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/gionmental-mobile.txt"
+  },
+  {
+    "site": "太宰府市吉塚歯科医院",
+    "version": "desktop",
+    "filename": "yoshizuka-dental-office",
+    "url": "http://yoshizuka-dental-office.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yoshizuka-dental-office.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yoshizuka-dental-office.txt"
+  },
+  {
+    "site": "太宰府市吉塚歯科医院",
+    "version": "mobile",
+    "filename": "yoshizuka-dental-office-mobile",
+    "url": "http://yoshizuka-dental-office.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/yoshizuka-dental-office-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/yoshizuka-dental-office-mobile.txt"
+  },
+  {
+    "site": "飯塚市花元建設",
+    "version": "desktop",
+    "filename": "hanamotokensetsu",
+    "url": "http://hanamotokensetsu.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanamotokensetsu.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanamotokensetsu.txt"
+  },
+  {
+    "site": "飯塚市花元建設",
+    "version": "mobile",
+    "filename": "hanamotokensetsu-mobile",
+    "url": "http://hanamotokensetsu.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/hanamotokensetsu-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/hanamotokensetsu-mobile.txt"
+  },
+  {
+    "site": "中津市Mono工房・自由設計",
+    "version": "desktop",
+    "filename": "mono-house",
+    "url": "http://mono-house.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/mono-house.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/mono-house.txt"
+  },
+  {
+    "site": "中津市Mono工房・自由設計",
+    "version": "mobile",
+    "filename": "mono-house-mobile",
+    "url": "http://mono-house.com/",
+    "screenshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/screenshots/mono-house-mobile.png",
+    "snapshotPath": "/home/yuki/git/web-page-ai/auto-hp/analysis/snapshots/mono-house-mobile.txt"
+  }
+]

@@ -1,0 +1,350 @@
+uid=0 body
+  uid=1 div
+    uid=2 div
+      uid=3 div
+  uid=4 script
+  uid=5 div
+    uid=6 div
+    uid=7 header
+      uid=8 div
+        uid=9 div
+          uid=10 div
+            uid=11 a
+              uid=12 img
+      uid=13 div
+        uid=14 div
+    uid=15 article
+      uid=16 section "Previous
+			   
+			
+			
+		Next"
+        uid=17 ul "Previous
+			   
+			
+			
+		Next"
+          uid=18 div
+            uid=19 listbox
+              uid=20 option
+                uid=21 img
+              uid=22 option
+                uid=23 img
+              uid=24 option
+                uid=25 img
+      uid=26 section
+        uid=27 div
+          uid=28 span
+            uid=29 img
+          uid=30 a
+            uid=31 img
+      uid=32 section
+        uid=33 div
+          uid=34 img
+        uid=35 div
+          uid=36 img
+        uid=37 div "各種保険・労災・交通事故自賠責お取り扱い"
+        uid=38 p
+          uid=39 br
+          uid=40 br
+      uid=41 section
+        uid=42 div
+          uid=43 div
+            uid=44 img
+      uid=45 section
+        uid=46 div
+          uid=47 div
+            uid=48 img
+          uid=49 div
+            uid=50 dl "北九州モノレール
+						香春口三萩野駅直結"
+              uid=51 dt "北九州モノレール
+						香春口三萩野駅直結"
+                uid=52 br
+                uid=53 span "香春口三萩野駅"
+              uid=54 dd
+                uid=55 a
+                  uid=56 img
+            uid=57 dl "患者様との距離感と信頼関係を大切に"
+              uid=58 dt "患者様との距離感と信頼関係を大切に"
+                uid=59 span "距離感と信頼関係"
+              uid=60 dd
+                uid=61 a
+                  uid=62 img
+            uid=63 dl "施術スタッフ全員が
+						国家資格者"
+              uid=64 dt "施術スタッフ全員が
+						国家資格者"
+                uid=65 br
+                uid=66 span "国家資格者"
+              uid=67 dd
+                uid=68 a
+                  uid=69 img
+            uid=70 dl "様々な治療に対応する最新の治療機器を導入"
+              uid=71 dt "様々な治療に対応する最新の治療機器を導入"
+                uid=72 span "最新の治療機器"
+              uid=73 dd
+                uid=74 a
+                  uid=75 img
+      uid=76 section
+        uid=77 div
+          uid=78 div
+            uid=79 img
+            uid=80 p
+              uid=81 br
+      uid=82 section
+        uid=83 div
+          uid=84 div
+            uid=85 div
+              uid=86 dl
+                uid=87 dt "一般診療"
+                  uid=88 span "一般診療"
+                uid=89 dd
+              uid=90 div "詳細はこちら"
+                uid=91 a "詳細はこちら"
+            uid=92 div
+              uid=93 dl
+                uid=94 dt "スポーツ障害"
+                  uid=95 span "スポーツ障害"
+                uid=96 dd
+              uid=97 div "詳細はこちら"
+                uid=98 a "詳細はこちら"
+            uid=99 div
+              uid=100 dl
+                uid=101 dt "鍼灸治療"
+                  uid=102 span "鍼灸治療"
+                uid=103 dd
+                  uid=104 br
+              uid=105 div "詳細はこちら"
+                uid=106 a "詳細はこちら"
+            uid=107 div
+              uid=108 dl
+                uid=109 dt "骨盤矯正"
+                  uid=110 span "骨盤矯正"
+                uid=111 dd
+              uid=112 div "詳細はこちら"
+                uid=113 a "詳細はこちら"
+      uid=114 section
+        uid=115 div
+          uid=116 div "毎月たくさんの患者様がいらっしゃいます！"
+          uid=117 div "お悩みを解消された患者様の声をご紹介します！"
+          uid=118 div
+            uid=119 div
+              uid=120 div "小倉北区  |  
+							31歳 	女性"
+                uid=121 span
+                  uid=122 img
+                uid=123 div "小倉北区  |  
+							31歳 	女性"
+                  uid=124 span "小倉北区  |"
+                  uid=125 span "31歳 	女性"
+              uid=126 p
+          uid=127 div "もっと見る"
+            uid=128 a "もっと見る"
+      uid=129 section
+        uid=130 div
+          uid=131 div
+            uid=132 a
+              uid=133 img
+          uid=134 div
+            uid=135 a
+              uid=136 img
+          uid=137 div
+            uid=138 a
+              uid=139 img
+      uid=140 section
+        uid=141 div
+          uid=142 div
+            uid=143 div "News
+					新着情報"
+              uid=144 span "News"
+              uid=145 span "新着情報"
+            uid=146 ul
+              uid=147 li "2025.08.01
+							
+								
+									お盆期間中の休業日ご案内"
+                uid=148 dl "2025.08.01
+							
+								
+									お盆期間中の休業日ご案内"
+                  uid=149 dt "2025.08.01"
+                    uid=150 time "2025.08.01"
+                  uid=151 dd "お盆期間中の休業日ご案内"
+                    uid=152 a "お盆期間中の休業日ご案内"
+              uid=153 li "2025.04.25
+							
+								
+									GW期間中の診療日ご案内"
+                uid=154 dl "2025.04.25
+							
+								
+									GW期間中の診療日ご案内"
+                  uid=155 dt "2025.04.25"
+                    uid=156 time "2025.04.25"
+                  uid=157 dd "GW期間中の診療日ご案内"
+                    uid=158 a "GW期間中の診療日ご案内"
+              uid=159 li "2024.07.31
+							
+								
+									お盆期間中の休業日ご案内"
+                uid=160 dl "2024.07.31
+							
+								
+									お盆期間中の休業日ご案内"
+                  uid=161 dt "2024.07.31"
+                    uid=162 time "2024.07.31"
+                  uid=163 dd "お盆期間中の休業日ご案内"
+                    uid=164 a "お盆期間中の休業日ご案内"
+              uid=165 li "2024.04.22
+							
+								
+									GW期間中の診療日ご案内"
+                uid=166 dl "2024.04.22
+							
+								
+									GW期間中の診療日ご案内"
+                  uid=167 dt "2024.04.22"
+                    uid=168 time "2024.04.22"
+                  uid=169 dd "GW期間中の診療日ご案内"
+                    uid=170 a "GW期間中の診療日ご案内"
+              uid=171 li "2024.01.01
+							
+								
+									新年のご挨拶申し上げます"
+                uid=172 dl "2024.01.01
+							
+								
+									新年のご挨拶申し上げます"
+                  uid=173 dt "2024.01.01"
+                    uid=174 time "2024.01.01"
+                  uid=175 dd "新年のご挨拶申し上げます"
+                    uid=176 a "新年のご挨拶申し上げます"
+          uid=177 div
+            uid=178 a
+              uid=179 img
+      uid=180 section
+        uid=181 div
+          uid=182 div
+            uid=183 img
+          uid=184 p
+          uid=185 div
+        uid=186 img
+      uid=187 section
+        uid=188 div
+          uid=189 ul
+            uid=190 li
+              uid=191 a
+                uid=192 img
+            uid=193 li
+              uid=194 a
+                uid=195 img
+            uid=196 li
+              uid=197 a
+                uid=198 img
+      uid=199 section
+        uid=200 div
+          uid=201 div
+            uid=202 h3 "アクセス"
+              uid=203 br
+              uid=204 br
+              uid=205 br
+            uid=206 div
+              uid=207 dl
+                uid=208 dt "住　所"
+                  uid=209 span "住　所"
+                uid=210 dd
+                  uid=211 br
+                  uid=212 br
+              uid=213 dl "最寄駅
+						
+							北九州モノレール 香春口三萩野駅 直結"
+                uid=214 dt "最寄駅"
+                  uid=215 span "最寄駅"
+                uid=216 dd "北九州モノレール 香春口三萩野駅 直結"
+          uid=217 div
+            uid=218 iframe
+    uid=219 footer
+      uid=220 div
+        uid=221 a
+          uid=222 i
+      uid=223 div
+        uid=224 div
+          uid=225 div
+            uid=226 div
+              uid=227 span
+                uid=228 br
+                uid=229 br
+              uid=230 dl "ホームページを見たとお伝え下さい。"
+                uid=231 dt "ホームページを見たとお伝え下さい。"
+              uid=232 dl "TEL
+						： 093-941-0303093-941-0303"
+                uid=233 dt "TEL"
+                uid=234 dd "： 093-941-0303093-941-0303"
+                  uid=235 span "093-941-0303"
+                    uid=236 a "093-941-0303"
+              uid=237 dl "FAX
+						： 093-941-0322"
+                uid=238 dt "FAX"
+                uid=239 dd "： 093-941-0322"
+              uid=240 dl "院長
+						： 田原 勝載"
+                uid=241 dt "院長"
+                uid=242 dd "： 田原 勝載"
+              uid=243 dl "最寄駅
+						： モノレール 香春口三萩野"
+                uid=244 dt "最寄駅"
+                uid=245 dd "： モノレール 香春口三萩野"
+          uid=246 div
+            uid=247 div "診療時間"
+            uid=248 div
+              uid=249 table
+                uid=250 tbody
+                  uid=251 tr
+                    uid=252 th "受付時間"
+                    uid=253 th "月"
+                    uid=254 th "火"
+                    uid=255 th "水"
+                    uid=256 th "木"
+                    uid=257 th "金"
+                    uid=258 th "土"
+                  uid=259 tr
+                    uid=260 td "9:00-20:00"
+                    uid=261 td "○"
+                    uid=262 td "○"
+                    uid=263 td "○"
+                    uid=264 td "※"
+                    uid=265 td "○"
+                    uid=266 td "※"
+            uid=267 p "※木曜日は9:00～13:00、土曜日は9:00～16:30
+					※日曜日・祝日は休診です。"
+              uid=268 br
+        uid=269 div
+          uid=270 div
+            uid=271 div
+              uid=272 div
+                uid=273 img
+              uid=274 div
+                uid=275 span
+                  uid=276 br
+                  uid=277 br
+                  uid=278 br
+              uid=279 div
+                uid=280 dl
+                  uid=281 dt "診療時間"
+                  uid=282 dd "： 9:00～20:00
+								      （月・火・水・金）"
+                    uid=283 br
+                uid=284 p
+                  uid=285 br
+                  uid=286 br
+            uid=287 p
+              uid=288 small
+                uid=289 a "Higashikaigan Inc."
+                  uid=290 span "Higashikaigan Inc."
+  uid=291 script
+  uid=292 script
+  uid=293 script
+  uid=294 script
+  uid=295 script
+  uid=296 script

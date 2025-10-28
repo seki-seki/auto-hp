@@ -1,0 +1,318 @@
+uid=0 body
+  uid=1 div
+    uid=2 header
+      uid=3 div
+        uid=4 h1
+          uid=5 a
+            uid=6 img
+        uid=7 div
+          uid=8 div
+            uid=9 dl "TEL:
+						090-5295-2244"
+              uid=10 dt "TEL:"
+              uid=11 dd "090-5295-2244"
+            uid=12 dl "新規会員募集中です。"
+              uid=13 dd "新規会員募集中です。"
+          uid=14 div "日本らんちう協会"
+            uid=15 a "日本らんちう協会"
+    uid=16 div
+      uid=17 div
+        uid=18 nav
+          uid=19 ul
+            uid=20 li "ホーム
+						home"
+              uid=21 a "ホーム
+						home"
+                uid=22 span "ホーム"
+                uid=23 span "home"
+            uid=24 li "お知らせ
+						news"
+              uid=25 a "お知らせ
+						news"
+                uid=26 span "お知らせ"
+                uid=27 span "news"
+            uid=28 li "行事日程
+						event"
+              uid=29 a "行事日程
+						event"
+                uid=30 span "行事日程"
+                uid=31 span "event"
+            uid=32 li "役員
+						officer"
+              uid=33 a "役員
+						officer"
+                uid=34 span "役員"
+                uid=35 span "officer"
+            uid=36 li "会則
+						constitution"
+              uid=37 a "会則
+						constitution"
+                uid=38 span "会則"
+                uid=39 span "constitution"
+            uid=40 li "運営規則
+						management"
+              uid=41 a "運営規則
+						management"
+                uid=42 span "運営規則"
+                uid=43 span "management"
+            uid=44 li "ギャラリー
+						gallery"
+              uid=45 a "ギャラリー
+						gallery"
+                uid=46 span "ギャラリー"
+                uid=47 span "gallery"
+          uid=48 span
+    uid=49 article
+      uid=50 section
+        uid=51 div
+          uid=52 ul
+            uid=53 div
+              uid=54 listbox
+                uid=55 option
+                uid=56 option
+                uid=57 option
+          uid=58 div
+            uid=59 img
+      uid=60 section
+        uid=61 div "Sake Competition
+				らんちゅう品評会を開催しています。"
+          uid=62 img
+          uid=63 div "Sake Competition"
+            uid=64 span "S"
+          uid=65 h2 "らんちゅう品評会を開催しています。"
+        uid=66 div
+          uid=67 div
+            uid=68 div
+              uid=69 div
+                uid=70 a
+                  uid=71 div "LEARN MORE"
+                    uid=72 div
+                      uid=73 span
+                    uid=74 span "LEARN MORE"
+                      uid=75 span "LEARN MORE"
+                  uid=76 dl "九蘭会
+									2020-09-13"
+                    uid=77 dt "九蘭会"
+                    uid=78 dd "2020-09-13"
+              uid=79 div
+                uid=80 a
+                  uid=81 div "LEARN MORE"
+                    uid=82 div
+                      uid=83 span
+                    uid=84 span "LEARN MORE"
+                      uid=85 span "LEARN MORE"
+                  uid=86 dl "九蘭会
+									2020-09-13"
+                    uid=87 dt "九蘭会"
+                    uid=88 dd "2020-09-13"
+              uid=89 div
+                uid=90 a
+                  uid=91 div "LEARN MORE"
+                    uid=92 div
+                      uid=93 span
+                    uid=94 span "LEARN MORE"
+                      uid=95 span "LEARN MORE"
+                  uid=96 dl "九蘭会
+									2020-09-13"
+                    uid=97 dt "九蘭会"
+                    uid=98 dd "2020-09-13"
+              uid=99 div
+                uid=100 a
+                  uid=101 div "LEARN MORE"
+                    uid=102 div
+                      uid=103 span
+                    uid=104 span "LEARN MORE"
+                      uid=105 span "LEARN MORE"
+                  uid=106 dl "九蘭会
+									2020-09-13"
+                    uid=107 dt "九蘭会"
+                    uid=108 dd "2020-09-13"
+              uid=109 div
+                uid=110 a
+                  uid=111 div "LEARN MORE"
+                    uid=112 div
+                      uid=113 span
+                    uid=114 span "LEARN MORE"
+                      uid=115 span "LEARN MORE"
+                  uid=116 dl "九蘭会
+									2020-09-13"
+                    uid=117 dt "九蘭会"
+                    uid=118 dd "2020-09-13"
+              uid=119 div
+                uid=120 a
+                  uid=121 div "LEARN MORE"
+                    uid=122 div
+                      uid=123 span
+                    uid=124 span "LEARN MORE"
+                      uid=125 span "LEARN MORE"
+                  uid=126 dl "九蘭会
+									2020-09-13"
+                    uid=127 dt "九蘭会"
+                    uid=128 dd "2020-09-13"
+              uid=129 div
+                uid=130 a
+                  uid=131 div "LEARN MORE"
+                    uid=132 div
+                      uid=133 span
+                    uid=134 span "LEARN MORE"
+                      uid=135 span "LEARN MORE"
+                  uid=136 dl "九蘭会
+									2020-09-13"
+                    uid=137 dt "九蘭会"
+                    uid=138 dd "2020-09-13"
+      uid=139 section
+        uid=140 div
+          uid=141 div
+            uid=142 div
+              uid=143 div "EVENT
+							行事日程"
+                uid=144 img
+                uid=145 div "EVENT"
+                  uid=146 span "E"
+                uid=147 h2 "行事日程"
+              uid=148 div "らんちゅう愛好会が集う組織です。行事日程をご覧ください。"
+                uid=149 br
+              uid=150 div "more"
+                uid=151 a "more"
+          uid=152 div
+            uid=153 div
+              uid=154 div "NEWS
+							新着情報"
+                uid=155 img
+                uid=156 div "NEWS"
+                  uid=157 span "N"
+                uid=158 h2 "新着情報"
+              uid=159 ul
+                uid=160 li
+                  uid=161 dl
+                    uid=162 dt "2024.01.01"
+                      uid=163 time "2024.01.01"
+                    uid=164 dd "新年のご挨拶申し上げます"
+                      uid=165 a "新年のご挨拶申し上げます"
+                uid=166 li
+                  uid=167 dl
+                    uid=168 dt "2023.01.01"
+                      uid=169 time "2023.01.01"
+                    uid=170 dd "新年のご挨拶申し上げます"
+                      uid=171 a "新年のご挨拶申し上げます"
+                uid=172 li
+                  uid=173 dl
+                    uid=174 dt "2022.01.01"
+                      uid=175 time "2022.01.01"
+                    uid=176 dd "新年のご挨拶申し上げます"
+                      uid=177 a "新年のご挨拶申し上げます"
+              uid=178 div "more"
+                uid=179 a "more"
+      uid=180 section
+        uid=181 div
+          uid=182 div "OFFICER
+							役員"
+            uid=183 a "OFFICER
+							役員"
+              uid=184 span
+              uid=185 div "OFFICER
+							役員"
+                uid=186 div "OFFICER"
+                  uid=187 span "O"
+                uid=188 h2 "役員"
+          uid=189 div "CONSTITUTION
+							会則"
+            uid=190 a "CONSTITUTION
+							会則"
+              uid=191 span
+              uid=192 div "CONSTITUTION
+							会則"
+                uid=193 div "CONSTITUTION"
+                  uid=194 span "C"
+                uid=195 h2 "会則"
+          uid=196 div "MANAGEMENT
+							運営規則"
+            uid=197 a "MANAGEMENT
+							運営規則"
+              uid=198 span
+              uid=199 div "MANAGEMENT
+							運営規則"
+                uid=200 div "MANAGEMENT"
+                  uid=201 span "M"
+                uid=202 h2 "運営規則"
+        uid=203 div
+          uid=204 div "GALLERY
+							ギャラリー"
+            uid=205 a "GALLERY
+							ギャラリー"
+              uid=206 span
+              uid=207 div "GALLERY
+							ギャラリー"
+                uid=208 div "GALLERY"
+                  uid=209 span "G"
+                uid=210 h2 "ギャラリー"
+          uid=211 div "LINK
+							リンク"
+            uid=212 a "LINK
+							リンク"
+              uid=213 span
+              uid=214 div "LINK
+							リンク"
+                uid=215 div "LINK"
+                  uid=216 span "L"
+                uid=217 h2 "リンク"
+      uid=218 section
+        uid=219 div
+          uid=220 div "九蘭会オフィシャルサイトにお越し頂き有難うございます。"
+          uid=221 ul
+            uid=222 li "九蘭会は、福岡県を中心にらんちう発展の礎を築き続け、九州の中心を担い続けた愛好団体です。"
+            uid=223 li
+    uid=224 footer
+      uid=225 div
+        uid=226 div "九蘭会では新規会員募集中です。"
+          uid=227 span "九蘭会では新規会員募集中です。"
+          uid=228 a
+            uid=229 img
+        uid=230 ul
+          uid=231 li "ホーム"
+            uid=232 a "ホーム"
+          uid=233 li "お知らせ"
+            uid=234 a "お知らせ"
+          uid=235 li "行事日程"
+            uid=236 a "行事日程"
+          uid=237 li "役員"
+            uid=238 a "役員"
+          uid=239 li "会則"
+            uid=240 a "会則"
+          uid=241 li "運営規則"
+            uid=242 a "運営規則"
+          uid=243 li "ギャラリー"
+            uid=244 a "ギャラリー"
+        uid=245 div
+          uid=246 div "TEL:
+						090-5295-2244
+						090-5295-2244"
+            uid=247 dl "TEL:
+						090-5295-2244
+						090-5295-2244"
+              uid=248 dt "TEL:"
+              uid=249 dd "090-5295-2244"
+          uid=250 div "〒811-3422 福岡県宗像市王丸806"
+          uid=251 div "info＠kyurankai.com"
+          uid=252 div "LINK
+						
+						
+							GALLERY"
+            uid=253 ul "LINK
+						
+						
+							GALLERY"
+              uid=254 li "LINK"
+                uid=255 a "LINK"
+              uid=256 li "GALLERY"
+                uid=257 a "GALLERY"
+      uid=258 p
+        uid=259 small
+          uid=260 a "Higashikaigan Inc."
+            uid=261 span "Higashikaigan Inc."
+  uid=262 script
+  uid=263 script
+  uid=264 script
+  uid=265 script
+  uid=266 script
+  uid=267 script

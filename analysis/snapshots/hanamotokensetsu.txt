@@ -1,0 +1,174 @@
+uid=0 body
+  uid=1 div
+    uid=2 header
+      uid=3 div
+        uid=4 h1 "福岡県飯塚市の花元建設は伝統工法を活かした社寺建築の職人集団"
+        uid=5 div
+          uid=6 a
+            uid=7 img
+        uid=8 div "HOME
+会社概要
+施工実績
+お問い合せ"
+          uid=9 div "HOME
+会社概要
+施工実績
+お問い合せ"
+            uid=10 ul "HOME
+会社概要
+施工実績
+お問い合せ"
+              uid=11 li "HOME"
+                uid=12 a "HOME"
+              uid=13 li "会社概要"
+                uid=14 a "会社概要"
+              uid=15 li "施工実績"
+                uid=16 a "施工実績"
+              uid=17 li "お問い合せ"
+                uid=18 a "お問い合せ"
+    uid=19 div
+      uid=20 div
+        uid=21 div
+          uid=22 div
+            uid=23 ul
+              uid=24 li
+                uid=25 img
+              uid=26 li
+                uid=27 img
+              uid=28 li
+                uid=29 img
+            uid=30 ul
+              uid=31 li
+                uid=32 img
+              uid=33 li
+                uid=34 img
+              uid=35 li
+                uid=36 img
+            uid=37 ul
+              uid=38 li
+                uid=39 img
+              uid=40 li
+                uid=41 img
+              uid=42 li
+                uid=43 img
+          uid=44 div
+          uid=45 div
+        uid=46 div
+          uid=47 a
+          uid=48 a
+          uid=49 a
+  uid=50 section
+    uid=51 div
+      uid=52 img
+  uid=53 section
+    uid=54 div
+      uid=55 div
+        uid=56 div
+          uid=57 img
+          uid=58 p
+          uid=59 p
+  uid=60 section
+    uid=61 div
+      uid=62 div
+        uid=63 p
+          uid=64 br
+        uid=65 p
+          uid=66 br
+          uid=67 br
+        uid=68 p "施工実績はこちら"
+          uid=69 a "施工実績はこちら"
+  uid=70 section
+    uid=71 div
+      uid=72 div
+        uid=73 img
+      uid=74 p
+        uid=75 br
+      uid=76 p "会社概要はこちら"
+        uid=77 a "会社概要はこちら"
+  uid=78 section
+    uid=79 img
+  uid=80 section
+    uid=81 div
+      uid=82 div
+        uid=83 div "NEWS
+
+お知らせ"
+          uid=84 span "NEWS"
+          uid=85 p
+          uid=86 h2 "お知らせ"
+        uid=87 ul
+          uid=88 li "2024年4月15日GW期間中の休業日ご案内"
+            uid=89 span "2024年4月15日"
+            uid=90 a "GW期間中の休業日ご案内"
+          uid=91 li "2024年1月1日新年のご挨拶申し上げます"
+            uid=92 span "2024年1月1日"
+            uid=93 a "新年のご挨拶申し上げます"
+          uid=94 li "2023年12月4日年末年始の休業日ご案内"
+            uid=95 span "2023年12月4日"
+            uid=96 a "年末年始の休業日ご案内"
+          uid=97 li "2023年7月31日お盆期間中の休業日ご案内"
+            uid=98 span "2023年7月31日"
+            uid=99 a "お盆期間中の休業日ご案内"
+          uid=100 li "2023年4月10日GW期間中の休業日ご案内"
+            uid=101 span "2023年4月10日"
+            uid=102 a "GW期間中の休業日ご案内"
+  uid=103 section "ACCESS
+
+アクセスマップ"
+    uid=104 div "ACCESS
+
+アクセスマップ"
+      uid=105 div "ACCESS
+
+アクセスマップ"
+        uid=106 span "ACCESS"
+        uid=107 p
+        uid=108 h2 "アクセスマップ"
+      uid=109 p
+        uid=110 iframe
+  uid=111 section
+    uid=112 img
+    uid=113 p
+  uid=114 section
+    uid=115 a
+      uid=116 img
+    uid=117 br
+  uid=118 footer
+    uid=119 div "花元建設は、一心に木と向かい合い柱の入り組んだ図板だけで神社や新築を建てていきます。"
+      uid=120 div "花元建設は、一心に木と向かい合い柱の入り組んだ図板だけで神社や新築を建てていきます。"
+        uid=121 div "花元建設は、一心に木と向かい合い柱の入り組んだ図板だけで神社や新築を建てていきます。"
+          uid=122 div "花元建設は、一心に木と向かい合い柱の入り組んだ図板だけで神社や新築を建てていきます。"
+            uid=123 div
+              uid=124 img
+            uid=125 p "花元建設は、一心に木と向かい合い柱の入り組んだ図板だけで神社や新築を建てていきます。"
+    uid=126 div
+      uid=127 div
+        uid=128 div "HOME
+会社概要
+施工実績
+お問い合せ"
+          uid=129 nav "HOME
+会社概要
+施工実績
+お問い合せ"
+            uid=130 div "HOME
+会社概要
+施工実績
+お問い合せ"
+              uid=131 ul "HOME
+会社概要
+施工実績
+お問い合せ"
+                uid=132 li "HOME"
+                  uid=133 a "HOME"
+                uid=134 li "会社概要"
+                  uid=135 a "会社概要"
+                uid=136 li "施工実績"
+                  uid=137 a "施工実績"
+                uid=138 li "お問い合せ"
+                  uid=139 a "お問い合せ"
+        uid=140 div
+          uid=141 img
+          uid=142 div
+            uid=143 a "Higashikaigan Inc."
+              uid=144 span "Higashikaigan Inc."

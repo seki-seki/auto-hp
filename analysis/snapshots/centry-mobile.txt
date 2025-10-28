@@ -1,0 +1,531 @@
+uid=0 body
+  uid=1 div
+    uid=2 header
+      uid=3 div
+        uid=4 a
+          uid=5 img
+      uid=6 div "EN
+                            JP"
+        uid=7 div "EN
+                            JP"
+          uid=8 div
+            uid=9 div
+              uid=10 ul
+                uid=11 li
+                  uid=12 span
+                    uid=13 a
+                uid=14 li
+                  uid=15 span
+                    uid=16 a
+    uid=17 article
+      uid=18 div
+        uid=19 div
+          uid=20 div
+            uid=21 div
+              uid=22 div
+                uid=23 video
+            uid=24 div
+              uid=25 div
+                uid=26 div "CENTRYINC."
+                  uid=27 br
+                uid=28 div "kaitory"
+            uid=29 div
+              uid=30 a
+                uid=31 img
+        uid=32 div
+          uid=33 div
+            uid=34 div
+              uid=35 div
+                uid=36 div
+                  uid=37 img
+                uid=38 p
+              uid=39 div
+                uid=40 div
+                  uid=41 div "Assessment / Purchase"
+                  uid=42 h3 "A New Value ofFarm Equipment"
+                    uid=43 br
+                  uid=44 div "リユースで生まれる新しい価値"
+                  uid=45 p
+                    uid=46 br
+                    uid=47 br
+                    uid=48 br
+                  uid=49 ul
+                    uid=50 li
+                      uid=51 img
+                    uid=52 li
+                      uid=53 img
+      uid=54 div
+        uid=55 div
+          uid=56 div
+            uid=57 div
+              uid=58 h2 "OUR BUSINESS"
+              uid=59 div
+                uid=60 p
+        uid=61 div
+          uid=62 div
+            uid=63 div
+              uid=64 div
+                uid=65 a
+                  uid=66 div
+                    uid=67 div "01"
+                      uid=68 span "01"
+                    uid=69 dl
+                      uid=70 dt "買取リユース事業"
+                      uid=71 dd
+                        uid=72 br
+              uid=73 div
+                uid=74 a
+                  uid=75 div
+                    uid=76 div "02"
+                      uid=77 span "02"
+                    uid=78 dl
+                      uid=79 dt "メンテナンス事業"
+                      uid=80 dd
+              uid=81 div
+                uid=82 a
+                  uid=83 div
+                    uid=84 div "03"
+                      uid=85 span "03"
+                    uid=86 dl
+                      uid=87 dt "海外事業"
+                      uid=88 dd "独自のネットワークを活用し、良質の日本の商品を世界中のお客様にお届けしています。"
+              uid=89 div
+                uid=90 a
+                  uid=91 div
+                    uid=92 div "04"
+                      uid=93 span "04"
+                    uid=94 dl
+                      uid=95 dt "物流サービス事業"
+                      uid=96 dd
+      uid=97 div
+        uid=98 div
+          uid=99 div
+            uid=100 div "CENTRY
+                            全国各地で査定・買取"
+              uid=101 h2 "CENTRY"
+              uid=102 div "全国各地で査定・買取"
+            uid=103 div "CENTRY"
+        uid=104 div
+          uid=105 div
+            uid=106 img
+          uid=107 div
+            uid=108 div
+              uid=109 h3 "お客様の要望の変化と当社の成長。そしてこれからも ワンストップサービス"
+                uid=110 br
+              uid=111 p
+                uid=112 br
+                uid=113 br
+                uid=114 br
+            uid=115 div
+              uid=116 div
+                uid=117 a
+                  uid=118 dl
+                    uid=119 dt "COMPANY"
+                    uid=120 dd "会社概要"
+      uid=121 div
+        uid=122 section
+          uid=123 div
+            uid=124 div
+            uid=125 div
+              uid=126 div
+                uid=127 h3 "STOCK LISTPROPRIETARYNETWORK"
+                  uid=128 span "STOCK LIST"
+                  uid=129 br
+                  uid=130 br
+                uid=131 p
+                uid=132 div "More"
+                  uid=133 a "More"
+                    uid=134 span "More"
+                    uid=135 div
+                      uid=136 svg
+                        uid=137 path
+                        uid=138 rect
+              uid=139 div
+                uid=140 ul
+                  uid=141 button "Previous"
+                  uid=142 div
+                    uid=143 div
+                      uid=144 li "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                        uid=145 div "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                          uid=146 a "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                            uid=147 span
+                              uid=148 span
+                              uid=149 span
+                              uid=150 span
+                              uid=151 span
+                            uid=152 div "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                              uid=153 dl "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                                uid=154 dt "MITSUBISHI  フォークリフト　FD25T"
+                                uid=155 dd "ASK"
+                              uid=156 div
+                                uid=157 p
+                      uid=158 li "MITSUBISHI  トラクター  GX510
+														ASK"
+                        uid=159 div "MITSUBISHI  トラクター  GX510
+														ASK"
+                          uid=160 a "MITSUBISHI  トラクター  GX510
+														ASK"
+                            uid=161 span
+                              uid=162 span
+                              uid=163 span
+                              uid=164 span
+                              uid=165 span
+                            uid=166 div "MITSUBISHI  トラクター  GX510
+														ASK"
+                              uid=167 dl "MITSUBISHI  トラクター  GX510
+														ASK"
+                                uid=168 dt "MITSUBISHI  トラクター  GX510"
+                                uid=169 dd "ASK"
+                              uid=170 div
+                                uid=171 p
+                      uid=172 li "KOBELCO　ミニユンボ  SK035
+														ASK"
+                        uid=173 div "KOBELCO　ミニユンボ  SK035
+														ASK"
+                          uid=174 a "KOBELCO　ミニユンボ  SK035
+														ASK"
+                            uid=175 span
+                              uid=176 span
+                              uid=177 span
+                              uid=178 span
+                              uid=179 span
+                            uid=180 div "KOBELCO　ミニユンボ  SK035
+														ASK"
+                              uid=181 dl "KOBELCO　ミニユンボ  SK035
+														ASK"
+                                uid=182 dt "KOBELCO　ミニユンボ  SK035"
+                                uid=183 dd "ASK"
+                              uid=184 div
+                                uid=185 p
+                      uid=186 li "YANMAR　ユンボ　B17
+														ASK"
+                        uid=187 div "YANMAR　ユンボ　B17
+														ASK"
+                          uid=188 a "YANMAR　ユンボ　B17
+														ASK"
+                            uid=189 span
+                              uid=190 span
+                              uid=191 span
+                              uid=192 span
+                              uid=193 span
+                            uid=194 div "YANMAR　ユンボ　B17
+														ASK"
+                              uid=195 dl "YANMAR　ユンボ　B17
+														ASK"
+                                uid=196 dt "YANMAR　ユンボ　B17"
+                                uid=197 dd "ASK"
+                              uid=198 div
+                                uid=199 p
+                      uid=200 li "YANMAR トラクター  CT95
+														ASK"
+                        uid=201 div "YANMAR トラクター  CT95
+														ASK"
+                          uid=202 a "YANMAR トラクター  CT95
+														ASK"
+                            uid=203 span
+                              uid=204 span
+                              uid=205 span
+                              uid=206 span
+                              uid=207 span
+                            uid=208 div "YANMAR トラクター  CT95
+														ASK"
+                              uid=209 dl "YANMAR トラクター  CT95
+														ASK"
+                                uid=210 dt "YANMAR トラクター  CT95"
+                                uid=211 dd "ASK"
+                              uid=212 div
+                                uid=213 p
+                      uid=214 li "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                        uid=215 div "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                          uid=216 a "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                            uid=217 span
+                              uid=218 span
+                              uid=219 span
+                              uid=220 span
+                              uid=221 span
+                            uid=222 div "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                              uid=223 dl "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                                uid=224 dt "KOMATSU  フォークリフト　FD25-7"
+                                uid=225 dd "ASK"
+                              uid=226 div
+                                uid=227 p
+                      uid=228 li "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                        uid=229 div "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                          uid=230 a "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                            uid=231 span
+                              uid=232 span
+                              uid=233 span
+                              uid=234 span
+                              uid=235 span
+                            uid=236 div "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                              uid=237 dl "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                                uid=238 dt "MITSUBISHI  フォークリフト　FD25T"
+                                uid=239 dd "ASK"
+                              uid=240 div
+                                uid=241 p
+                      uid=242 li "MITSUBISHI  トラクター  GX510
+														ASK"
+                        uid=243 div "MITSUBISHI  トラクター  GX510
+														ASK"
+                          uid=244 a "MITSUBISHI  トラクター  GX510
+														ASK"
+                            uid=245 span
+                              uid=246 span
+                              uid=247 span
+                              uid=248 span
+                              uid=249 span
+                            uid=250 div "MITSUBISHI  トラクター  GX510
+														ASK"
+                              uid=251 dl "MITSUBISHI  トラクター  GX510
+														ASK"
+                                uid=252 dt "MITSUBISHI  トラクター  GX510"
+                                uid=253 dd "ASK"
+                              uid=254 div
+                                uid=255 p
+                      uid=256 li "KOBELCO　ミニユンボ  SK035
+														ASK"
+                        uid=257 div "KOBELCO　ミニユンボ  SK035
+														ASK"
+                          uid=258 a "KOBELCO　ミニユンボ  SK035
+														ASK"
+                            uid=259 span
+                              uid=260 span
+                              uid=261 span
+                              uid=262 span
+                              uid=263 span
+                            uid=264 div "KOBELCO　ミニユンボ  SK035
+														ASK"
+                              uid=265 dl "KOBELCO　ミニユンボ  SK035
+														ASK"
+                                uid=266 dt "KOBELCO　ミニユンボ  SK035"
+                                uid=267 dd "ASK"
+                              uid=268 div
+                                uid=269 p
+                      uid=270 li "YANMAR　ユンボ　B17
+														ASK"
+                        uid=271 div "YANMAR　ユンボ　B17
+														ASK"
+                          uid=272 a "YANMAR　ユンボ　B17
+														ASK"
+                            uid=273 span
+                              uid=274 span
+                              uid=275 span
+                              uid=276 span
+                              uid=277 span
+                            uid=278 div "YANMAR　ユンボ　B17
+														ASK"
+                              uid=279 dl "YANMAR　ユンボ　B17
+														ASK"
+                                uid=280 dt "YANMAR　ユンボ　B17"
+                                uid=281 dd "ASK"
+                              uid=282 div
+                                uid=283 p
+                      uid=284 li "YANMAR トラクター  CT95
+														ASK"
+                        uid=285 div "YANMAR トラクター  CT95
+														ASK"
+                          uid=286 a "YANMAR トラクター  CT95
+														ASK"
+                            uid=287 span
+                              uid=288 span
+                              uid=289 span
+                              uid=290 span
+                              uid=291 span
+                            uid=292 div "YANMAR トラクター  CT95
+														ASK"
+                              uid=293 dl "YANMAR トラクター  CT95
+														ASK"
+                                uid=294 dt "YANMAR トラクター  CT95"
+                                uid=295 dd "ASK"
+                              uid=296 div
+                                uid=297 p
+                      uid=298 li "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                        uid=299 div "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                          uid=300 a "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                            uid=301 span
+                              uid=302 span
+                              uid=303 span
+                              uid=304 span
+                              uid=305 span
+                            uid=306 div "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                              uid=307 dl "KOMATSU  フォークリフト　FD25-7
+														ASK"
+                                uid=308 dt "KOMATSU  フォークリフト　FD25-7"
+                                uid=309 dd "ASK"
+                              uid=310 div
+                                uid=311 p
+                      uid=312 li "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                        uid=313 div "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                          uid=314 a "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                            uid=315 span
+                              uid=316 span
+                              uid=317 span
+                              uid=318 span
+                              uid=319 span
+                            uid=320 div "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                              uid=321 dl "MITSUBISHI  フォークリフト　FD25T
+														ASK"
+                                uid=322 dt "MITSUBISHI  フォークリフト　FD25T"
+                                uid=323 dd "ASK"
+                              uid=324 div
+                                uid=325 p
+                  uid=326 button "Next"
+      uid=327 div
+        uid=328 div
+          uid=329 div
+            uid=330 div
+              uid=331 div "News
+                                / 最新ニュース"
+                uid=332 h2 "News"
+                uid=333 div "/ 最新ニュース"
+              uid=334 div "View ALL"
+                uid=335 a "View ALL"
+                  uid=336 span "View ALL"
+                  uid=337 div
+                    uid=338 svg
+                      uid=339 path
+                      uid=340 rect
+            uid=341 div
+              uid=342 div
+                uid=343 div
+                  uid=344 ul
+                    uid=345 li
+                      uid=346 a
+                        uid=347 div
+                          uid=348 span "2024.06.24"
+                            uid=349 time "2024.06.24"
+                          uid=350 span "お知らせ"
+                        uid=351 p "LINE友だち募集中！"
+                          uid=352 span "LINE友だち募集中！"
+                    uid=353 li
+                      uid=354 a
+                        uid=355 div
+                          uid=356 span "2024.04.15"
+                            uid=357 time "2024.04.15"
+                          uid=358 span "お知らせ"
+                        uid=359 p "GW期間中の休業日ご案内"
+                          uid=360 span "GW期間中の休業日ご案内"
+                    uid=361 li
+                      uid=362 a
+                        uid=363 div
+                          uid=364 span "2024.01.01"
+                            uid=365 time "2024.01.01"
+                          uid=366 span "お知らせ"
+                        uid=367 p "新年のご挨拶申し上げます"
+                          uid=368 span "新年のご挨拶申し上げます"
+      uid=369 div
+        uid=370 div
+          uid=371 div
+            uid=372 div "ABOUT US"
+            uid=373 a
+              uid=374 div
+                uid=375 img
+                uid=376 img
+              uid=377 div
+                uid=378 div
+                  uid=379 div "PHILOSOPHY"
+                  uid=380 h3 "経営理念"
+                uid=381 div "LEARN MORE"
+                  uid=382 span "LEARN MORE"
+          uid=383 div
+            uid=384 div "JOIN US"
+            uid=385 a
+              uid=386 div
+                uid=387 img
+                uid=388 img
+              uid=389 div
+                uid=390 div "RECRUIT
+                                    採用情報"
+                  uid=391 div "RECRUIT"
+                  uid=392 h3 "採用情報"
+                uid=393 div "LEARN MORE"
+                  uid=394 span "LEARN MORE"
+      uid=395 div
+        uid=396 div
+          uid=397 div "INSTAGRAM"
+          uid=398 div
+            uid=399 div
+              uid=400 div
+                uid=401 h2 "Instagram"
+                uid=402 p
+                  uid=403 br
+            uid=404 div "VIEW"
+              uid=405 div "VIEW"
+                uid=406 a "VIEW"
+                  uid=407 span
+                  uid=408 span "VIEW"
+      uid=409 div
+        uid=410 div
+          uid=411 video
+      uid=412 div
+        uid=413 div
+          uid=414 a
+            uid=415 div
+              uid=416 h2 "CONTACT"
+              uid=417 div "お問い合わせ"
+              uid=418 p "お仕事の依頼・取材依頼など、各種お問い合わせはこちらから"
+    uid=419 footer
+      uid=420 div
+        uid=421 div
+          uid=422 div
+            uid=423 div
+              uid=424 a
+                uid=425 img
+        uid=426 div
+          uid=427 div
+            uid=428 div
+              uid=429 div
+                uid=430 ul
+                  uid=431 li "ONLINE SHOP"
+                    uid=432 a "ONLINE SHOP"
+                  uid=433 li "SERVICE SITE"
+                    uid=434 a "SERVICE SITE"
+              uid=435 div
+                uid=436 div
+                  uid=437 a
+                    uid=438 i
+                uid=439 div
+                  uid=440 a
+                    uid=441 i
+                uid=442 div
+                  uid=443 a
+                    uid=444 i
+            uid=445 div
+              uid=446 div "Privacy Policy"
+                uid=447 a "Privacy Policy"
+              uid=448 p
+                uid=449 small
+                  uid=450 a "Higashikaigan Inc."
+                    uid=451 span "Higashikaigan Inc."
+  uid=452 script
+  uid=453 script
+  uid=454 script
+  uid=455 script
+  uid=456 script
+  uid=457 script
+  uid=458 script
+  uid=459 script
+  uid=460 script

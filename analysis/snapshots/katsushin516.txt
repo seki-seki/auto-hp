@@ -1,0 +1,382 @@
+uid=0 body
+  uid=1 div
+    uid=2 div
+      uid=3 div
+  uid=4 script
+  uid=5 div
+    uid=6 header
+      uid=7 div
+        uid=8 h1
+          uid=9 a
+            uid=10 img
+        uid=11 div
+          uid=12 div
+            uid=13 p "小倉北区三萩野の整骨院・整体｜勝しんきゅう整骨院"
+            uid=14 div "ホームページを見たとお伝えください。"
+              uid=15 span "ホームページを見たとお伝えください。"
+                uid=16 span "ホームページを見たとお伝えください。"
+              uid=17 img
+          uid=18 div "北九州モノレール
+							香春口三萩野駅直結"
+            uid=19 div "北九州モノレール
+							香春口三萩野駅直結"
+              uid=20 img
+              uid=21 span "北九州モノレール
+							香春口三萩野駅直結"
+                uid=22 br
+            uid=23 div
+              uid=24 div
+                uid=25 img
+              uid=26 div
+                uid=27 a
+                  uid=28 img
+              uid=29 div
+                uid=30 a
+                  uid=31 img
+    uid=32 nav
+      uid=33 ul
+        uid=34 li "ホーム"
+          uid=35 a "ホーム"
+        uid=36 li "初めての方へ"
+          uid=37 a "初めての方へ"
+        uid=38 li "院のこだわり"
+          uid=39 a "院のこだわり"
+        uid=40 li "診療項目"
+          uid=41 a "診療項目"
+        uid=42 li "料金表"
+          uid=43 a "料金表"
+        uid=44 li "整骨院概要"
+          uid=45 a "整骨院概要"
+        uid=46 li "採用情報"
+          uid=47 a "採用情報"
+    uid=48 article
+      uid=49 section "Previous
+			   
+			
+			
+		Next"
+        uid=50 ul "Previous
+			   
+			
+			
+		Next"
+          uid=51 div
+            uid=52 listbox
+              uid=53 option
+              uid=54 option
+              uid=55 option
+        uid=56 div
+          uid=57 div
+            uid=58 img
+      uid=59 section
+        uid=60 div
+          uid=61 img
+        uid=62 div
+          uid=63 img
+        uid=64 div "各種保険・労災・交通事故自賠責お取り扱い"
+        uid=65 p
+          uid=66 br
+          uid=67 br
+      uid=68 section
+        uid=69 div
+          uid=70 div
+            uid=71 img
+      uid=72 section
+        uid=73 div
+          uid=74 div
+            uid=75 img
+          uid=76 div
+            uid=77 dl "北九州モノレール
+						香春口三萩野駅直結"
+              uid=78 dt "北九州モノレール
+						香春口三萩野駅直結"
+                uid=79 br
+                uid=80 span "香春口三萩野駅"
+              uid=81 dd
+                uid=82 a
+                  uid=83 img
+            uid=84 dl "患者様との距離感と信頼関係を大切に"
+              uid=85 dt "患者様との距離感と信頼関係を大切に"
+                uid=86 br
+                uid=87 span "距離感と信頼関係"
+              uid=88 dd
+                uid=89 a
+                  uid=90 img
+            uid=91 dl "施術スタッフ全員が
+						国家資格者"
+              uid=92 dt "施術スタッフ全員が
+						国家資格者"
+                uid=93 br
+                uid=94 span "国家資格者"
+              uid=95 dd
+                uid=96 a
+                  uid=97 img
+            uid=98 dl "様々な治療に対応する最新の治療機器を導入"
+              uid=99 dt "様々な治療に対応する最新の治療機器を導入"
+                uid=100 br
+                uid=101 span "最新の治療機器"
+              uid=102 dd
+                uid=103 a
+                  uid=104 img
+      uid=105 section
+        uid=106 div
+          uid=107 div
+            uid=108 img
+            uid=109 p
+              uid=110 br
+      uid=111 section
+        uid=112 div
+          uid=113 div
+            uid=114 div
+              uid=115 dl
+                uid=116 dt "一般診療"
+                  uid=117 span "一般診療"
+                uid=118 dd
+              uid=119 div "詳細はこちら"
+                uid=120 a "詳細はこちら"
+            uid=121 div
+              uid=122 dl
+                uid=123 dt "スポーツ障害"
+                  uid=124 span "スポーツ障害"
+                uid=125 dd
+              uid=126 div "詳細はこちら"
+                uid=127 a "詳細はこちら"
+            uid=128 div
+              uid=129 dl
+                uid=130 dt "鍼灸治療"
+                  uid=131 span "鍼灸治療"
+                uid=132 dd
+                  uid=133 br
+              uid=134 div "詳細はこちら"
+                uid=135 a "詳細はこちら"
+            uid=136 div
+              uid=137 dl
+                uid=138 dt "骨盤矯正"
+                  uid=139 span "骨盤矯正"
+                uid=140 dd
+              uid=141 div "詳細はこちら"
+                uid=142 a "詳細はこちら"
+      uid=143 section
+        uid=144 div
+          uid=145 div "毎月たくさんの患者様がいらっしゃいます！"
+          uid=146 div "お悩みを解消された患者様の声をご紹介します！"
+          uid=147 div
+            uid=148 div
+              uid=149 div "小倉北区  |  
+							31歳 	女性"
+                uid=150 span
+                  uid=151 img
+                uid=152 div "小倉北区  |  
+							31歳 	女性"
+                  uid=153 span "小倉北区  |"
+                  uid=154 span "31歳 	女性"
+              uid=155 p
+          uid=156 div "もっと見る"
+            uid=157 a "もっと見る"
+      uid=158 section
+        uid=159 div
+          uid=160 div
+            uid=161 a
+              uid=162 img
+          uid=163 div
+            uid=164 a
+              uid=165 img
+          uid=166 div
+            uid=167 a
+              uid=168 img
+      uid=169 section
+        uid=170 div
+          uid=171 div
+            uid=172 div "News
+					新着情報"
+              uid=173 span "News"
+              uid=174 span "新着情報"
+            uid=175 ul
+              uid=176 li "2025.08.01
+							
+								
+									お盆期間中の休業日ご案内"
+                uid=177 dl "2025.08.01
+							
+								
+									お盆期間中の休業日ご案内"
+                  uid=178 dt "2025.08.01"
+                    uid=179 time "2025.08.01"
+                  uid=180 dd "お盆期間中の休業日ご案内"
+                    uid=181 a "お盆期間中の休業日ご案内"
+              uid=182 li "2025.04.25
+							
+								
+									GW期間中の診療日ご案内"
+                uid=183 dl "2025.04.25
+							
+								
+									GW期間中の診療日ご案内"
+                  uid=184 dt "2025.04.25"
+                    uid=185 time "2025.04.25"
+                  uid=186 dd "GW期間中の診療日ご案内"
+                    uid=187 a "GW期間中の診療日ご案内"
+              uid=188 li "2024.07.31
+							
+								
+									お盆期間中の休業日ご案内"
+                uid=189 dl "2024.07.31
+							
+								
+									お盆期間中の休業日ご案内"
+                  uid=190 dt "2024.07.31"
+                    uid=191 time "2024.07.31"
+                  uid=192 dd "お盆期間中の休業日ご案内"
+                    uid=193 a "お盆期間中の休業日ご案内"
+              uid=194 li "2024.04.22
+							
+								
+									GW期間中の診療日ご案内"
+                uid=195 dl "2024.04.22
+							
+								
+									GW期間中の診療日ご案内"
+                  uid=196 dt "2024.04.22"
+                    uid=197 time "2024.04.22"
+                  uid=198 dd "GW期間中の診療日ご案内"
+                    uid=199 a "GW期間中の診療日ご案内"
+              uid=200 li "2024.01.01
+							
+								
+									新年のご挨拶申し上げます"
+                uid=201 dl "2024.01.01
+							
+								
+									新年のご挨拶申し上げます"
+                  uid=202 dt "2024.01.01"
+                    uid=203 time "2024.01.01"
+                  uid=204 dd "新年のご挨拶申し上げます"
+                    uid=205 a "新年のご挨拶申し上げます"
+          uid=206 div
+            uid=207 a
+              uid=208 img
+      uid=209 section
+        uid=210 div
+          uid=211 div
+            uid=212 img
+          uid=213 p
+          uid=214 div
+      uid=215 section
+        uid=216 div
+          uid=217 ul
+            uid=218 li
+              uid=219 a
+                uid=220 img
+            uid=221 li
+              uid=222 a
+                uid=223 img
+            uid=224 li
+              uid=225 a
+                uid=226 img
+      uid=227 section
+        uid=228 div
+          uid=229 div
+            uid=230 span
+              uid=231 img
+            uid=232 h3 "アクセス"
+              uid=233 br
+              uid=234 br
+              uid=235 br
+            uid=236 div
+              uid=237 dl
+                uid=238 dt "住　所"
+                  uid=239 span "住　所"
+                uid=240 dd
+                  uid=241 br
+                  uid=242 br
+              uid=243 dl "最寄駅
+						
+							北九州モノレール 香春口三萩野駅 直結"
+                uid=244 dt "最寄駅"
+                  uid=245 span "最寄駅"
+                uid=246 dd "北九州モノレール 香春口三萩野駅 直結"
+          uid=247 div
+            uid=248 iframe
+    uid=249 footer
+      uid=250 div
+        uid=251 a
+          uid=252 i
+      uid=253 div
+        uid=254 div
+          uid=255 div
+            uid=256 div
+              uid=257 span
+                uid=258 br
+                uid=259 br
+              uid=260 dl "ホームページを見たとお伝え下さい。"
+                uid=261 dt "ホームページを見たとお伝え下さい。"
+              uid=262 dl "TEL
+						： 093-941-0303093-941-0303"
+                uid=263 dt "TEL"
+                uid=264 dd "： 093-941-0303093-941-0303"
+                  uid=265 span "093-941-0303"
+              uid=266 dl "FAX
+						： 093-941-0322"
+                uid=267 dt "FAX"
+                uid=268 dd "： 093-941-0322"
+              uid=269 dl "院長
+						： 田原 勝載"
+                uid=270 dt "院長"
+                uid=271 dd "： 田原 勝載"
+              uid=272 dl "最寄駅
+						： モノレール 香春口三萩野"
+                uid=273 dt "最寄駅"
+                uid=274 dd "： モノレール 香春口三萩野"
+          uid=275 div
+            uid=276 div "診療時間"
+            uid=277 div
+              uid=278 table
+                uid=279 tbody
+                  uid=280 tr
+                    uid=281 th "受付時間"
+                    uid=282 th "月"
+                    uid=283 th "火"
+                    uid=284 th "水"
+                    uid=285 th "木"
+                    uid=286 th "金"
+                    uid=287 th "土"
+                  uid=288 tr
+                    uid=289 td "9:00-20:00"
+                    uid=290 td "○"
+                    uid=291 td "○"
+                    uid=292 td "○"
+                    uid=293 td "※"
+                    uid=294 td "○"
+                    uid=295 td "※"
+            uid=296 p "※木曜日は9:00～13:00、土曜日は9:00～16:30
+					※日曜日・祝日は休診です。"
+              uid=297 br
+        uid=298 div
+          uid=299 div
+            uid=300 div
+              uid=301 div
+                uid=302 img
+              uid=303 div
+                uid=304 span
+                  uid=305 br
+                  uid=306 br
+                  uid=307 br
+              uid=308 div
+                uid=309 dl
+                  uid=310 dt "診療時間"
+                  uid=311 dd "： 9:00～20:00
+								      （月・火・水・金）"
+                    uid=312 br
+                uid=313 p
+                  uid=314 br
+                  uid=315 br
+            uid=316 p
+              uid=317 small
+                uid=318 a "Higashikaigan Inc."
+                  uid=319 span "Higashikaigan Inc."
+  uid=320 script
+  uid=321 script
+  uid=322 script
+  uid=323 script
+  uid=324 script
+  uid=325 script
