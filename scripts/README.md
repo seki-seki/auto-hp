@@ -6,19 +6,43 @@
 
 ```
 scripts/
-├── data/                         # データファイル
-│   └── all-sites.json            # 全90サイトのリスト（レスポンシブ対応サイトのみ）
-├── collection/                   # データ収集用スクリプト
-│   ├── collect-mobile-data.js    # データ収集スクリプト
-│   └── COLLECTION_PROMPT.md      # Claude Code用プロンプト（90サイト × デスクトップ + モバイル）
-├── analysis/                     # 分析用スクリプト
-│   └── run-analysis-mobile.js    # デスクトップ + モバイル版分析スクリプト
-└── README.md                     # このドキュメント
+├── data/                            # データファイル
+│   └── all-sites.json               # 全90サイトのリスト（レスポンシブ対応サイトのみ）
+├── collection/                      # データ収集用スクリプト
+│   ├── playwright-collect-all.js    # 自動収集スクリプト（推奨、15-20分）
+│   ├── selenium-collect-all.py      # Python版自動収集スクリプト（代替）
+│   ├── collect-mobile-data.js       # 手動収集用ヘルパー
+│   └── COLLECTION_PROMPT.md         # Claude Code用プロンプト
+├── analysis/                        # 分析用スクリプト
+│   └── run-analysis-mobile.js       # デスクトップ + モバイル版分析スクリプト
+└── README.md                        # このドキュメント
 ```
 
 ## 🚀 使い方
 
-### ステップ1: モバイル版データの収集
+### 方法A: 自動収集（推奨）⚡
+
+全90サイトのデータを15-20分で自動収集します。
+
+```bash
+# Playwright版（推奨）
+cd /home/yuki/git/web-page-ai/auto-hp
+npm install playwright
+npx playwright install chromium
+node scripts/collection/playwright-collect-all.js
+
+# または Python版（Selenium）
+pip3 install selenium webdriver-manager
+python3 scripts/collection/selenium-collect-all.py
+```
+
+**収集完了後**:
+```bash
+# 分析を実行
+node scripts/analysis/run-analysis-mobile.js
+```
+
+### 方法B: 手動収集（Claude Code使用）
 
 #### 1-1. 収集プロンプトの生成
 
@@ -60,9 +84,7 @@ node scripts/collection/collect-mobile-data.js plan
 node scripts/collection/collect-mobile-data.js checklist
 ```
 
-### ステップ2: データの分析
-
-#### 2-1. モバイル版を含めた分析
+### ステップ2: データの分析（共通）
 
 ```bash
 # デスクトップ版 + モバイル版を分析
@@ -71,6 +93,7 @@ node scripts/analysis/run-analysis-mobile.js
 
 **出力ファイル**:
 - `analysis/analysis-report-mobile.json` - デスクトップ版とモバイル版の両方の分析結果
+- 90サイトの共通パターン、平均コンポーネント数、ナビゲーション項目の統計
 
 ## 📊 分析結果の構造
 

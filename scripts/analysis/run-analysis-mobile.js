@@ -50,11 +50,12 @@ function analyzePageStructure(snapshot) {
   for (const line of lines) {
     const trimmed = line.trim();
 
-    // 見出しの検出とカウント
-    const headingMatch = trimmed.match(/heading "([^"]*)" level="(\d+)"/);
+    // 見出しの検出とカウント (Playwright形式: uid=N h2 "text")
+    const headingMatch = trimmed.match(/uid=\d+\s+(h[1-6])(?:\s+"([^"]*)")?/);
     if (headingMatch) {
-      const level = parseInt(headingMatch[2]);
-      const text = headingMatch[1];
+      const tag = headingMatch[1]; // h1, h2, etc.
+      const level = parseInt(tag.substring(1)); // 1, 2, etc.
+      const text = headingMatch[2] || '';
 
       if (level >= 1 && level <= 6) {
         analysis.components.headings[`h${level}`]++;
@@ -68,30 +69,41 @@ function analyzePageStructure(snapshot) {
       }
     }
 
-    // コンポーネントのカウント
-    if (trimmed.startsWith('uid=') && trimmed.includes('link ')) {
+    // コンポーネントのカウント (Playwright形式)
+    // リンク検出: uid=N a または uid=N a "text"
+    if (trimmed.match(/uid=\d+\s+a(\s|$|")/)) {
       analysis.components.links++;
     }
-    if (trimmed.includes('button ')) {
+
+    // ボタン検出: uid=N button
+    if (trimmed.match(/uid=\d+\s+button(\s|$|")/)) {
       analysis.components.buttons++;
     }
-    if (trimmed.includes('image ')) {
+
+    // 画像検出: uid=N img
+    if (trimmed.match(/uid=\d+\s+img(\s|$|")/)) {
       analysis.components.images++;
     }
-    if (trimmed.includes('form ')) {
+
+    // フォーム検出: uid=N form
+    if (trimmed.match(/uid=\d+\s+form(\s|$|")/)) {
       analysis.components.forms++;
     }
-    if (trimmed.includes('Iframe ')) {
+
+    // iframe検出: uid=N iframe
+    if (trimmed.match(/uid=\d+\s+iframe(\s|$|")/)) {
       analysis.components.iframes++;
     }
-    if (trimmed.includes('listitem ')) {
+
+    // リスト検出: uid=N li
+    if (trimmed.match(/uid=\d+\s+li(\s|$|")/)) {
       analysis.components.lists++;
     }
 
-    // ナビゲーションアイテムの検出
-    const linkMatch = trimmed.match(/link "([^"]*)"/);
-    if (linkMatch && linkMatch[1].length > 0 && linkMatch[1].length < 30) {
-      const linkText = linkMatch[1];
+    // ナビゲーションアイテムの検出 (Playwright形式: uid=N a "text")
+    const linkTextMatch = trimmed.match(/uid=\d+\s+a\s+"([^"]*)"/);
+    if (linkTextMatch && linkTextMatch[1].length > 0 && linkTextMatch[1].length < 30) {
+      const linkText = linkTextMatch[1];
       if (linkText.match(/(お知らせ|施設|保育|入園|採用|会社|サービス|メニュー|アクセス|お問い合わせ|TOP|HOME|ABOUT|CONTACT)/i)) {
         if (!analysis.navigation.includes(linkText)) {
           analysis.navigation.push(linkText);
