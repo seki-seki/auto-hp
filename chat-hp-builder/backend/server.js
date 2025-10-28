@@ -353,6 +353,18 @@ app.get('/api/session/:id/logs', (req, res) => {
   });
 });
 
+// サンプルデータ取得API（gaia_kumamoto.mdの内容を返す）
+app.get('/api/sample-data', async (req, res) => {
+  try {
+    const samplePath = path.join(__dirname, '../../gaia_kumamoto.md');
+    const sampleData = await fs.readFile(samplePath, 'utf-8');
+    res.json({ content: sampleData });
+  } catch (error) {
+    console.error('Failed to load sample data:', error);
+    res.status(500).json({ error: 'Failed to load sample data' });
+  }
+});
+
 // ヘルスチェック
 app.get('/api/health', (req, res) => {
   res.json({

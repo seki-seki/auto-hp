@@ -67,15 +67,11 @@ class ClaudeCodeSession {
 
       // 意味のある出力のみログ表示
       // - 5文字以上
-      // - 直前のログと異なる内容（最初の10文字を比較）、または1秒以上経過
+      // - 直前のログと異なる内容（完全一致で比較）、または1秒以上経過
       // - 英数字や記号を含む
       const trimmedData = cleanData.trim();
       const now = Date.now();
-
-      // 最初の10文字が同じかチェック（秒数やトークン数の違いを無視）
-      const currentPrefix = trimmedData.substring(0, 10);
-      const lastPrefix = lastLoggedContent.substring(0, 10);
-      const isDifferent = currentPrefix !== lastPrefix;
+      const isDifferent = trimmedData !== lastLoggedContent;
       const hasCooldownPassed = now - lastLogTime > LOG_COOLDOWN;
 
       if (
