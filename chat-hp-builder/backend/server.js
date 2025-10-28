@@ -15,6 +15,7 @@ app.use('/preview', express.static(path.join(__dirname, '../../dist')));
 
 // セッション管理
 const sessions = new Map();
+const sessionMessages = new Map(); // メッセージ履歴を保存
 
 // PROMPT_TEMPLATE_FOR_BUILDERを起動時に読み込む
 let PROMPT_TEMPLATE = '';
@@ -45,8 +46,8 @@ function generateSessionId() {
   return `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 }
 
-// セッションのクリーンアップ（30分アイドルで自動削除）
-const SESSION_TIMEOUT = 30 * 60 * 1000; // 30分
+// セッションのクリーンアップ（3日アイドルで自動削除）
+const SESSION_TIMEOUT = 3 * 24 * 60 * 60 * 1000; // 3日
 const sessionTimestamps = new Map();
 
 setInterval(() => {
@@ -60,6 +61,7 @@ setInterval(() => {
         sessions.delete(sessionId);
       }
       sessionTimestamps.delete(sessionId);
+      sessionMessages.delete(sessionId);
     }
   }
 }, 60000); // 1分ごとにチェック
@@ -91,6 +93,7 @@ app.post('/api/chat', async (req, res) => {
         await session.start();
         sessions.set(sid, session);
         sessionTimestamps.set(sid, Date.now());
+        sessionMessages.set(sid, []); // メッセージ履歴を初期化
 
         console.log(`[${sid}] Session created successfully`);
       } catch (error) {
@@ -105,10 +108,46 @@ app.post('/api/chat', async (req, res) => {
       session = sessions.get(sessionId);
 
       if (!session || !session.isAlive()) {
-        return res.status(404).json({
-          error: 'Session not found or expired',
-          sessionId
-        });
+        // セッションがタイムアウトしたが、dist/にファイルが存在する場合は新しいセッションを作成
+        const outputDir = path.join(__dirname, '../../dist', sessionId);
+        let hasOutputDir = false;
+
+        try {
+          const entries = await fs.readdir(outputDir, { withFileTypes: true });
+          const htmlFiles = entries.filter(entry => entry.isFile() && entry.name.endsWith('.html'));
+          hasOutputDir = htmlFiles.length > 0;
+        } catch (error) {
+          // ディレクトリがない
+        }
+
+        if (!hasOutputDir) {
+          return res.status(404).json({
+            error: 'Session not found or expired, and no output files exist',
+            sessionId
+          });
+        }
+
+        // 既存の成果物がある場合は、新しいセッションを作成して編集を続行
+        console.log(`\n=== Restoring expired session: ${sessionId} ===`);
+        const workingDir = path.join(__dirname, '../../');
+        const outputDirRelative = `dist/${sessionId}`;
+
+        session = new ClaudeCodeSession(sessionId, workingDir, outputDirRelative);
+
+        try {
+          await session.start();
+          sessions.set(sessionId, session);
+          sessionTimestamps.set(sessionId, Date.now());
+          // メッセージ履歴は既存のものを保持（初期化しない）
+
+          console.log(`[${sessionId}] Session restored successfully`);
+        } catch (error) {
+          console.error(`[${sessionId}] Failed to restore session:`, error);
+          return res.status(500).json({
+            error: 'Failed to restore session',
+            details: error.message
+          });
+        }
       }
 
       sessionTimestamps.set(sessionId, Date.now());
@@ -161,6 +200,12 @@ ${session.outputDir}/
     console.log(`[${sid}] Sending message to Claude Code...`);
     const response = await session.sendMessage(messageToSend);
 
+    // メッセージ履歴を保存
+    const messages = sessionMessages.get(sid) || [];
+    messages.push({ role: 'user', content: message, timestamp: new Date().toISOString() });
+    messages.push({ role: 'assistant', content: response, timestamp: new Date().toISOString() });
+    sessionMessages.set(sid, messages);
+
     // プレビューURLを生成
     const previewUrl = `/preview/${sid}/index.html`;
 
@@ -196,13 +241,11 @@ app.get('/api/session/:id', async (req, res) => {
   const sessionId = req.params.id;
   const session = sessions.get(sessionId);
 
-  if (!session) {
-    return res.status(404).json({ error: 'Session not found' });
-  }
-
   // 生成されたファイル一覧を取得（プロジェクトルートのdist/）
   const outputDir = path.join(__dirname, '../../dist', sessionId);
   let files = [];
+  let hasOutputDir = false;
+
   try {
     const entries = await fs.readdir(outputDir, { withFileTypes: true });
     files = entries
@@ -211,14 +254,25 @@ app.get('/api/session/:id', async (req, res) => {
         name: entry.name,
         url: `/preview/${sessionId}/${entry.name}`
       }));
+    hasOutputDir = files.length > 0;
   } catch (error) {
-    // ディレクトリがまだない場合
+    // ディレクトリがない場合
   }
+
+  // セッションが存在しない場合でも、dist/にファイルがあれば情報を返す
+  if (!session && !hasOutputDir) {
+    return res.status(404).json({ error: 'Session not found and no output files exist' });
+  }
+
+  // メッセージ履歴を取得（セッションが生きている場合のみ）
+  const messages = sessionMessages.get(sessionId) || [];
 
   res.json({
     sessionId,
-    isAlive: session.isAlive(),
-    files
+    isAlive: session ? session.isAlive() : false,
+    isExpired: !session && hasOutputDir, // タイムアウトしたが成果物は残っている
+    files,
+    messages
   });
 });
 
@@ -245,6 +299,7 @@ app.post('/api/session/:id/close', async (req, res) => {
     await session.close();
     sessions.delete(sessionId);
     sessionTimestamps.delete(sessionId);
+    sessionMessages.delete(sessionId);
     console.log(`[${sessionId}] Session manually closed`);
   }
 
@@ -258,6 +313,20 @@ app.get('/api/health', (req, res) => {
     activeSessions: sessions.size,
     uptime: process.uptime()
   });
+});
+
+// セッションURLルーティング（/:sessionId）
+app.get('/:sessionId', (req, res) => {
+  const sessionId = req.params.sessionId;
+
+  // APIルートやその他の特別なルートは除外
+  if (sessionId.startsWith('api') || sessionId.startsWith('preview')) {
+    return res.status(404).send('Not found');
+  }
+
+  // セッションが存在するかチェック（オプション）
+  // 存在しなくてもindex.htmlを返してフロントエンドで処理
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 // エラーハンドリング

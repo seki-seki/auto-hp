@@ -22,10 +22,7 @@ class ClaudeCodeSession {
 
     // Claude Codeをptyで起動（Maxプランは認証済みなのでAPIキー不要）
     // --permission-mode bypassPermissions: すべてのパーミッションチェックをバイパス
-    const claudeArgs = [
-      "--permission-mode",
-      "bypassPermissions",
-    ];
+    const claudeArgs = ["--permission-mode", "bypassPermissions"];
 
     this.ptyProcess = pty.spawn("claude", claudeArgs, {
       name: "xterm-color",
@@ -40,6 +37,9 @@ class ClaudeCodeSession {
 
     // 出力をキャプチャ
     let lastLoggedContent = "";
+    let lastLogTime = 0;
+    const LOG_COOLDOWN = 1000; // 同じ内容は1秒以内には再表示しない
+
     this.ptyProcess.onData((data) => {
       this.outputBuffer += data;
       this.lastOutputTime = Date.now(); // 最後の出力時刻を記録
@@ -50,16 +50,27 @@ class ClaudeCodeSession {
 
       // 意味のある出力のみログ表示
       // - 5文字以上
-      // - 直前のログと異なる内容
+      // - 直前のログと異なる内容、または1秒以上経過
       // - 英数字や記号を含む
       const trimmedData = cleanData.trim();
+      const now = Date.now();
+      const isDifferent = trimmedData !== lastLoggedContent;
+      const hasCooldownPassed = now - lastLogTime > LOG_COOLDOWN;
+
       if (
         trimmedData.length >= 5 &&
-        trimmedData !== lastLoggedContent &&
+        (isDifferent || hasCooldownPassed) &&
         /[a-zA-Z0-9\u3000-\u9FFF]/.test(trimmedData)
       ) {
+        // 前回と同じ内容の場合はスキップ表示
+        if (!isDifferent && hasCooldownPassed) {
+          // 同じ内容が繰り返される場合は表示しない
+          return;
+        }
+
         console.log(`[${this.sessionId}] ${trimmedData}`);
         lastLoggedContent = trimmedData;
+        lastLogTime = now;
       }
 
       // プロンプトが表示されたら準備完了（複数パターンを確認）
@@ -159,12 +170,13 @@ class ClaudeCodeSession {
 
     console.log(`[${this.sessionId}] Message sent (${message.length} bytes)`);
 
-    // 応答を待つ（HP生成は15分程度かかるため、余裕を持って20分に設定）
+    // 応答を待つ（HP生成は15分程度かかるため、余裕を持って1時間に設定）
     try {
-      const response = await this.waitForResponse(1200000); // 20分タイムアウト
+      const response = await this.waitForResponse(3600000); // 1時間タイムアウト
 
       // キューに溜まっているメッセージを処理
       if (this.messageQueue.length > 0) {
+        console.log(`[${this.sessionId}] Processing next message in queue`);
         const next = this.messageQueue.shift();
         this.sendMessage(next.message).then(next.resolve).catch(next.reject);
       }
@@ -208,7 +220,7 @@ class ClaudeCodeSession {
     }
   }
 
-  async waitForResponse(timeout = 1200000) {
+  async waitForResponse(timeout = 3600000) {
     const startTime = Date.now();
     let lastOutputLength = 0;
     let stableCount = 0;
@@ -264,11 +276,13 @@ class ClaudeCodeSession {
       const hasPrompt =
         lastPart.includes("How can I help") ||
         lastPart.includes("What would you like") ||
-        /^>\s*$/m.test(lastPart) ||  // 行頭の > だけの行
-        (lastPart.includes('? for shortcuts') && lastPart.includes('>'));
+        /^>\s*$/m.test(lastPart) || // 行頭の > だけの行
+        (lastPart.includes("? for shortcuts") && lastPart.includes(">"));
 
       if (hasPrompt && this.outputBuffer.length > 100 && !isThinking) {
-        console.log(`[${this.sessionId}] ✓ Response completed (prompt detected)`);
+        console.log(
+          `[${this.sessionId}] ✓ Response completed (prompt detected)`
+        );
         this.isReady = true;
         this.isProcessing = false;
         return this.cleanOutput(this.outputBuffer);
