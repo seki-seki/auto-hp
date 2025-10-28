@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia LLC - 価値創造を通じた社会貢献</title>
+    <meta name="description" content="合同会社ガイア - 不動産、建築設計、広告看板事業を通じて価値を創造し、社会に還元します。">
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #4a90a4;
+            --accent-color: #d4a574;
+            --text-color: #333333;
+            --text-light: #666666;
+            --bg-color: #ffffff;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(44, 82, 130, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(44, 82, 130, 0.4);
+        }
+
+        /* Hero Section - Full Image with Overlay */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('images/hero-c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(44, 82, 130, 0.85) 0%, rgba(74, 144, 164, 0.75) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: slideInLeft 1s ease;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            animation: slideInLeft 1s ease 0.2s backwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            animation: slideInLeft 1s ease 0.4s backwards;
+        }
+
+        .btn-hero-primary {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-hero-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-hero-secondary {
+            background-color: transparent;
+            color: white;
+            padding: 1.2rem 3rem;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-hero-secondary:hover {
+            background-color: white;
+            color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Asymmetric Section Base */
+        .asymmetric-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 600px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .asymmetric-section.reverse {
+            direction: rtl;
+        }
+
+        .asymmetric-section.reverse > * {
+            direction: ltr;
+        }
+
+        /* Business Section - Asymmetric Layout */
+        .business-section {
+            padding: 8rem 3rem;
+            background-color: var(--bg-light);
+        }
+
+        .business-asymmetric {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .business-intro {
+            position: relative;
+            padding: 3rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            border-radius: 20px;
+            transform: translateX(-30px);
+            box-shadow: 0 20px 60px rgba(44, 82, 130, 0.3);
+        }
+
+        .business-intro h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .business-intro .label {
+            font-size: 0.9rem;
+            letter-spacing: 0.3em;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .business-intro p {
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        .business-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .business-card {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .business-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            transform: scaleY(0);
+            transition: transform 0.4s ease;
+        }
+
+        .business-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .business-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .business-card:nth-child(1) {
+            grid-column: span 2;
+        }
+
+        .business-card h3 {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .business-card .card-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .business-card p {
+            color: var(--text-light);
+            line-height: 1.9;
+        }
+
+        /* Services Section - Overlapping Layout */
+        .services-section {
+            padding: 8rem 3rem;
+            background-color: var(--bg-color);
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 0;
+        }
+
+        .services-content {
+            padding: 4rem;
+            background-color: var(--primary-color);
+            color: white;
+            z-index: 2;
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        }
+
+        .services-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .services-content .label {
+            font-size: 0.9rem;
+            letter-spacing: 0.3em;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .services-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .services-list li {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 1.1rem;
+        }
+
+        .services-list li:last-child {
+            border-bottom: none;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 4rem;
+            background-color: var(--bg-light);
+            margin-left: -80px;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .service-card li::before {
+            content: '→';
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        /* Message Section - Split Diagonal */
+        .message-section {
+            position: relative;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color) 50%, var(--bg-light) 50%, var(--bg-light) 100%);
+        }
+
+        .message-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 3rem;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .message-profile {
+            text-align: center;
+            padding: 3rem;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            transform: rotate(-3deg);
+            transition: transform 0.4s ease;
+        }
+
+        .message-profile:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        .message-profile h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .message-profile .role {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .message-profile .quote {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .message-text {
+            background-color: white;
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .message-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            line-height: 2;
+            font-size: 1.05rem;
+        }
+
+        /* Company Section - Asymmetric Grid */
+        .company-section {
+            padding: 8rem 3rem;
+            background-color: var(--bg-light);
+        }
+
+        .company-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .company-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .company-header h2 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .company-header .label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .company-item {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .company-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .company-item:nth-child(1) {
+            grid-column: span 2;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+        }
+
+        .company-item:nth-child(1) .company-label {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .company-item:nth-child(1) .company-value {
+            color: white;
+        }
+
+        .company-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .company-value {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        /* CTA Section - Full Width Dramatic */
+        .cta-section {
+            position: relative;
+            padding: 8rem 3rem;
+            background-image: url('images/hero-a.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(44, 82, 130, 0.9) 0%, rgba(74, 144, 164, 0.85) 100%);
+        }
+
+        .cta-container {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-container h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-container p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            line-height: 2;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 1.5rem 3.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Access Section */
+        .access-section {
+            padding: 8rem 3rem;
+            background-color: var(--bg-color);
+        }
+
+        .access-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 3rem;
+        }
+
+        .access-info {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(44, 82, 130, 0.3);
+        }
+
+        .access-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .access-info .label {
+            font-size: 0.9rem;
+            letter-spacing: 0.3em;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .access-info p {
+            margin-bottom: 1.5rem;
+            line-height: 2;
+        }
+
+        .map-wrapper {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            height: 100%;
+            min-height: 500px;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 5rem 3rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .business-asymmetric,
+            .services-container,
+            .message-container,
+            .access-container {
+                grid-template-columns: 1fr;
+            }
+
+            .business-intro {
+                transform: translateX(0);
+            }
+
+            .services-content {
+                clip-path: none;
+            }
+
+            .services-grid {
+                margin-left: 0;
+                grid-template-columns: 1fr;
+            }
+
+            .message-profile {
+                transform: rotate(0);
+            }
+
+            .company-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .company-item:nth-child(1) {
+                grid-column: span 1;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .business-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .business-card:nth-child(1) {
+                grid-column: span 1;
+            }
+
+            .cta-container h2 {
+                font-size: 2.2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">GAIA LLC</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#business">事業内容</a></li>
+                    <li><a href="#message">メッセージ</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">お問い合わせ</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>VALUE CREATION<br>価値創造の先へ</h1>
+            <p class="tagline">不動産、建築、広告 - 3つの事業で新たな価値を創造する</p>
+            <div class="hero-buttons">
+                <a href="#business" class="btn-hero-primary">事業を見る</a>
+                <a href="#contact" class="btn-hero-secondary">お問い合わせ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section id="business" class="business-section">
+        <div class="business-asymmetric">
+            <div class="business-intro">
+                <span class="label">BUSINESS</span>
+                <h2>事業内容</h2>
+                <p>
+                    合同会社ガイアは、不動産事業、建築設計、広告看板事業を中心に、お客様にとって最適な価値の創造を常に考え、提案し、形にすることを使命としています。
+                </p>
+            </div>
+            <div class="business-cards">
+                <div class="business-card">
+                    <span class="card-label">Real Estate Business</span>
+                    <h3>不動産事業</h3>
+                    <p>独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応いたします。住宅地・別荘地の開発造成、不動産コンサルタント業務も行っております。</p>
+                </div>
+                <div class="business-card">
+                    <span class="card-label">Architecture</span>
+                    <h3>建築の工事設計</h3>
+                    <p>最高のデザインと独自性を追求した建築設計を提供します。Design × Place の融合を実現します。</p>
+                </div>
+                <div class="business-card">
+                    <span class="card-label">Signboard</span>
+                    <h3>広告看板事業</h3>
+                    <p>独自のデザインで最適化した唯一無二の広告を提案します。メディアミックスによる効果的な広告を展開します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-container">
+            <div class="services-content">
+                <span class="label">SERVICES</span>
+                <h2>提供する<br>サービス</h2>
+                <ul class="services-list">
+                    <li>不動産売買・賃貸仲介</li>
+                    <li>建築設計・デザイン</li>
+                    <li>看板広告制作・施工</li>
+                    <li>不動産コンサルティング</li>
+                    <li>保険代理店業務</li>
+                </ul>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>不動産サービス</h3>
+                    <ul>
+                        <li>売買仲介</li>
+                        <li>賃貸管理</li>
+                        <li>投資相談</li>
+                        <li>開発造成</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>建築サービス</h3>
+                    <ul>
+                        <li>建築設計</li>
+                        <li>工事監理</li>
+                        <li>リノベーション</li>
+                        <li>店舗設計</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>広告サービス</h3>
+                    <ul>
+                        <li>看板デザイン</li>
+                        <li>広告企画</li>
+                        <li>施工管理</li>
+                        <li>ブランディング</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>保険サービス</h3>
+                    <ul>
+                        <li>生命保険</li>
+                        <li>損害保険</li>
+                        <li>保険見直し</li>
+                        <li>法人保険</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section id="message" class="message-section">
+        <div class="message-container">
+            <div class="message-profile">
+                <h3>井上真意</h3>
+                <p class="role">代表社員</p>
+                <p class="quote">「価値を創造し<br>社会に還元する」</p>
+            </div>
+            <div class="message-text">
+                <h2>代表メッセージ</h2>
+                <p>私たちの使命は「価値を創造し、社会に還元すること」です。</p>
+                <p>激しく変化する現代社会において、単にモノやサービスを提供するだけではなく、人々の期待を超える「新たな価値」を生み出すことこそが企業に求められる本質的な役割だと私たちは考えています。</p>
+                <p>創業以来、私たちは常に「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切にしながら事業を展開してまいりました。</p>
+                <p>お客様、パートナー企業、そして地域社会とのつながりを大切にし、共に成長していける関係を築いていくことが、さらなる価値創造につながると確信しております。</p>
+                <p>これからも変化を恐れず挑戦を続け、持続可能な社会の実現に貢献してまいります。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Section -->
+    <section id="company" class="company-section">
+        <div class="company-container">
+            <div class="company-header">
+                <span class="label">COMPANY</span>
+                <h2>会社概要</h2>
+            </div>
+            <div class="company-grid">
+                <div class="company-item">
+                    <div class="company-label">Company Name</div>
+                    <div class="company-value">合同会社ガイア / Gaia LLC</div>
+                </div>
+                <div class="company-item">
+                    <div class="company-label">Representative</div>
+                    <div class="company-value">井上真意</div>
+                </div>
+                <div class="company-item">
+                    <div class="company-label">Established</div>
+                    <div class="company-value">平成25年11月1日</div>
+                </div>
+                <div class="company-item">
+                    <div class="company-label">Capital</div>
+                    <div class="company-value">200万円</div>
+                </div>
+                <div class="company-item">
+                    <div class="company-label">Corporate Number</div>
+                    <div class="company-value">5330003005421</div>
+                </div>
+                <div class="company-item">
+                    <div class="company-label">Address</div>
+                    <div class="company-value">熊本県熊本市中央区<br>帯山５丁目３８番２５号</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="cta-container">
+            <h2>お問い合わせ</h2>
+            <p>不動産、建築設計、広告看板事業に関するご相談はお気軽にお問い合わせください。<br>お客様のニーズに合わせた最適なソリューションをご提案いたします。</p>
+            <div class="cta-buttons">
+                <a href="tel:0962851234" class="btn-cta">📞 096-285-1234</a>
+                <a href="mailto:info@gaia-llc.jp" class="btn-cta">✉ メールで相談</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="access-section">
+        <div class="access-container">
+            <div class="access-info">
+                <span class="label">ACCESS</span>
+                <h2>アクセス</h2>
+                <p>
+                    <strong>〒862-0924</strong><br>
+                    熊本県熊本市中央区<br>
+                    帯山５丁目３８番２５号
+                </p>
+                <p>
+                    <strong>アクセス</strong><br>
+                    熊本市電 健軍町駅より徒歩15分<br>
+                    熊本バス 帯山停留所より徒歩5分
+                </p>
+            </div>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.3892345678!2d130.7234567!3d32.7823456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ2JzU2LjQiTiAxMzDCsDQzJzI0LjQiRQ!5e0!3m2!1sja!2sjp!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Gaia LLC</h3>
+                    <p>合同会社ガイア<br><br>価値創造を通じた社会貢献。不動産、建築設計、広告看板事業を通じて新たな価値を生み出します。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>事業内容</h3>
+                    <ul>
+                        <li><a href="#business">不動産事業</a></li>
+                        <li><a href="#business">建築設計</a></li>
+                        <li><a href="#business">広告看板事業</a></li>
+                        <li><a href="#business">保険代理店</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>企業情報</h3>
+                    <ul>
+                        <li><a href="#company">会社概要</a></li>
+                        <li><a href="#message">代表メッセージ</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <ul>
+                        <li><a href="tel:0962851234">TEL: 096-285-1234</a></li>
+                        <li><a href="mailto:info@gaia-llc.jp">info@gaia-llc.jp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gaia LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 90;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            const scrolled = window.pageYOffset;
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>

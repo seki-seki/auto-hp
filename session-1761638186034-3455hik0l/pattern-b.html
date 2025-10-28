@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia LLC - 合同会社ガイア | 価値創造</title>
+    <meta name="description" content="合同会社ガイアは不動産事業、建築工事設計、広告看板事業などを通じて、お客様に最適な価値創造を提案します。">
+    <style>
+        /* リセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* カスタムプロパティ（全パターン共通ブランドカラー） */
+        :root {
+            --primary-color: #1a5490;
+            --accent-color: #d4af37;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #ffffff;
+            --bg-gray: #f5f5f5;
+            --bg-alt: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            color: var(--text-color);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ヘッダー */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .logo-sub {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        /* モバイルメニュー */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav .cta-button {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .nav .cta-button:hover {
+            background: #c19d2f;
+            color: white;
+        }
+
+        /* ヒーローセクション（2分割） */
+        .hero {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 600px;
+            align-items: center;
+        }
+
+        .hero-text {
+            padding: 4rem;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-text .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            align-self: flex-start;
+        }
+
+        .hero-text .btn:hover {
+            background: #c19d2f;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-image {
+            background: url('images/hero-2.jpg') center/cover no-repeat;
+            min-height: 600px;
+        }
+
+        /* セクション共通 */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title .en-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* サービスセクション（グリッド） */
+        .services {
+            background: var(--bg-gray);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .service-card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card-content {
+            padding: 2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* メッセージセクション（2カラム） */
+        .message {
+            background: white;
+        }
+
+        .message-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .message-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .message-content h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .message-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.9;
+            color: var(--text-color);
+        }
+
+        .message-signature {
+            font-weight: bold;
+            margin-top: 2rem;
+            color: var(--primary-color);
+            text-align: right;
+        }
+
+        /* 特徴セクション */
+        .features {
+            background: var(--bg-alt);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* 会社概要セクション */
+        .company {
+            background: white;
+        }
+
+        .company-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .company-info {
+            background: var(--bg-gray);
+            padding: 3rem;
+            border-radius: 10px;
+        }
+
+        .company-info h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .info-value {
+            color: var(--text-color);
+        }
+
+        .company-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* CTAセクション */
+        .cta {
+            background: linear-gradient(135deg, var(--primary-color), #2a6ab0);
+            color: white;
+        }
+
+        .cta-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #c19d2f;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-gray);
+            transform: translateY(-3px);
+        }
+
+        .cta-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-info p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* アクセスセクション */
+        .access {
+            background: var(--bg-gray);
+        }
+
+        .access-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+        }
+
+        .access-info {
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+        }
+
+        .access-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .access-info p {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .map {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* フッター */
+        .footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-nav a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav.active {
+                display: flex;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                margin-top: 60px;
+            }
+
+            .hero-text {
+                padding: 3rem 1.5rem;
+                min-height: auto;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            .hero-image {
+                min-height: 300px;
+                order: -1;
+            }
+
+            .service-grid,
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .message-grid,
+            .company-grid,
+            .cta-grid,
+            .access-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .company-image {
+                height: 300px;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .info-item {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .service-grid,
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                Gaia LLC
+                <span class="logo-sub">合同会社ガイア</span>
+            </div>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <nav class="nav" id="mainNav">
+                <a href="#services">事業内容</a>
+                <a href="#features">特徴</a>
+                <a href="#message">メッセージ</a>
+                <a href="#company">会社概要</a>
+                <a href="#access">アクセス</a>
+                <a href="#contact" class="cta-button">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>VALUE CREATION</h1>
+            <p>価値創造で、未来を築く</p>
+            <a href="#contact" class="btn">お問い合わせはこちら</a>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- サービスセクション -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <p class="en-label">SERVICES</p>
+                <h2>事業内容</h2>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="images/service-1.jpg" alt="不動産事業" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>不動産事業</h3>
+                        <p>独自のネットワークと不動産の知識で賃貸から不動産投資まで幅広い範囲で対応致します。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-2.jpg" alt="建築工事設計" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>建築工事設計</h3>
+                        <p>最高のデザインと独自性を兼ね備えた建築設計を提供します。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-3.jpg" alt="看板・広告事業" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>看板・広告事業</h3>
+                        <p>独自のデザインで最適化し、他にはない唯一無二の広告を提案します。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-4.jpg" alt="保険事業" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>保険事業</h3>
+                        <p>生命保険募集、損害保険代理店事業を通じて、お客様の大切な資産と生活を守ります。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-1.jpg" alt="不動産コンサルタント" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>不動産コンサルタント</h3>
+                        <p>住宅地・別荘地の開発造成をはじめとする不動産コンサルタント業務を提供します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特徴セクション -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <p class="en-label">FEATURES</p>
+                <h2>選ばれる理由</h2>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>最高のデザイン</h3>
+                    <p>Design × Place - 最高のデザインと独自性で、お客様の期待を超える価値を創造します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>自由な創造力</h3>
+                    <p>Creation - 固定観念にとらわれない自由な創造力で、新しい価値を生み出します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>確かな実績</h3>
+                    <p>長年培ってきた経験と実績で、お客様に最適なソリューションを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メッセージセクション -->
+    <section class="message" id="message">
+        <div class="container">
+            <div class="section-title">
+                <p class="en-label">MESSAGE</p>
+                <h2>代表メッセージ</h2>
+            </div>
+            <div class="message-grid">
+                <img src="images/hero-3.jpg" alt="代表メッセージ" class="message-image">
+                <div class="message-content">
+                    <h3>価値創造で、社会に貢献する</h3>
+                    <p>私たちの使命は「価値を創造し、社会に還元すること」です。</p>
+                    <p>激しく変化する現代社会において、単にモノやサービスを提供するだけではなく、人々の期待を超える「新たな価値」を生み出すことこそが企業に求められる本質的な役割だと私たちは考えています。</p>
+                    <p>創業以来、私たちは常に「本質は何か」「誰のためにあるのか」を問い続け、ユーザー視点と未来志向を大切にしながら事業を展開してまいりました。</p>
+                    <p>お客様、パートナー企業、そして地域社会とのつながりを大切にし、共に成長していける関係を築いていくことが、さらなる価値創造につながると確信しております。</p>
+                    <p class="message-signature">代表社員　井上真意</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要セクション -->
+    <section class="company" id="company">
+        <div class="container">
+            <div class="section-title">
+                <p class="en-label">COMPANY</p>
+                <h2>会社概要</h2>
+            </div>
+            <div class="company-grid">
+                <div class="company-info">
+                    <h3>企業情報</h3>
+                    <div class="info-item">
+                        <div class="info-label">会社名</div>
+                        <div class="info-value">合同会社ガイア（Gaia LLC）</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">資本金</div>
+                        <div class="info-value">200万円</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">設立日</div>
+                        <div class="info-value">平成25年11月1日</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">法人番号</div>
+                        <div class="info-value">5330003005421</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">所在地</div>
+                        <div class="info-value">〒862-0924<br>熊本県熊本市中央区帯山5丁目38番25号</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">代表社員</div>
+                        <div class="info-value">井上真意</div>
+                    </div>
+                </div>
+                <img src="images/hero-1.jpg" alt="会社イメージ" class="company-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-content">
+                    <h2>お問い合わせ</h2>
+                    <p>ご相談・お見積りは無料です。お気軽にお問い合わせください。</p>
+                    <div class="cta-buttons">
+                        <a href="tel:0962345678" class="btn btn-primary">電話でお問い合わせ</a>
+                        <a href="mailto:info@gaia-llc.jp" class="btn btn-secondary">メールでお問い合わせ</a>
+                    </div>
+                </div>
+                <div class="cta-info">
+                    <h3>営業時間</h3>
+                    <p>平日 9:00 - 18:00</p>
+                    <p>土日祝 定休日</p>
+                    <p>※緊急のご連絡は24時間受付</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- アクセスセクション -->
+    <section class="access" id="access">
+        <div class="container">
+            <div class="section-title">
+                <p class="en-label">ACCESS</p>
+                <h2>アクセス</h2>
+            </div>
+            <div class="access-grid">
+                <div class="access-info">
+                    <h3>所在地</h3>
+                    <p><strong>合同会社ガイア</strong></p>
+                    <p>〒862-0924</p>
+                    <p>熊本県熊本市中央区帯山5丁目38番25号</p>
+                    <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid var(--border-color);">
+                    <p><strong>TEL:</strong> 096-234-5678</p>
+                    <p><strong>Email:</strong> info@gaia-llc.jp</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.5!2d130.7442!3d32.7858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ3JzA4LjkiTiAxMzDCsDQ0JzM5LjEiRQ!5e0!3m2!1sja!2sjp!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Gaia LLC</h3>
+                <p>合同会社ガイア</p>
+                <p>価値創造で、未来を築く</p>
+            </div>
+            <div class="footer-section">
+                <h3>ナビゲーション</h3>
+                <nav class="footer-nav">
+                    <a href="#services">事業内容</a>
+                    <a href="#features">特徴</a>
+                    <a href="#message">メッセージ</a>
+                    <a href="#company">会社概要</a>
+                    <a href="#access">アクセス</a>
+                    <a href="#contact">お問い合わせ</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>お問い合わせ</h3>
+                <p>TEL: 096-234-5678</p>
+                <p>Email: info@gaia-llc.jp</p>
+                <p>営業時間: 9:00-18:00</p>
+                <p>定休日: 土日祝</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gaia LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

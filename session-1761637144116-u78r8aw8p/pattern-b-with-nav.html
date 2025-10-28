@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社ガイア | 不動産・建築・広告看板事業</title>
+    <meta name="description" content="株式会社ガイアは熊本を拠点に不動産事業、建築の工事設計、広告看板事業を展開しています。">
+    <style>
+        :root {
+            --primary-color: #2C5F7F;
+            --secondary-color: #4A8DAD;
+            --accent-color: #D4A574;
+            --text-dark: #1A1A1A;
+            --text-light: #666666;
+            --bg-light: #F9F9F9;
+            --bg-lighter: #FFFFFF;
+            --border-color: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-lighter);
+            border-bottom: 2px solid var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo-subtitle {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--text-light);
+            margin-top: 0.2rem;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            background: var(--bg-light);
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-toggle {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--bg-light);
+            padding: 2rem;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.875rem 1.75rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            box-shadow: 0 4px 15px rgba(74, 141, 173, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            padding: 0.875rem 1.75rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Section */
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
+            color: var(--accent-color);
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section-white {
+            background: var(--bg-lighter);
+        }
+
+        .section-gray {
+            background: var(--bg-light);
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .card-text {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .feature-content h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-box h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--bg-light);
+        }
+
+        .info-box dl {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .info-box dt {
+            font-weight: 600;
+            color: var(--primary-color);
+            background: var(--bg-light);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .info-box dd {
+            color: var(--text-light);
+            margin-left: 0;
+            padding-left: 1rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section .section-title,
+        .cta-section .section-label {
+            color: white;
+        }
+
+        .cta-section .section-description {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .cta-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .cta-card p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .phone-large {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        .phone-large a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Map Section */
+        .map-wrapper {
+            display: grid;
+            gap: 0;
+        }
+
+        .map-info {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .map-info h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .map-info address {
+            font-style: normal;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .footer-nav ul {
+            list-style: none;
+        }
+
+        .footer-nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-nav a:hover {
+            color: white;
+        }
+
+        .footer-info p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 1rem 2rem;
+            color: var(--text-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--bg-light);
+            transition: background 0.3s;
+        }
+
+        .mobile-nav a:hover {
+            background: var(--bg-light);
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-image {
+                height: 400px;
+            }
+
+            .hero-buttons {
+                flex-direction: row;
+            }
+
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .map-wrapper {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                align-items: start;
+            }
+
+            .map-container {
+                height: 100%;
+                min-height: 400px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .info-box dl {
+                grid-template-columns: 150px 1fr;
+                align-items: start;
+            }
+
+            .info-box dd {
+                padding-left: 0;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+
+            .nav {
+                display: block;
+            }
+
+            .header-content {
+                grid-template-columns: 200px 1fr auto;
+            }
+
+            .hero {
+                padding: 4rem 2rem;
+                min-height: 600px;
+            }
+
+            .hero-text h1 {
+                font-size: 3rem;
+            }
+
+            .hero-image {
+                height: 500px;
+            }
+
+            .section {
+                padding: 5rem 2rem;
+            }
+
+            .section-title {
+                font-size: 2.25rem;
+            }
+
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                GAIA LLC
+                <span class="logo-subtitle">合同会社ガイア</span>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#services">事業内容</a></li>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#about">会社概要</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" id="menuToggle">メニュー</button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#services">事業内容</a></li>
+            <li><a href="#features">特徴</a></li>
+            <li><a href="#about">会社概要</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>価値創造で<br>熊本の未来を創る</h1>
+                <p class="subtitle">
+                    株式会社ガイアは、不動産事業・建築の工事設計・広告看板事業を通じて、地域社会の発展に貢献しています。確かな技術と誠実な対応で、お客様の期待にお応えします。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">お問い合わせ</a>
+                    <a href="#services" class="btn-secondary">事業内容を見る</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/hero-2.jpg" alt="株式会社ガイア" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-white">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">SERVICES</div>
+                <h2 class="section-title">事業内容</h2>
+                <p class="section-description">
+                    3つの事業領域で、お客様のニーズに応える総合的なサービスを提供しています。
+                </p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/service-1.jpg" alt="不動産事業" class="card-image">
+                    <div class="card-body">
+                        <div class="card-icon">1</div>
+                        <h3 class="card-title">不動産事業</h3>
+                        <p class="card-text">
+                            熊本市を中心に、不動産の売買・賃貸・管理を行っています。物件の査定から契約、アフターフォローまで、ワンストップでサポートします。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/service-2.jpg" alt="建築の工事設計" class="card-image">
+                    <div class="card-body">
+                        <div class="card-icon">2</div>
+                        <h3 class="card-title">建築の工事設計</h3>
+                        <p class="card-text">
+                            新築からリフォームまで、建築の企画・設計・施工を一貫して対応。お客様の理想を形にする確かな技術力で、快適な空間を実現します。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/service-3.jpg" alt="広告看板事業" class="card-image">
+                    <div class="card-body">
+                        <div class="card-icon">3</div>
+                        <h3 class="card-title">広告看板事業</h3>
+                        <p class="card-text">
+                            店舗看板から大型屋外広告まで、デザイン・制作・施工・メンテナンスをトータルサポート。効果的な広告で、ビジネスの成功をサポートします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-gray">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">FEATURES</div>
+                <h2 class="section-title">選ばれる理由</h2>
+                <p class="section-description">
+                    長年の実績と確かな技術で、お客様の信頼にお応えします。
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-content">
+                        <h3>地域密着のサービス</h3>
+                        <p>熊本市を中心に、地域の特性を熟知したきめ細やかなサービスを提供します。</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-content">
+                        <h3>ワンストップ対応</h3>
+                        <p>企画から施工、アフターフォローまで、一貫したサポート体制で安心をお届けします。</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-content">
+                        <h3>確かな実績と信頼</h3>
+                        <p>平成25年の設立以来、多くのお客様にご利用いただいています。</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-content">
+                        <h3>柔軟な対応力</h3>
+                        <p>お客様のご要望に合わせた柔軟な提案と迅速な対応を心がけています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-white">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">COMPANY</div>
+                <h2 class="section-title">会社概要</h2>
+            </div>
+            <div class="info-box">
+                <h3>会社情報</h3>
+                <dl>
+                    <dt>会社名</dt>
+                    <dd>合同会社ガイア / Gaiya LLC</dd>
+                    <dt>設立</dt>
+                    <dd>平成25年11月1日</dd>
+                    <dt>資本金</dt>
+                    <dd>200万円</dd>
+                    <dt>所在地</dt>
+                    <dd>〒862-0924 熊本県熊本市中央区帯山５丁目３８番２５号</dd>
+                    <dt>事業内容</dt>
+                    <dd>不動産事業、建築の工事設計、広告看板事業</dd>
+                    <dt>企業理念</dt>
+                    <dd>価値創造を通じて、地域社会の発展に貢献し、お客様に信頼されるパートナーであり続けます。</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="section cta-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">CONTACT</div>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">
+                    不動産、建築、広告看板に関するご相談は、お気軽にお問い合わせください。
+                </p>
+            </div>
+            <div class="card-grid">
+                <div class="cta-card">
+                    <h3>お電話でのお問い合わせ</h3>
+                    <p>営業時間: 平日 9:00 - 18:00</p>
+                    <div class="phone-large">
+                        <a href="tel:096-000-0000">096-000-0000</a>
+                    </div>
+                </div>
+                <div class="cta-card">
+                    <h3>メールでのお問い合わせ</h3>
+                    <p>24時間受付中。2営業日以内に返信いたします。</p>
+                    <a href="mailto:info@gaia-llc.com" class="btn-primary">メールを送る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="access" class="section section-white">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">ACCESS</div>
+                <h2 class="section-title">アクセス</h2>
+            </div>
+            <div class="map-wrapper">
+                <div class="map-info">
+                    <h3>所在地</h3>
+                    <address>
+                        <strong>合同会社ガイア</strong><br>
+                        〒862-0924<br>
+                        熊本県熊本市中央区帯山５丁目３８番２５号<br><br>
+                        <strong>TEL:</strong> 096-000-0000<br>
+                        <strong>営業時間:</strong> 平日 9:00 - 18:00<br>
+                        <strong>定休日:</strong> 土日祝日
+                    </address>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.8917857845596!2d130.73891231521842!3d32.78939068097186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f3c8f8b0a1c7%3A0x1234567890abcdef!2z54aK5pys55yM54aK5pys5biC5Lit5aSu5Yy65bi-5bGxIO-8leS4geebruO8k--8mOeVque_jumFt--8kuO8leWPtw!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section footer-nav">
+                    <h3>サイトマップ</h3>
+                    <ul>
+                        <li><a href="#services">事業内容</a></li>
+                        <li><a href="#features">特徴</a></li>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-info">
+                    <h3>会社情報</h3>
+                    <p><strong>合同会社ガイア</strong></p>
+                    <p>〒862-0924<br>熊本県熊本市中央区帯山<br>５丁目３８番２５号</p>
+                </div>
+                <div class="footer-section footer-info">
+                    <h3>お問い合わせ</h3>
+                    <p><strong>TEL:</strong> 096-000-0000</p>
+                    <p><strong>Email:</strong> info@gaia-llc.com</p>
+                    <p>営業時間: 平日 9:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gaiya LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

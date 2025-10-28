@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia LLC - 合同会社ガイア | リダイレクト中...</title>
+    <meta http-equiv="refresh" content="0; url=pattern-a-with-nav.html">
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1a5490, #2a6ab0);
+            color: white;
+        }
+
+        .redirect-message {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .redirect-message h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .redirect-message p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #d4af37;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .manual-link {
+            margin-top: 2rem;
+        }
+
+        .manual-link a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #d4af37;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .manual-link a:hover {
+            background: #d4af37;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-message">
+        <h1>Gaia LLC</h1>
+        <p>合同会社ガイア</p>
+        <div class="spinner"></div>
+        <p style="margin-top: 2rem;">リダイレクト中...</p>
+        <div class="manual-link">
+            <a href="pattern-a-with-nav.html">クリックして進む</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScriptによるリダイレクト（念のため）
+        setTimeout(function() {
+            window.location.href = 'pattern-a-with-nav.html';
+        }, 1000);
+    </script>
+</body>
+</html>
