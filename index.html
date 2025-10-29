@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaia LLC — デザインパターン比較</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Gaia LLC — デザインパターン</h1>
+    <p>3つの異なるデザイン言語で構成されたWebページを比較し、ブランドに最適な表現をお選びください。タブを切り替えて各パターンをご覧いただけます。</p>
+  </header>
+  <main>
+    <p class="instructions" id="tabInstructions">タブは左右キーまたは上下キーで移動し、Enterまたはスペースで選択できます。</p>
+    <div class="tablist" role="tablist" aria-labelledby="tabInstructions">
+      <button class="tab-button" role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1">モダンミニマル</button>
+      <button class="tab-button" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" tabindex="-1">ダーク×グラデーション</button>
+      <button class="tab-button" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" tabindex="-1">ビジュアルリッチ &amp; Bold</button>
+    </div>
+
+    <section class="tab-panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+      <iframe src="pattern-1.html" title="Gaia LLC モダンミニマル パターン" loading="lazy"></iframe>
+    </section>
+
+    <section class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+      <iframe src="pattern-2.html" title="Gaia LLC ダークグラデーション パターン" loading="lazy"></iframe>
+    </section>
+
+    <section class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+      <iframe src="pattern-3.html" title="Gaia LLC ビジュアルリッチ Bold パターン" loading="lazy"></iframe>
+    </section>
+
+    <noscript>
+      <p>JavaScriptが無効になっています。以下のリンクから各パターンを個別にご覧ください。</p>
+      <ul>
+        <li><a href="pattern-1.html">モダンミニマル</a></li>
+        <li><a href="pattern-2.html">ダーク×グラデーション</a></li>
+        <li><a href="pattern-3.html">ビジュアルリッチ &amp; Bold</a></li>
+      </ul>
+    </noscript>
+  </main>
+  <footer>© Gaia LLC</footer>
+  <script src="script.js"></script>
+</body>
+</html>
